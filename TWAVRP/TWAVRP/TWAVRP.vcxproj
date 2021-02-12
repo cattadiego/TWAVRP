@@ -151,7 +151,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Config.cpp" />
+    <ClCompile Include="ContinuousCustomer.cpp" />
+    <ClCompile Include="Customer.cpp" />
+    <ClCompile Include="Depot.cpp" />
+    <ClCompile Include="PbData.cpp" />
+    <ClCompile Include="Point.cpp" />
     <ClCompile Include="TWAVRP.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Config.h" />
+    <ClInclude Include="ContinuousCustomer.h" />
+    <ClInclude Include="Customer.h" />
+    <ClInclude Include="Depot.h" />
+    <ClInclude Include="DiscreteCustomer.h" />
+    <ClInclude Include="PbData.h" />
+    <ClInclude Include="Point.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
