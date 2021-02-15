@@ -1,28 +1,23 @@
 #pragma once
 
 #include <string>
+#include "Util.h"
 
 using namespace std;
 
-#define myEpsilon 0.00000001
-#define myCutOff 0.1
 
-enum instance {
-	twa = 1,
-	dtwa = 2
-};
 
-enum user {
-	diego = 1,
-	lab = 2
-};
 
 class Config {
 
 public:
 
-	Config(user user, instance instance);
+	Config(user user, instanceType instanceType);
+	Config(Config &config);
+	Config();
 
+	instanceType instance;
 	string filePath;
 	string instanceFolder;
 };
+

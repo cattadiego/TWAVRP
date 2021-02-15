@@ -1,6 +1,17 @@
 #include "Config.h"
 
-Config::Config(user user, instance instance) {
+Config::Config() {
+
+}
+Config::Config(Config &config) {
+	this->filePath = config.filePath;
+	this->instance = config.instance;
+	this->instanceFolder = config.instanceFolder;
+}
+
+Config::Config(user user, instanceType instanceType) {
+
+	this->instance = instanceType;
 	switch (user)
 	{
 	case diego:
@@ -12,7 +23,7 @@ Config::Config(user user, instance instance) {
 		break;
 	}
 
-	switch (instance)
+	switch (instanceType)
 	{
 	case twa:
 		this->instanceFolder = "TWAVRPInstances//";

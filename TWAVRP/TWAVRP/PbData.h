@@ -1,22 +1,50 @@
 #pragma once
 
+#include <fstream>
+#include <iostream>
 #include <string>
+#include <unordered_map>
 #include <vector>
+
+#include "Config.h"
+
 using namespace std;
-
-
 
 class PbData {
 
+	void readData();
+	void readContinuousTW(ifstream &stream);
+	void readDiscreteTW(ifstream &stream);
+	void readDistancesCosts(ifstream &stream);
+	Config config;
 public:
 
 	int vehicleCapacity;
+	int nbPoints;
+	int nbCustomers;
+	int nbScenarios;
+	vector<int> id;
 	vector<double> scenarioProbability;
+	unordered_map<int, vector<int>> demandScenarios;
+	unordered_map<int, double> x;
+	unordered_map<int, double> y;
 
+	vector<int> probabilityScenario;
+
+	/* continuous customer */ 
+	unordered_map<int, int> lbExogenousTW;
+	unordered_map<int, int> ubExogenousTW;
+	unordered_map<int, int> widthEndogenousTW;
+
+	/* discrete customer */
+	unordered_map<int, vector<int>> lbTWs;
+	unordered_map<int, vector<int>> ubTWs;
+
+	unordered_map <int, unordered_map<int, double> > travelTimes;
+	unordered_map <int, unordered_map<int, double> > travelCosts;
 	string instanceName;
 
-	void readData();
 
-	PbData(string instanceName);
+	PbData(string instanceName, Config config);
 
 };
