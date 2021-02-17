@@ -1,6 +1,7 @@
 #pragma once
 
 #include <iostream>
+#include <sstream>
 #include <string>
 #include <vector>
 
@@ -18,6 +19,13 @@ enum user {
 	diego = 1,
 	lab = 2
 };
+
+template<typename T>
+string toString(T nt) {
+	ostringstream strs;
+	strs << nt;
+	return strs.str();
+}
 
 void subsetsUtil(vector<int>& A, vector<vector<int> >& res, vector<int>& subset, int index);
 vector<vector<int>> subsets(vector<int>& A);

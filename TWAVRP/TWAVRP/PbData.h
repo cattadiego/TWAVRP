@@ -24,12 +24,11 @@ public:
 	int nbCustomers;
 	int nbScenarios;
 	vector<int> id;
+	vector<int> idCustomers;
 	vector<double> scenarioProbability;
 	unordered_map<int, vector<int>> demandScenarios;
 	unordered_map<int, double> x;
 	unordered_map<int, double> y;
-
-	vector<int> probabilityScenario;
 
 	/* continuous customer */ 
 	unordered_map<int, int> lbExogenousTW;

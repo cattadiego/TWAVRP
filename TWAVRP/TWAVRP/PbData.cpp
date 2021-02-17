@@ -45,6 +45,7 @@ void PbData::readData() {
 		stream >> locX;
 		stream >> locY;
 		this->id.push_back(locId);
+		if(locId != 0) this->idCustomers.push_back(locId);
 		this->x.insert(make_pair(locId, locX));
 		this->x.insert(make_pair(locId, locY));
 	} while (i < nbPoints);
@@ -74,7 +75,7 @@ void PbData::readData() {
 	for (int s = 0; s < this->nbScenarios; ++s) {
 		double ps;
 		stream >> ps;
-		this->probabilityScenario.push_back(ps);
+		this->scenarioProbability.push_back(ps);
 	}
 
 	switch (this->config.instance) {

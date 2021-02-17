@@ -12,10 +12,9 @@ int main()
 {
 	
 	Config config(user::diego, instanceType::twa);
-	PbData pbData("TWAVRPInstance_1_10_3", config);
+	PbData pbData("TWAVRPInstance_2_10_3", config);
 	Solver solver(&pbData);
-	solver.generateAllClusters();
-
+	solver.enumeration();
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
