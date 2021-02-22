@@ -8,11 +8,17 @@
 #include "Solver.h"
 #include "Util.h"
 
-int main()
+int main(int argc, char* argv[])
 {
-	
+	string fileName = "TWAVRPInstance_1_10_3";
+
+	//fileName = "TWAVRPInstanceExtraScenarios_1_10_3";
+	if (argc > 1) {
+		fileName = string(argv[1]);
+	}
+
 	Config config(user::diego, instanceType::twa);
-	PbData pbData("TWAVRPInstance_2_10_3", config);
+	PbData pbData(fileName, config);
 	Solver solver(&pbData);
 	solver.enumeration();
 }

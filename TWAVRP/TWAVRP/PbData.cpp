@@ -8,8 +8,15 @@ PbData::PbData(string instanceName, Config config) {
 
 void PbData::readData() {
 	
-	string comment;
-	string file = this->config.filePath + this->config.instanceFolder + this->instanceName + ".txt";
+	string comment, file;
+
+	if(this->instanceName.find("ExtraScenarios") == string::npos)
+		file = this->config.filePath + this->config.instanceFolder + this->instanceName + ".txt";
+	else {
+		int pos = this->instanceName.find("ExtraScenarios");
+		string instName = this->instanceName;
+		file = this->config.filePath + this->config.instanceFolder + instName.erase(pos, 14) + ".txt";
+	}
 	ifstream stream; stream.open(file.c_str());
 
 	if (!stream)
@@ -50,6 +57,21 @@ void PbData::readData() {
 		this->x.insert(make_pair(locId, locY));
 	} while (i < nbPoints);
 
+	if (this->instanceName.find("ExtraScenarios") != string::npos) {
+		stream.close();
+		string instFolder = this->config.instanceFolder;
+		instFolder.erase(instFolder.length() - 2, 2);
+		instFolder += "ExtraScenarios//";
+		file = this->config.filePath + instFolder + this->instanceName + ".txt";
+		stream.open(file.c_str());
+		do
+		{
+			stream >> comment;
+		} while (comment != "Number_Of_Scenarios:");
+		stream >> this->nbScenarios;
+	}
+
+	
 
 	do
 	{
@@ -76,6 +98,14 @@ void PbData::readData() {
 		double ps;
 		stream >> ps;
 		this->scenarioProbability.push_back(ps);
+	}
+
+	if (this->instanceName.find("ExtraScenarios") != string::npos) {
+		stream.close();
+		int pos = this->instanceName.find("ExtraScenarios");
+		string instName = this->instanceName;
+		file = this->config.filePath + this->config.instanceFolder + instName.erase(pos, 14) + ".txt";
+		stream.open(file.c_str());
 	}
 
 	switch (this->config.instance) {
