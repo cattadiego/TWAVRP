@@ -16,6 +16,7 @@ class PbData {
 	void readContinuousTW(ifstream &stream);
 	void readDiscreteTW(ifstream &stream);
 	void readDistancesCosts(ifstream &stream);
+	void calculateBigM();
 	Config config;
 public:
 
@@ -43,6 +44,7 @@ public:
 	unordered_map <int, unordered_map<int, double> > travelCosts;
 	string instanceName;
 
+	double bigM;
 
 	PbData(string instanceName, Config config);
 

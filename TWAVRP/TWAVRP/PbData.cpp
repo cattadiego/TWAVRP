@@ -4,6 +4,7 @@ PbData::PbData(string instanceName, Config config) {
 	this->instanceName = instanceName;
 	this->config = config;
 	readData();
+	calculateBigM();
 }
 
 void PbData::readData() {
@@ -209,4 +210,12 @@ void PbData::readDistancesCosts(ifstream &stream) {
 		}
 	}
 
+}
+void PbData::calculateBigM() {
+	this->bigM = 0;
+	for (int i = 0; i < this->nbPoints; ++i) {
+		for (int j = 0; j < this->nbPoints; ++j) {
+			this->bigM += this->travelCosts.at(i).at(j);
+		}
+	}
 }

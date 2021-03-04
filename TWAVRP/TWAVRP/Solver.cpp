@@ -174,6 +174,7 @@ void Solver::enumeration() {
 	vector<vector<int>> solBest;
 	int nbCuts = 0;
 	double lb, ub = DBL_MAX;
+	double lb0, ub0;
 
 	try {
 		
@@ -183,6 +184,7 @@ void Solver::enumeration() {
 		
 		cplex.solve();
 		lb = cplex.getObjValue();
+		lb0 = lb;
 		determineClustersInSolUCVRP(cplex, u, sol);
 		printSolUCVRP(sol);
 		double cost = solveSeparationUCVRP(sol);
@@ -190,7 +192,9 @@ void Solver::enumeration() {
 			ub = cost;
 			solBest = sol;
 		}
+		ub0 = ub;
 
+		int iter = 0;
 		while (lb < ub) {
 			IloExpr expr(env);
 			int rhs = 0;
@@ -200,29 +204,210 @@ void Solver::enumeration() {
 					expr += u.at(sol.at(s).at(c)).at(s);
 				}
 			}
-			model.add(expr <= rhs - 2);
+			model.add(expr <= rhs - 1);
 			nbCuts++;
 
 			cplex.solve();
 			lb = cplex.getObjValue();
 
 			determineClustersInSolUCVRP(cplex, u, sol);
-			printSolUCVRP(sol);
+			
+			++iter;
 			double cost = solveSeparationUCVRP(sol);
 			if (cost < ub) {
 				ub = cost;
 				solBest = sol;
 			}
-		}			
+
+			ofstream stream; stream.open(this->pbdata->instanceName + "_infos.dat", ios::app);
+			stream << "******* " << iter << " ********\n";
+			stream << "lb: " << lb << "\tub: " << ub << endl;
+			stream << printSolUCVRP(sol) << endl;
+			stream.close();
+
+
+			cout << "lb: " << lb << endl;
+			cout << "ub: " << ub << endl;
+		}
 	}
 	catch (IloException &ex) {
 		cerr << "enumeration error: " << ex << endl;
 		cplex.end(); model.end(); env.end();
 		return;
 	}
+	cplex.end(); model.end(); env.end();
 	ofstream stream; stream.open("results.dat", ios::app);
-	stream << this->pbdata->instanceName << "\t" << this->pbdata->nbCustomers << "\t" << this->pbdata->nbScenarios 
-		<<  "lb:" << lb << "\tub:" << ub << "\tcuts: " << nbCuts << endl;
+	stream << this->pbdata->instanceName << "\t" << this->pbdata->nbCustomers << "\t" << this->pbdata->nbScenarios
+		<< "\t" << calculateNbClusters()
+		<< "\tlb0:" << lb0 << "\tub0:" << ub0 << "\tcuts: " << nbCuts
+		<< "\tlb:" << lb << "\tub:" << ub << "\tcuts: " << nbCuts << endl;
+	stream.close();
+}
+void Solver::enumerationCutSymmetries() {
+	int tt = clock();
+	cout << "gen started" << endl;
+	generateAllClusters();
+	cout << "eval started" << endl;
+	evaluateAllCluster();
+	cout << "eval done" << endl;
+
+	IloEnv env;
+	IloModel model(env);
+	IloCplex cplex(model);
+
+	vector< unordered_map<int, IloIntVar > > u; //at position i contains the variables associated to the clusters
+												//stored in position i in this->cluster
+												// in position i there is a map which stores a 
+												//pair key val where key is the scenario and val the variables
+	vector<IloIntVar> y;						//at position i contains the variables associated to the clusters
+												//stored in position i in this->cluster
+
+	vector< unordered_map<int, IloIntVar > > z; //at position i contains the variables associated to the clusters
+												//stored in position i in this->cluster
+												// in position i there is a map which stores a 
+												//pair key val where key is the scenario and val the variables
+
+
+	vector< unordered_map<int, IloRange > > coveringCnst; //at position s contains the constraints associated to the scenario s
+												// in position s there is a map which stores a 
+												//pair key val where key is the customer and val the associated covering constraint
+
+	vector< unordered_map<int, IloRange >> linkUandYCnst;
+
+	vector<vector<int>> sol;					//in position s contains the vector of clusters associated to scenario s
+												//the vector contains at position i contains the index of the related cluster
+
+	vector<vector<int>> solBest;
+	int nbCutsF = 0, nbCutsI = 0;
+	double lb, ub = this->pbdata->bigM;
+	double lb0, ub0;
+
+	try {
+
+		initializeVariablesUCVRP(env, u);
+		initializeVariablesUCVRPCutSymmetries(env, y, z);
+		initializeObjFunctionUCVRP(env, model, u);
+		initializeCoveringCnstUCVRP(env, model, u, coveringCnst);
+		initializeLinkUandYCnstUCVRPCutSymmetries(env, model, u, y, linkUandYCnst);
+
+		cplex.solve();
+		lb = cplex.getObjValue();
+		lb0 = lb;
+		determineClustersInSolUCVRP(cplex, u, sol);
+		printSolUCVRP(sol);
+		double cost = solveSeparationUCVRP(sol);
+		if (cost < ub) {
+			ub = cost;
+			solBest = sol;
+		}
+
+		HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+		SetConsoleTextAttribute(hConsole, 12);
+		cout << "********************\n";
+		cout << "lb: " << lb << endl;
+		cout << "ub: " << ub << endl;
+		cout << "********************\n";
+		SetConsoleTextAttribute(hConsole, 15);
+
+
+		ub0 = ub;
+		int iter = 0;
+		while (lb < ub) {
+			if (cost < this->pbdata->bigM) {
+				unordered_map<int, vector<int>> invSol;
+				for (int s = 0; s < this->pbdata->nbScenarios; ++s) {
+					for (int c = 0; c < sol.at(s).size(); ++c) {
+						try {
+							invSol.at(sol.at(s).at(c)).push_back(s);
+						}
+						catch (out_of_range ex) {
+							vector<int> temp; temp.push_back(s);
+							invSol.insert(make_pair(sol.at(s).at(c), temp));
+						}
+					}
+				}
+
+				for (auto itc = invSol.begin(); itc != invSol.end(); ++itc) {
+					IloExpr expr(env);
+					for (auto its = u.at(itc->first).begin(); its != u.at(itc->first).end(); ++its) {
+						expr += its->second;
+					}
+
+					IloExpr expr1(env);
+					for (auto its = z.at(itc->first).begin(); its != z.at(itc->first).end(); ++its) {
+						expr -= its->first * z.at(itc->first).at(its->first);
+						expr1 += z.at(itc->first).at(its->first);
+					}
+					model.add(expr == 0);
+					model.add(expr1 <= 1);
+				}
+
+				IloExpr expr(env);
+				for (auto itc = invSol.begin(); itc != invSol.end(); ++itc) {
+					expr += z.at(itc->first).at(itc->second.size());
+				}
+				model.add(expr <= (int)invSol.size() - 1);
+
+				nbCutsF++;
+			}
+			else {
+				unordered_map<int, IloIntVar> tempy;
+				for (int s = 0; s < this->pbdata->nbScenarios; ++s) {
+					for (int c = 0; c < sol.at(s).size(); ++c) {
+						tempy.insert(make_pair(sol.at(s).at(c), y.at(sol.at(s).at(c))));
+					}
+				}
+				IloExpr expr(env);
+				for (auto it = tempy.begin(); it != tempy.end(); ++it) {
+					expr += it->second;
+				}
+				int rhs = tempy.size();
+				model.add(expr <= (int)tempy.size() - 1);
+
+				nbCutsI++;
+			}
+
+			cplex.exportModel("model.lp");
+			cplex.solve();
+			lb = cplex.getObjValue();
+
+			determineClustersInSolUCVRP(cplex, u, sol);
+
+			++iter;
+			cost = solveSeparationUCVRP(sol);
+			if (cost < ub) {
+				ub = cost;
+				solBest = sol;
+			}
+
+			ofstream stream; stream.open(this->pbdata->instanceName + "_infos.dat", ios::app);
+			stream << "******* " << iter << " ********\n";
+			stream << "lb: " << lb << "\tub: " << ub << endl;
+			stream << printSolUCVRP(sol) << endl;
+			stream.close();
+
+			HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+			SetConsoleTextAttribute(hConsole, 12);
+			cout << "********************\n";
+			cout << "lb: " << lb << endl;
+			cout << "ub: " << ub << endl;
+			cout << "********************\n";
+			SetConsoleTextAttribute(hConsole, 15);
+		}
+	}
+	catch (IloException &ex) {
+		cerr << "enumeration error: " << ex << endl;
+		cplex.end(); model.end(); env.end();
+		return;
+	}
+	cplex.end(); model.end(); env.end();
+	ofstream stream; stream.open("results.dat", ios::app);
+	stream << this->pbdata->instanceName << "\t" << this->pbdata->nbCustomers << "\t" << this->pbdata->nbScenarios
+		<< "\t" << calculateNbClusters()
+		<< "\tlb0:" << lb0 << "\tub0:" << ub0 
+		<< "\tlb:" << lb << "\tub:" << ub 
+		<< "\tcutsI: " << nbCutsI << "\tcutsF: " << nbCutsF
+		<< "\t" << clock() - tt << endl;
 	stream.close();
 }
 template<typename T>
@@ -240,6 +425,51 @@ void Solver::initializeVariablesUCVRP(IloEnv &env, vector< unordered_map<int, T 
 					var = T(env, 0.0, IloInfinity, variableName);
 				u.at(c).insert(make_pair(s, var));
 			}
+		}
+	}
+}
+template<typename T>
+void Solver::initializeVariablesUCVRPCutSymmetries(IloEnv &env, vector<T> &y, vector< unordered_map<int, T > > &z) {
+	for (int c = 0; c < this->clusters.size(); ++c) {
+		string str = "y_" + toString(c);
+		char* variableName = const_cast<char*>(str.c_str());
+		T var;
+		if (typeid(T) == typeid(IloIntVar))
+			var = T(env, 0.0, 1.0, variableName);
+		if (typeid(T) == typeid(IloNumVar))
+			var = T(env, 0.0, IloInfinity, variableName);
+		y.push_back(var);
+
+		z.push_back(unordered_map<int, T>());
+		int k = 1;
+		for (int s = 0; s < this->pbdata->nbScenarios; ++s) {
+			if (this->clusters.at(c).isFeasibleForScenario(s)) {
+				string str = "z_" + toString(c) + "_" + toString(k);
+				char* variableName = const_cast<char*>(str.c_str());
+				T var;
+				if (typeid(T) == typeid(IloIntVar))
+					var = T(env, 0.0, 1.0, variableName);
+				if (typeid(T) == typeid(IloNumVar))
+					var = T(env, 0.0, IloInfinity, variableName);
+				z.at(c).insert(make_pair(k, var));
+				++k;
+			}
+		}
+	}
+}
+template<typename T>
+void Solver::initializeLinkUandYCnstUCVRPCutSymmetries(IloEnv &env, IloModel &model, vector< unordered_map<int, T > > &u, 
+	vector<IloIntVar> &y, vector< unordered_map<int, IloRange > > &linkUandYCnst) {
+	for (int c = 0; c < this->clusters.size(); ++c) {
+		linkUandYCnst.push_back(unordered_map<int, IloRange >());
+		for (auto s = u.at(c).begin(); s != u.at(c).end(); ++s) {
+			IloExpr expr(env);
+			string str = "link_" + toString(c) + "_" + toString(s->first);
+			char* constraintName = const_cast<char*>(str.c_str());
+			expr += s->second - y.at(c);
+			IloRange constraint(env, -IloInfinity, expr, 0, constraintName);
+			linkUandYCnst.at(c).insert(make_pair(s->first, constraint));
+			model.add(constraint);
 		}
 	}
 }
@@ -295,25 +525,29 @@ void Solver::printSolUCVRP(IloCplex &cplex, vector< unordered_map<int, T > > &u)
 		}
 	}
 }
-void Solver::printSolUCVRP(vector<vector<int>> &sol) {
+string Solver::printSolUCVRP(vector<vector<int>> &sol) {
+	string str = "";
 	for (int s = 0; s < this->pbdata->nbScenarios; ++s) {
 		for (int c = 0; c < sol.at(s).size(); ++c) {
-			cout << "s" << s << "_c" << sol.at(s).at(c) << endl;
-			cout << this->clusters.at(sol.at(s).at(c)).print(s) << endl;
+			str += "s" + toString(s) + "_c" + toString(sol.at(s).at(c)) + "\n";
+			str += this->clusters.at(sol.at(s).at(c)).print(s) + "\n";
 		}
 	}
+	return str;
 }
 double Solver::solveSeparationUCVRP(vector<vector<int>> &sol) {
-	
+
+	//the first index of sol is the scenario, the second the position of the cluster in this->clusters
+
 	IloEnv env;
 	IloModel model(env);
 	IloCplex cplex(model);
 
 	try {
 
-		vector < unordered_map<int, unordered_map<int, IloIntVar>>> x;
-		vector < unordered_map<int, IloNumVar>> t;
-		unordered_map<int, IloNumVar> y;
+		vector < unordered_map<int, unordered_map<int, IloIntVar>>> x;	// the first index is the scenario, then the two point indexes
+		vector < unordered_map<int, IloNumVar>> t;						// the first index is the scenario, then the point index
+		unordered_map<int, IloNumVar> y;								// the first index is the point index
 
 		for (int s = 0; s < this->pbdata->nbScenarios; ++s) {
 			x.push_back(unordered_map<int, unordered_map<int, IloIntVar>>());
@@ -357,8 +591,6 @@ double Solver::solveSeparationUCVRP(vector<vector<int>> &sol) {
 		IloNumVar var(env, this->pbdata->lbExogenousTW.at(0), this->pbdata->ubExogenousTW.at(0), variableName);
 		y.insert(make_pair(this->pbdata->nbPoints, var));
 
-
-
 		for (int s = 0; s < this->pbdata->nbScenarios; ++s) {
 			for (int c = 0; c < sol.at(s).size(); ++c) {
 				for (int i = 0; i < this->clusters.at(sol.at(s).at(c)).cluster.size(); ++i) {
@@ -380,7 +612,6 @@ double Solver::solveSeparationUCVRP(vector<vector<int>> &sol) {
 				}
 			}
 		}
-
 
 		IloExpr expr(env);
 		for (int s = 0; s < this->pbdata->nbScenarios; ++s) {
@@ -445,6 +676,7 @@ double Solver::solveSeparationUCVRP(vector<vector<int>> &sol) {
 			}
 		}
 
+		/* endogenous tw determination */
 		for (int s = 0; s < this->pbdata->nbScenarios; ++s) {
 			for (int i = 0; i < this->pbdata->idCustomers.size(); ++i) {
 				model.add(y.at(this->pbdata->idCustomers.at(i)) <= t.at(s).at(this->pbdata->idCustomers.at(i)));
@@ -452,7 +684,35 @@ double Solver::solveSeparationUCVRP(vector<vector<int>> &sol) {
 			}
 		}
 
-		cplex.exportModel("sep.lp");
+		IloConstraintArray lazyCnst(env);
+		int nbCnst = 0;
+		for (int s = 0; s < this->pbdata->nbScenarios; ++s) {
+			for (int c = 0; c < sol.at(s).size(); ++c) {
+				vector<vector<int>> subSets = subsets(this->clusters.at(sol.at(s).at(c)).cluster);
+				for (int ss = 0; ss < subSets.size(); ++ss) {
+					if (subSets.at(ss).size() > 1) {
+						IloExpr expr(env);
+						for (int i = 0; i < subSets.at(ss).size(); ++i) {
+							for (int j = i + 1; j < subSets.at(ss).size(); ++j) {
+								expr += x.at(s).at(subSets.at(ss).at(i)).at(subSets.at(ss).at(j));
+								expr += x.at(s).at(subSets.at(ss).at(j)).at(subSets.at(ss).at(i));
+							}
+						}
+						string str = "subtour_elim_" + toString(nbCnst);
+						char* constraintName = const_cast<char*>(str.c_str());
+						IloRange constraint(env, 0, expr, subSets.at(ss).size() - 1, constraintName);
+						//lazyCnst.add(constraint);
+						model.add(constraint);
+						++nbCnst;
+					}
+				}
+			}
+		}
+
+		//cplex.addLazyConstraints(lazyCnst);
+		//cplex.addUserCuts(lazyCnst);
+
+		//cplex.exportModel("sep.lp");
 		cplex.solve();
 		return cplex.getObjValue();
 		cout << cplex.getObjValue() << endl;
@@ -473,6 +733,16 @@ double Solver::solveSeparationUCVRP(vector<vector<int>> &sol) {
 	catch (IloException &ex) {
 		cerr << "separation error: " << ex << endl;
 		cplex.end(); model.end(); env.end();
-		return DBL_MAX;
+		return this->pbdata->bigM;
 	}
+}
+int Solver::calculateNbClusters() {
+	int nbClusters = 0;
+	for (int c = 0; c < this->clusters.size(); ++c) {
+		for (int s = 0; s < this->pbdata->nbScenarios; ++s) {
+			if (this->clusters.at(c).isFeasibleForScenario(s))
+				nbClusters++;
+		}
+	}
+	return nbClusters;
 }

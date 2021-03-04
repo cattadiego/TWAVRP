@@ -10,17 +10,17 @@
 
 int main(int argc, char* argv[])
 {
-	string fileName = "TWAVRPInstance_1_10_3";
+	string fileName = "TWAVRPInstance_12_15_3";
 
-	//fileName = "TWAVRPInstanceExtraScenarios_1_10_3";
+	fileName = "TWAVRPInstance_4_10_3";
 	if (argc > 1) {
 		fileName = string(argv[1]);
 	}
 
-	Config config(user::diego, instanceType::twa);
+	Config config(user::lab, instanceType::twa);
 	PbData pbData(fileName, config);
 	Solver solver(&pbData);
-	solver.enumeration();
+	solver.enumerationCutSymmetries();
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
