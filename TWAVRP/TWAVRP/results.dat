@@ -1,8 +1,2 @@
-TWAVRPInstance_4_10_3	10	3	1357	lb0:18.4833	ub0:18.6	cuts: 3	lb:18.51	ub:18.51	cuts: 3
-TWAVRPInstance_4_10_3	10	3	1357	lb0:18.4833	ub0:18.6	lb:18.9833	ub:18.6	cutsI: 0	cutsF: 2	1897
-TWAVRPInstance_4_10_3	10	3	1357	lb0:18.4833	ub0:18.6	lb:18.9833	ub:18.6	cutsI: 0	cutsF: 2	1618
-TWAVRPInstance_4_10_3	10	3	1357	lb0:18.4833	ub0:18.6	lb:18.9833	ub:18.6	cutsI: 0	cutsF: 2	51044
-TWAVRPInstance_4_10_3	10	3	1357	lb0:18.4833	ub0:18.6	lb:18.9833	ub:18.6	cutsI: 0	cutsF: 2	5123
-TWAVRPInstance_4_10_3	10	3	1357	lb0:18.4833	ub0:18.6	lb:18.9833	ub:18.6	cutsI: 0	cutsF: 2	2168
-TWAVRPInstance_4_10_3	10	3	1357	lb0:18.4833	ub0:18.6	lb:18.71	ub:18.6	cutsI: 0	cutsF: 2	19184
-TWAVRPInstance_4_10_3	10	3	1357	lb0:18.4833	ub0:18.6	lb:18.51	ub:18.51	cutsI: 0	cutsF: 2	13116
+TWAVRPInstance_4_10_3	10	3	1357	lb0:18.4833	ub0:18.6	lb:18.51	ub:18.51	cutsI: 0	cutsF: 2	1849
+TWAVRPInstance_1_4_3	4	3	45	lb0:8.85999	ub0:8.85999	lb:8.85999	ub:8.85999	cutsI: 0	cutsF: 0	194

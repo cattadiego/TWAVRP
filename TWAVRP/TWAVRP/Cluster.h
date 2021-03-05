@@ -20,7 +20,8 @@ public:
 	string print();
 	string print(int scenario);
 
-	vector<int> cluster; 
+	vector<int> cluster;
+	vector<int> tsp;
 	vector<int> demandScenario;
 	//vector<bool> feasScenario;
 	double cost;

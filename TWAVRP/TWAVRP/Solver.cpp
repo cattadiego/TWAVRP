@@ -30,6 +30,8 @@ void Solver::generateAllClusters() {
 		}
 	}
 
+	evaluateAllCluster();
+
 	for (int s = 0; s < this->pbdata->nbScenarios; ++s) {
 		this->clusterFeasThatContain.push_back(unordered_map<int, vector<int>>());
 	}
@@ -61,14 +63,14 @@ void Solver::generateAllClusters() {
 	}
 }
 
-double Solver::permute(vector<int> a, int l, int r, double cost)
+double Solver::permute(vector<int> a, vector<int> &aBest, int l, int r, double cost, double &bestCost)
 {
 	// Base case 
 	double minCost = cost, delta = 0;
 	if (l == r) {
 		//for (int i = 0; i < a.size(); ++i)
 		//	cout << a.at(i) << "\t";
-		//cout << "\t\t" << cost; // << "\t" << verifyCostSequence(a);
+		//cout << "\t\t" << cost << "\t" << verifyCostSequence(a);
 		//cout << endl;
 	}
 
@@ -83,7 +85,16 @@ double Solver::permute(vector<int> a, int l, int r, double cost)
 			cost += delta;
 			swap(a[l], a[i]);
 			// Recursion called 
-			minCost = min(minCost, permute(a, l + 1, r, cost));
+			minCost = min(minCost, permute(a, aBest, l + 1, r, cost, bestCost));
+			if (minCost < bestCost - 0.00001) {
+				bestCost = minCost;
+				//cout << minCost << "\t";
+				for (int h = 0; h < aBest.size(); ++h) {
+					//cout << a.at(h) << "\t";
+					aBest.at(h) = a.at(h);
+				}
+				//cout << endl;
+			}
 
 			//backtrack 
 			delta = permuteCost(a, l, i);
@@ -140,21 +151,26 @@ double Solver::verifyCostSequence(vector<int> sequence) {
 }
 void Solver::evaluateAllCluster() {
 	/* calcualte the cost of the TSP in each cluster */
-	for (auto cl = clusters.begin(); cl != clusters.end(); ++cl) {
+	vector<Cluster>::iterator cl = clusters.begin();
+	while (cl != clusters.end()) {
 		double cost = this->pbdata->travelCosts.at(0).at(cl->cluster.at(0));
 		for (int i = 1; i < cl->cluster.size(); ++i) {
 			cost += this->pbdata->travelCosts.at(cl->cluster.at(i - 1)).at(cl->cluster.at(i));
 		}
 		cost += this->pbdata->travelCosts.at(cl->cluster.at(cl->cluster.size() - 1)).at(0);
 		if (cl->cluster.size() > 1) {
-			cl->cost = permute(cl->cluster, 0, cl->cluster.size(), cost);
+			double bestCost = cost;
+			cl->cost = permute(cl->cluster, cl->tsp, 0, cl->cluster.size(), cost, bestCost);
 		}
 		else cl->cost = cost;
+		if (cl->cost > this->pbdata->ubExogenousTW.at(0) - this->pbdata->lbExogenousTW.at(0))
+			cl = clusters.erase(cl);
+		else 
+			++cl;
 	}
 }
 void Solver::enumeration() {
 	generateAllClusters();
-	evaluateAllCluster();
 
 	IloEnv env;
 	IloModel model(env);
@@ -247,9 +263,7 @@ void Solver::enumerationCutSymmetries() {
 	int tt = clock();
 	cout << "gen started" << endl;
 	generateAllClusters();
-	cout << "eval started" << endl;
-	evaluateAllCluster();
-	cout << "eval done" << endl;
+	cout << "generation done" << endl;
 
 	IloEnv env;
 	IloModel model(env);
@@ -503,9 +517,10 @@ void Solver::initializeCoveringCnstUCVRP(IloEnv &env, IloModel &model, vector< u
 template<typename T>
 void Solver::determineClustersInSolUCVRP(IloCplex &cplex, vector< unordered_map<int, T > > &u, vector<vector<int>> &sol) {
 	sol.clear();
-	for (int s = 0; s < this->pbdata->nbScenarios; ++s) {
+	sol = vector<vector<int>>(this->pbdata->nbScenarios, vector<int>());
+	/*for (int s = 0; s < this->pbdata->nbScenarios; ++s) {
 		sol.push_back(vector<int>());
-	}
+	}*/
 	for (int c = 0; c < u.size(); ++c) {
 		for (auto var = u.at(c).begin(); var != u.at(c).end(); ++var) {
 			if (cplex.getValue(var->second) > 0.99) {
@@ -555,6 +570,209 @@ double Solver::solveSeparationUCVRP(vector<vector<int>> &sol) {
 			for (int i = 0; i < this->pbdata->id.size(); ++i)
 				x.at(s).insert(make_pair(this->pbdata->id.at(i), unordered_map<int, IloIntVar>()));
 		}
+
+		for (int s = 0; s < this->pbdata->nbScenarios; ++s) {
+			for (int i = 0; i < this->pbdata->idCustomers.size(); ++i) {
+				string str = "x_" + toString(s) + "_" + toString(0) + "_" + toString(this->pbdata->idCustomers.at(i));
+				char* variableName = const_cast<char*>(str.c_str());
+				IloIntVar var(env, 0.0, 1.0, variableName);
+				x.at(s).at(0).insert(make_pair(this->pbdata->idCustomers.at(i), var));
+
+				str = "x_" + toString(s) + "_" + toString(this->pbdata->idCustomers.at(i)) + "_" + toString(this->pbdata->nbPoints);
+				variableName = const_cast<char*>(str.c_str());
+				var = IloIntVar(env, 0.0, 1.0, variableName);
+				x.at(s).at(this->pbdata->idCustomers.at(i)).insert(make_pair(this->pbdata->nbPoints, var));
+			}
+			for (int i = 0; i < this->pbdata->id.size(); ++i) {
+				string str = "t_" + toString(s) + "_" + toString(this->pbdata->id.at(i));
+				char* variableName = const_cast<char*>(str.c_str());
+				IloNumVar var(env, this->pbdata->lbExogenousTW.at(this->pbdata->id.at(i)), this->pbdata->ubExogenousTW.at(this->pbdata->id.at(i)), variableName);
+				t.at(s).insert(make_pair(this->pbdata->id.at(i), var));
+			}
+			string str = "t_" + toString(s) + "_" + toString(this->pbdata->nbPoints);
+			char* variableName = const_cast<char*>(str.c_str());
+			IloNumVar var(env, 0.0, IloInfinity, variableName);
+			t.at(s).insert(make_pair(this->pbdata->nbPoints, var));
+		}
+
+		for (int i = 0; i < this->pbdata->id.size(); ++i) {
+			string str = "y_" + toString(this->pbdata->id.at(i));
+			char* variableName = const_cast<char*>(str.c_str());
+			IloNumVar var(env, this->pbdata->lbExogenousTW.at(this->pbdata->id.at(i)), this->pbdata->ubExogenousTW.at(this->pbdata->id.at(i)), variableName);
+			y.insert(make_pair(this->pbdata->id.at(i), var));
+		}
+		string str = "y_" + toString(this->pbdata->nbPoints);
+		char* variableName = const_cast<char*>(str.c_str());
+		IloNumVar var(env, this->pbdata->lbExogenousTW.at(0), this->pbdata->ubExogenousTW.at(0), variableName);
+		y.insert(make_pair(this->pbdata->nbPoints, var));
+
+		for (int s = 0; s < this->pbdata->nbScenarios; ++s) {
+			for (int c = 0; c < sol.at(s).size(); ++c) {
+				for (int i = 0; i < this->clusters.at(sol.at(s).at(c)).cluster.size(); ++i) {
+					for (int j = i + 1; j < this->clusters.at(sol.at(s).at(c)).cluster.size(); ++j) {
+						string str = "x_" + toString(s) + "_" + toString(this->clusters.at(sol.at(s).at(c)).cluster.at(i));
+						str += "_" + toString(this->clusters.at(sol.at(s).at(c)).cluster.at(j));
+						char* variableName = const_cast<char*>(str.c_str());
+						IloIntVar var(env, 0.0, 1.0, variableName);
+						x.at(s).at(this->clusters.at(sol.at(s).at(c)).cluster.at(i))
+							.insert(make_pair(this->clusters.at(sol.at(s).at(c)).cluster.at(j), var));
+
+						str = "x_" + toString(s) + "_" + toString(this->clusters.at(sol.at(s).at(c)).cluster.at(j));
+						str += "_" + toString(this->clusters.at(sol.at(s).at(c)).cluster.at(i));
+						variableName = const_cast<char*>(str.c_str());
+						var = IloIntVar(env, 0.0, 1.0, variableName);
+						x.at(s).at(this->clusters.at(sol.at(s).at(c)).cluster.at(j))
+							.insert(make_pair(this->clusters.at(sol.at(s).at(c)).cluster.at(i), var));
+					}
+				}
+			}
+		}
+
+		IloExpr expr(env);
+		for (int s = 0; s < this->pbdata->nbScenarios; ++s) {
+			for (auto it = x.at(s).begin(); it != x.at(s).end(); ++it) {
+				for (auto itj = it->second.begin(); itj != it->second.end(); ++itj) {
+					int arrival = itj->first == this->pbdata->nbPoints ? 0 : itj->first;
+					expr += this->pbdata->scenarioProbability.at(s) * this->pbdata->travelCosts.at(it->first).at(arrival) * itj->second;
+				}
+			}
+		}
+		model.add(IloMinimize(env, expr));
+
+		/* flow out of the depot */
+		for (int s = 0; s < this->pbdata->nbScenarios; ++s) {
+			IloExpr expr(env);
+			for (auto it = x.at(s).at(0).begin(); it != x.at(s).at(0).end(); ++it) {
+				expr += it->second;
+			}
+			model.add(expr == sol.at(s).size());
+		}
+
+		/* flow back into the depot */
+		for (int s = 0; s < this->pbdata->nbScenarios; ++s) {
+			IloExpr expr(env);
+			for (int i = 0; i < this->pbdata->idCustomers.size(); ++i) {
+				expr += x.at(s).at(this->pbdata->idCustomers.at(i)).at(this->pbdata->nbPoints);
+			}
+			model.add(expr == sol.at(s).size());
+		}
+
+
+		/* flow conservation at nodes */
+		for (int s = 0; s < this->pbdata->nbScenarios; ++s) {
+			for (int i = 0; i < this->pbdata->idCustomers.size(); ++i) {
+				IloExpr expr(env);
+				for (auto it = x.at(s).at(this->pbdata->idCustomers.at(i)).begin(); it != x.at(s).at(this->pbdata->idCustomers.at(i)).end(); ++it) {
+					expr += it->second;
+				}
+				IloExpr out(env);
+				for (int j = 0; j < this->pbdata->id.size(); ++j) {
+					try {
+						out += x.at(s).at(this->pbdata->id.at(j)).at(this->pbdata->idCustomers.at(i));
+					}
+					catch (out_of_range ex) {
+
+					}
+				}
+				model.add(expr == 1);
+				model.add(out == 1);
+			}
+		}
+
+		/* scheduling of visits */
+		int bigM = this->pbdata->ubExogenousTW.at(0);
+		for (int s = 0; s < this->pbdata->nbScenarios; ++s) {
+			for (int i = 0; i < this->pbdata->id.size(); ++i) {
+				for (auto it = x.at(s).at(this->pbdata->id.at(i)).begin(); it != x.at(s).at(this->pbdata->id.at(i)).end(); ++it) {
+					int arrival = it->first == this->pbdata->nbPoints ? 0 : it->first;
+					model.add(t.at(s).at(this->pbdata->id.at(i)) + it->second * this->pbdata->travelTimes.at(this->pbdata->id.at(i)).at(arrival)
+						- t.at(s).at(it->first) - bigM * (1 - it->second) <= 0);
+				}
+			}
+		}
+
+		/* endogenous tw determination */
+		for (int s = 0; s < this->pbdata->nbScenarios; ++s) {
+			for (int i = 0; i < this->pbdata->idCustomers.size(); ++i) {
+				model.add(y.at(this->pbdata->idCustomers.at(i)) <= t.at(s).at(this->pbdata->idCustomers.at(i)));
+				model.add(t.at(s).at(this->pbdata->idCustomers.at(i)) <= y.at(this->pbdata->idCustomers.at(i)) + this->pbdata->widthEndogenousTW.at(this->pbdata->idCustomers.at(i)));
+			}
+		}
+
+		IloConstraintArray lazyCnst(env);
+		int nbCnst = 0;
+		for (int s = 0; s < this->pbdata->nbScenarios; ++s) {
+			for (int c = 0; c < sol.at(s).size(); ++c) {
+				vector<vector<int>> subSets = subsets(this->clusters.at(sol.at(s).at(c)).cluster);
+				for (int ss = 0; ss < subSets.size(); ++ss) {
+					if (subSets.at(ss).size() > 1) {
+						IloExpr expr(env);
+						for (int i = 0; i < subSets.at(ss).size(); ++i) {
+							for (int j = i + 1; j < subSets.at(ss).size(); ++j) {
+								expr += x.at(s).at(subSets.at(ss).at(i)).at(subSets.at(ss).at(j));
+								expr += x.at(s).at(subSets.at(ss).at(j)).at(subSets.at(ss).at(i));
+							}
+						}
+						string str = "subtour_elim_" + toString(nbCnst);
+						char* constraintName = const_cast<char*>(str.c_str());
+						IloRange constraint(env, 0, expr, subSets.at(ss).size() - 1, constraintName);
+						//lazyCnst.add(constraint);
+						model.add(constraint);
+						++nbCnst;
+					}
+				}
+			}
+		}
+
+		//cplex.addLazyConstraints(lazyCnst);
+		//cplex.addUserCuts(lazyCnst);
+
+		//cplex.exportModel("sep.lp");
+		cplex.solve();
+		return cplex.getObjValue();
+		cout << cplex.getObjValue() << endl;
+
+		for (int s = 0; s < this->pbdata->nbScenarios; ++s) {
+			for (auto it = x.at(s).begin(); it != x.at(s).end(); ++it) {
+				for (auto it1 = it->second.begin(); it1 != it->second.end(); ++it1) {
+					if (cplex.getValue(it1->second) > 0.99) {
+						cout << it1->second.getName() << endl;
+						cout << cplex.getValue(t.at(s).at(it->first)) << endl;
+						cout << cplex.getValue(t.at(s).at(it1->first)) << endl;
+						cout << "----" << endl;
+					}
+				}
+			}
+		}
+	}
+	catch (IloException &ex) {
+		cerr << "separation error: " << ex << endl;
+		cplex.end(); model.end(); env.end();
+		return this->pbdata->bigM;
+	}
+}
+double Solver::solveSeparationUCVRP(unordered_map<int, vector<int>> &sol){
+
+	//the first index of sol is the scenario, the second the position of the cluster in this->clusters
+
+	IloEnv env;
+	IloModel model(env);
+	IloCplex cplex(model);
+
+	try {
+
+		unordered_map <int, unordered_map<int, unordered_map<int, IloIntVar>>> x;
+		unordered_map <int, unordered_map<int, IloNumVar>> t;						// the first index is the scenario, then the point index
+		unordered_map<int, IloNumVar> y;								// the first index is the point index
+
+		for (auto s = sol.begin(); s != sol.end(); ++s) {
+			x.insert(make_pair(s->first, unordered_map<int, unordered_map<int, IloIntVar>>()));
+			t.insert(make_pair(s->first, unordered_map<int, IloNumVar>()));
+			
+		}
+
+		// TO BE COMPLETED
+
 
 		for (int s = 0; s < this->pbdata->nbScenarios; ++s) {
 			for (int i = 0; i < this->pbdata->idCustomers.size(); ++i) {

@@ -219,3 +219,13 @@ void PbData::calculateBigM() {
 		}
 	}
 }
+string PbData::printTravelCost(int i, int j) {
+	if (i < 0 || i > this->nbPoints) return "index out of bounds";
+	if (j < 0 || j > this->nbPoints) return "index out of bounds";
+	return "t(" + toString(i) + ", " + toString(j) + "):" + toString(this->travelCosts.at(i).at(j));
+}
+string PbData::printTravelTime(int i, int j) {
+	if (i < 0 || i > this->nbPoints) return "index out of bounds";
+	if (j < 0 || j > this->nbPoints) return "index out of bounds";
+	return "t(" + toString(i) + ", " + toString(j) + "):" + toString(this->travelTimes.at(i).at(j));
+}

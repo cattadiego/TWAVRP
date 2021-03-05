@@ -14,7 +14,7 @@ class Solver
 {
 	PbData *pbdata;
 
-	double permute(vector<int> a, int l, int r, double cost);
+	double permute(vector<int> a, vector<int> &aBest, int l, int r, double cost, double &bestCost);
 	double permuteCost(vector<int> a, int l, int r);
 	double verifyCostSequence(vector<int> sequence);
 
@@ -43,6 +43,7 @@ class Solver
 	void printSolUCVRP(IloCplex &cplex, vector< unordered_map<int, T > > &u);
 	string printSolUCVRP(vector<vector<int>> &sol);
 	double solveSeparationUCVRP(vector<vector<int>> &sol);
+	double solveSeparationUCVRP(unordered_map<int, vector<int>> &sol);
 
 public:
 	Solver(PbData *pbdata);

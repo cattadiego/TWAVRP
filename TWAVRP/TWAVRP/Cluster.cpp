@@ -19,6 +19,7 @@ bool Cluster::addCustomer(int id) {
 		this->demandScenario.at(s) += this->pbData->demandScenarios.at(id).at(s);
 	}
 	this->cluster.push_back(id);
+	this->tsp.push_back(id);
 	return atLeastFeasForOneScenario;
 }
 bool Cluster::isFeasibleForScenario(int s) {
@@ -29,7 +30,11 @@ string Cluster::print() {
 	for (int i = 0; i < this->cluster.size(); ++i) {
 		str += toString(this->cluster.at(i)) + "\t";
 	}
-	str += "\n";
+	str += "\t(";
+	for (int i = 0; i < this->cluster.size(); ++i) {
+		str += toString(this->tsp.at(i)) + "\t";
+	}
+	str += ")\n";
 	str += "cost: " + toString(this->cost) + "\n";
 	return str;
 }
@@ -38,7 +43,13 @@ string Cluster::print(int scenario) {
 	for (int i = 0; i < this->cluster.size(); ++i) {
 		str += toString(this->cluster.at(i)) + "\t";
 	}
-	str += "\n";
+
+	str += "\ttsp(";
+	for (int i = 0; i < this->cluster.size(); ++i) {
+		str += toString(this->tsp.at(i)) + "\t";
+	}
+
+	str += ")\n";
 	str += "quantity: " + toString(this->demandScenario.at(scenario)) + "\t";
 	str += "cost: " + toString(this->cost) + "\n";
 	return str;

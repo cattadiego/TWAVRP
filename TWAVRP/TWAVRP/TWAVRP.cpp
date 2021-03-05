@@ -12,13 +12,15 @@ int main(int argc, char* argv[])
 {
 	string fileName = "TWAVRPInstance_12_15_3";
 
-	fileName = "TWAVRPInstance_4_10_3";
+	fileName = "TWAVRPInstanceExtraScenarios_4_10_3";
+	fileName = "TWAVRPInstance_1_4_3";
 	if (argc > 1) {
 		fileName = string(argv[1]);
 	}
 
-	Config config(user::lab, instanceType::twa);
+	Config config(user::diego, instanceType::twa);
 	PbData pbData(fileName, config);
+
 	Solver solver(&pbData);
 	solver.enumerationCutSymmetries();
 }

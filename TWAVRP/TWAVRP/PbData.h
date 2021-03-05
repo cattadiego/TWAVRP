@@ -47,5 +47,6 @@ public:
 	double bigM;
 
 	PbData(string instanceName, Config config);
-
+	string printTravelCost(int i, int j);
+	string printTravelTime(int i, int j);
 };
