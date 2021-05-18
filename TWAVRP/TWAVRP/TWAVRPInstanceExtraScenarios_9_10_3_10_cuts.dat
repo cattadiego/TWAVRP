@@ -1,0 +1,3894 @@
+*****(y) 0 (y)****
+----
+clust(1	2	3	9	)
+tsp(2	9	1	3	)	cost: 6.95
+	seq sol(2	1	3	9	)	cost sol: 7.35
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+twacost: 2.327	tspcost: 1.846
+----
+clust(1	2	3	9	)
+tsp(2	9	1	3	)	cost: 6.95
+	seq sol(2	1	3	9	)	cost sol: 7.35
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+twacost: 2.327	tspcost: 1.846
+----
+clust(4	6	7	10	)
+tsp(4	7	10	6	)	cost: 8.27
+	seq sol(4	7	10	6	)	cost sol: 8.27
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+twacost: 2.419	tspcost: 1.978
+----
+clust(4	6	7	10	)
+tsp(4	7	10	6	)	cost: 8.27
+	seq sol(4	7	10	6	)	cost sol: 8.27
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+twacost: 2.419	tspcost: 1.978
+----
+clust(5	8	)
+tsp(5	8	)	cost: 5.84
+	seq sol(8	5	)	cost sol: 5.84
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+twacost: 2.176	tspcost: 1.735
+----
+clust(5	8	)
+tsp(5	8	)	cost: 5.84
+	seq sol(8	5	)	cost sol: 5.84
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+twacost: 2.176	tspcost: 1.735
+----
+clust(1	2	3	6	9	)
+tsp(2	9	1	3	6	)	cost: 8.37
+	seq sol(6	3	1	2	9	)	cost sol: 9.7
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+twacost: 2.562	tspcost: 1.988
+----
+clust(1	2	3	6	9	)
+tsp(2	9	1	3	6	)	cost: 8.37
+	seq sol(6	3	1	2	9	)	cost sol: 9.7
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+twacost: 2.562	tspcost: 1.988
+----
+clust(4	5	7	8	10	)
+tsp(5	8	4	7	10	)	cost: 10.48
+	seq sol(10	7	4	8	5	)	cost sol: 10.48
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+twacost: 2.64	tspcost: 2.199
+----
+clust(4	5	7	8	10	)
+tsp(5	8	4	7	10	)	cost: 10.48
+	seq sol(10	7	4	8	5	)	cost sol: 10.48
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+twacost: 2.64	tspcost: 2.199
+----
+clust(1	2	3	9	)
+tsp(2	9	1	3	)	cost: 6.95
+	seq sol(2	1	3	9	)	cost sol: 7.35
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+twacost: 2.327	tspcost: 1.846
+----
+clust(1	2	3	9	)
+tsp(2	9	1	3	)	cost: 6.95
+	seq sol(2	1	3	9	)	cost sol: 7.35
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+twacost: 2.327	tspcost: 1.846
+----
+clust(4	5	6	7	8	10	)
+tsp(5	8	4	7	10	6	)	cost: 11.65
+	seq sol(7	4	8	5	6	10	)	cost sol: 14.21
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+twacost: 3.013	tspcost: 2.316
+----
+clust(4	5	6	7	8	10	)
+tsp(5	8	4	7	10	6	)	cost: 11.65
+	seq sol(7	4	8	5	6	10	)	cost sol: 14.21
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+twacost: 3.013	tspcost: 2.316
+----
+clust(1	2	3	9	)
+tsp(2	9	1	3	)	cost: 6.95
+	seq sol(2	1	3	9	)	cost sol: 7.35
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+twacost: 2.327	tspcost: 1.846
+----
+clust(1	2	3	9	)
+tsp(2	9	1	3	)	cost: 6.95
+	seq sol(2	1	3	9	)	cost sol: 7.35
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+twacost: 2.327	tspcost: 1.846
+----
+clust(4	5	6	7	8	10	)
+tsp(5	8	4	7	10	6	)	cost: 11.65
+	seq sol(7	4	8	5	6	10	)	cost sol: 14.21
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+twacost: 3.013	tspcost: 2.316
+----
+clust(4	5	6	7	8	10	)
+tsp(5	8	4	7	10	6	)	cost: 11.65
+	seq sol(7	4	8	5	6	10	)	cost sol: 14.21
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+twacost: 3.013	tspcost: 2.316
+----
+clust(1	2	3	9	)
+tsp(2	9	1	3	)	cost: 6.95
+	seq sol(2	1	3	9	)	cost sol: 7.35
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+twacost: 2.327	tspcost: 1.846
+----
+clust(1	2	3	9	)
+tsp(2	9	1	3	)	cost: 6.95
+	seq sol(2	1	3	9	)	cost sol: 7.35
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+twacost: 2.327	tspcost: 1.846
+----
+clust(4	5	7	8	10	)
+tsp(5	8	4	7	10	)	cost: 10.48
+	seq sol(10	7	4	8	5	)	cost sol: 10.48
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+twacost: 2.64	tspcost: 2.199
+----
+clust(4	5	7	8	10	)
+tsp(5	8	4	7	10	)	cost: 10.48
+	seq sol(10	7	4	8	5	)	cost sol: 10.48
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+twacost: 2.64	tspcost: 2.199
+----
+clust(6	)
+tsp(6	)	cost: 3.22
+	seq sol(6	)	cost sol: 3.22
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+twacost: 1.914	tspcost: 1.473
+----
+clust(6	)
+tsp(6	)	cost: 3.22
+	seq sol(6	)	cost sol: 3.22
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+twacost: 1.914	tspcost: 1.473
+----
+clust(1	2	3	9	)
+tsp(2	9	1	3	)	cost: 6.95
+	seq sol(2	1	3	9	)	cost sol: 7.35
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+twacost: 2.327	tspcost: 1.846
+----
+clust(1	2	3	9	)
+tsp(2	9	1	3	)	cost: 6.95
+	seq sol(2	1	3	9	)	cost sol: 7.35
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+twacost: 2.327	tspcost: 1.846
+----
+clust(4	5	6	7	8	10	)
+tsp(5	8	4	7	10	6	)	cost: 11.65
+	seq sol(7	4	8	5	6	10	)	cost sol: 14.21
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+twacost: 3.013	tspcost: 2.316
+----
+clust(4	5	6	7	8	10	)
+tsp(5	8	4	7	10	6	)	cost: 11.65
+	seq sol(7	4	8	5	6	10	)	cost sol: 14.21
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+twacost: 3.013	tspcost: 2.316
+----
+clust(1	3	6	)
+tsp(1	3	6	)	cost: 6.24
+	seq sol(6	3	1	)	cost sol: 6.24
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+twacost: 2.216	tspcost: 1.775
+----
+clust(1	3	6	)
+tsp(1	3	6	)	cost: 6.24
+	seq sol(6	3	1	)	cost sol: 6.24
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+twacost: 2.216	tspcost: 1.775
+----
+clust(2	5	9	)
+tsp(2	9	5	)	cost: 7.16
+	seq sol(5	2	9	)	cost sol: 7.77
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+twacost: 2.369	tspcost: 1.867
+----
+clust(2	5	9	)
+tsp(2	9	5	)	cost: 7.16
+	seq sol(5	2	9	)	cost sol: 7.77
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+twacost: 2.369	tspcost: 1.867
+----
+clust(4	7	8	10	)
+tsp(8	4	7	10	)	cost: 9.8
+	seq sol(10	7	4	8	)	cost sol: 9.8
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+twacost: 2.572	tspcost: 2.131
+----
+clust(4	7	8	10	)
+tsp(8	4	7	10	)	cost: 9.8
+	seq sol(10	7	4	8	)	cost sol: 9.8
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+twacost: 2.572	tspcost: 2.131
+----
+clust(1	3	9	)
+tsp(3	1	9	)	cost: 6.95
+	seq sol(3	1	9	)	cost sol: 6.95
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+twacost: 2.287	tspcost: 1.846
+----
+clust(1	3	9	)
+tsp(3	1	9	)	cost: 6.95
+	seq sol(3	1	9	)	cost sol: 6.95
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+twacost: 2.287	tspcost: 1.846
+----
+clust(2	5	8	)
+tsp(2	5	8	)	cost: 7.05
+	seq sol(8	5	2	)	cost sol: 7.05
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+twacost: 2.297	tspcost: 1.856
+----
+clust(2	5	8	)
+tsp(2	5	8	)	cost: 7.05
+	seq sol(8	5	2	)	cost sol: 7.05
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+twacost: 2.297	tspcost: 1.856
+----
+clust(4	6	7	10	)
+tsp(4	7	10	6	)	cost: 8.27
+	seq sol(4	7	10	6	)	cost sol: 8.27
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+twacost: 2.419	tspcost: 1.978
+----
+clust(4	6	7	10	)
+tsp(4	7	10	6	)	cost: 8.27
+	seq sol(4	7	10	6	)	cost sol: 8.27
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+twacost: 2.419	tspcost: 1.978
+----
+clust(1	6	10	)
+tsp(1	6	10	)	cost: 7.04
+	seq sol(10	6	1	)	cost sol: 7.04
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+twacost: 2.296	tspcost: 1.855
+----
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+clust(1	6	10	)
+tsp(1	6	10	)	cost: 7.04
+	seq sol(10	6	1	)	cost sol: 7.04
+
+
+twacost: 2.296	tspcost: 1.855
+*******(g) 0 (g)********
+---
+clust(1	2	3	9	)
+tsp(2	9	1	3	)	cost: 6.95
+	seq sol(2	3	1	9	)	cost sol: 8
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+M: 0.441	(0.04, 0.441)
+---
+clust(1	2	3	9	)
+tsp(2	9	1	3	)	cost: 6.95
+	seq sol(2	3	1	9	)	cost sol: 8
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+M: 0.441	(0.04, 0.441)
+---
+clust(4	6	7	10	)
+tsp(4	7	10	6	)	cost: 8.27
+	seq sol(4	7	6	10	)	cost sol: 10
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+M: 0.441	(3.33067e-16, 0.441)
+---
+clust(4	6	7	10	)
+tsp(4	7	10	6	)	cost: 8.27
+	seq sol(4	7	6	10	)	cost sol: 10
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+M: 0.441	(3.33067e-16, 0.441)
+---
+clust(5	8	)
+tsp(5	8	)	cost: 5.84
+	seq sol(8	5	)	cost sol: 6
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+M: 0.441	(0, 0.441)
+---
+clust(5	8	)
+tsp(5	8	)	cost: 5.84
+	seq sol(8	5	)	cost sol: 6
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+M: 0.441	(0, 0.441)
+---
+clust(1	2	3	6	9	)
+tsp(2	9	1	3	6	)	cost: 8.37
+	seq sol(1	6	3	2	9	)	cost sol: 13
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+M: 0.441	(0.133, 0.441)
+---
+clust(1	2	3	6	9	)
+tsp(2	9	1	3	6	)	cost: 8.37
+	seq sol(1	6	3	2	9	)	cost sol: 13
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+M: 0.441	(0.133, 0.441)
+---
+clust(4	5	7	8	10	)
+tsp(5	8	4	7	10	)	cost: 10.48
+	seq sol(10	7	4	8	5	)	cost sol: 11
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+M: 0.441	(2.22045e-16, 0.441)
+---
+clust(4	5	7	8	10	)
+tsp(5	8	4	7	10	)	cost: 10.48
+	seq sol(10	7	4	8	5	)	cost sol: 11
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+M: 0.441	(2.22045e-16, 0.441)
+---
+clust(1	2	3	9	)
+tsp(2	9	1	3	)	cost: 6.95
+	seq sol(2	3	1	9	)	cost sol: 8
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+M: 0.441	(0.04, 0.441)
+---
+clust(1	2	3	9	)
+tsp(2	9	1	3	)	cost: 6.95
+	seq sol(2	3	1	9	)	cost sol: 8
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+M: 0.441	(0.04, 0.441)
+---
+clust(4	5	6	7	8	10	)
+tsp(5	8	4	7	10	6	)	cost: 11.65
+	seq sol(7	4	8	5	6	10	)	cost sol: 15
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+M: 0.441	(0.256, 0.441)
+---
+clust(4	5	6	7	8	10	)
+tsp(5	8	4	7	10	6	)	cost: 11.65
+	seq sol(7	4	8	5	6	10	)	cost sol: 15
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+M: 0.441	(0.256, 0.441)
+---
+clust(1	2	3	9	)
+tsp(2	9	1	3	)	cost: 6.95
+	seq sol(2	3	1	9	)	cost sol: 8
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+M: 0.441	(0.04, 0.441)
+---
+clust(1	2	3	9	)
+tsp(2	9	1	3	)	cost: 6.95
+	seq sol(2	3	1	9	)	cost sol: 8
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+M: 0.441	(0.04, 0.441)
+---
+clust(4	5	6	7	8	10	)
+tsp(5	8	4	7	10	6	)	cost: 11.65
+	seq sol(7	4	8	5	6	10	)	cost sol: 15
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+M: 0.441	(0.256, 0.441)
+---
+clust(4	5	6	7	8	10	)
+tsp(5	8	4	7	10	6	)	cost: 11.65
+	seq sol(7	4	8	5	6	10	)	cost sol: 15
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+M: 0.441	(0.256, 0.441)
+---
+clust(1	2	3	9	)
+tsp(2	9	1	3	)	cost: 6.95
+	seq sol(2	3	1	9	)	cost sol: 8
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+M: 0.441	(0.04, 0.441)
+---
+clust(1	2	3	9	)
+tsp(2	9	1	3	)	cost: 6.95
+	seq sol(2	3	1	9	)	cost sol: 8
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+M: 0.441	(0.04, 0.441)
+---
+clust(4	5	7	8	10	)
+tsp(5	8	4	7	10	)	cost: 10.48
+	seq sol(10	7	4	8	5	)	cost sol: 11
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+M: 0.441	(2.22045e-16, 0.441)
+---
+clust(4	5	7	8	10	)
+tsp(5	8	4	7	10	)	cost: 10.48
+	seq sol(10	7	4	8	5	)	cost sol: 11
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+M: 0.441	(2.22045e-16, 0.441)
+---
+clust(6	)
+tsp(6	)	cost: 3.22
+	seq sol(6	)	cost sol: 3.22
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+M: 0.441	(0, 0.441)
+---
+clust(6	)
+tsp(6	)	cost: 3.22
+	seq sol(6	)	cost sol: 3.22
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+M: 0.441	(0, 0.441)
+---
+clust(1	2	3	9	)
+tsp(2	9	1	3	)	cost: 6.95
+	seq sol(2	3	1	9	)	cost sol: 8
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+M: 0.441	(0.04, 0.441)
+---
+clust(1	2	3	9	)
+tsp(2	9	1	3	)	cost: 6.95
+	seq sol(2	3	1	9	)	cost sol: 8
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+M: 0.441	(0.04, 0.441)
+---
+clust(4	5	6	7	8	10	)
+tsp(5	8	4	7	10	6	)	cost: 11.65
+	seq sol(7	4	8	5	6	10	)	cost sol: 15
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+M: 0.441	(0.256, 0.441)
+---
+clust(4	5	6	7	8	10	)
+tsp(5	8	4	7	10	6	)	cost: 11.65
+	seq sol(7	4	8	5	6	10	)	cost sol: 15
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+M: 0.441	(0.256, 0.441)
+---
+clust(1	3	6	)
+tsp(1	3	6	)	cost: 6.24
+	seq sol(6	1	3	)	cost sol: 7
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+M: 0.441	(0, 0.441)
+---
+clust(1	3	6	)
+tsp(1	3	6	)	cost: 6.24
+	seq sol(6	1	3	)	cost sol: 7
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+M: 0.441	(0, 0.441)
+---
+clust(2	5	9	)
+tsp(2	9	5	)	cost: 7.16
+	seq sol(5	2	9	)	cost sol: 8
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+M: 0.441	(0.061, 0.441)
+---
+clust(2	5	9	)
+tsp(2	9	5	)	cost: 7.16
+	seq sol(5	2	9	)	cost sol: 8
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+M: 0.441	(0.061, 0.441)
+---
+clust(4	7	8	10	)
+tsp(8	4	7	10	)	cost: 9.8
+	seq sol(10	4	7	8	)	cost sol: 11
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+M: 0.441	(3.33067e-16, 0.441)
+---
+clust(4	7	8	10	)
+tsp(8	4	7	10	)	cost: 9.8
+	seq sol(10	4	7	8	)	cost sol: 11
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+M: 0.441	(3.33067e-16, 0.441)
+---
+clust(1	3	9	)
+tsp(3	1	9	)	cost: 6.95
+	seq sol(1	3	9	)	cost sol: 8
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+M: 0.441	(0, 0.441)
+---
+clust(1	3	9	)
+tsp(3	1	9	)	cost: 6.95
+	seq sol(1	3	9	)	cost sol: 8
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+M: 0.441	(0, 0.441)
+---
+clust(2	5	8	)
+tsp(2	5	8	)	cost: 7.05
+	seq sol(8	5	2	)	cost sol: 8
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+M: 0.441	(0, 0.441)
+---
+clust(2	5	8	)
+tsp(2	5	8	)	cost: 7.05
+	seq sol(8	5	2	)	cost sol: 8
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+M: 0.441	(0, 0.441)
+---
+clust(4	6	7	10	)
+tsp(4	7	10	6	)	cost: 8.27
+	seq sol(4	7	6	10	)	cost sol: 10
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+M: 0.441	(3.33067e-16, 0.441)
+---
+clust(4	6	7	10	)
+tsp(4	7	10	6	)	cost: 8.27
+	seq sol(4	7	6	10	)	cost sol: 10
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+M: 0.441	(3.33067e-16, 0.441)
+---
+clust(1	6	10	)
+tsp(1	6	10	)	cost: 7.04
+	seq sol(6	1	10	)	cost sol: 9
+
+
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 15.92
+
+
+M: 0.441	(1.11022e-16, 0.441)
+---
+clust(2	3	4	5	7	8	9	)
+tsp(2	3	9	5	8	4	7	)	cost: 11.51
+	seq sol(7	4	8	5	2	3	9	)	cost sol: 16
+
+
+clust(1	6	10	)
+tsp(1	6	10	)	cost: 7.04
+	seq sol(10	6	1	)	cost sol: 7.04
+
+
+M: 0.441	(0.441, 1.11022e-16)
+*****(y) 1 (y)****
+----
+clust(1	2	3	9	)
+tsp(2	9	1	3	)	cost: 6.95
+	seq sol(2	9	1	3	)	cost sol: 6.95
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 15.92
+
+
+twacost: 2.287	tspcost: 1.85
+----
+clust(1	2	3	9	)
+tsp(2	9	1	3	)	cost: 6.95
+	seq sol(2	9	1	3	)	cost sol: 6.95
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 15.92
+
+
+twacost: 2.287	tspcost: 1.85
+----
+clust(1	2	3	9	)
+tsp(2	9	1	3	)	cost: 6.95
+	seq sol(2	9	1	3	)	cost sol: 6.95
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 15.92
+
+
+twacost: 2.287	tspcost: 1.85
+----
+clust(4	6	7	10	)
+tsp(4	7	10	6	)	cost: 8.27
+	seq sol(4	7	10	6	)	cost sol: 8.27
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+twacost: 2.419	tspcost: 1.982
+----
+clust(4	6	7	10	)
+tsp(4	7	10	6	)	cost: 8.27
+	seq sol(4	7	10	6	)	cost sol: 8.27
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+twacost: 2.419	tspcost: 1.982
+----
+clust(4	6	7	10	)
+tsp(4	7	10	6	)	cost: 8.27
+	seq sol(4	7	10	6	)	cost sol: 8.27
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+twacost: 2.419	tspcost: 1.982
+----
+clust(5	8	)
+tsp(5	8	)	cost: 5.84
+	seq sol(5	8	)	cost sol: 5.84
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+twacost: 2.176	tspcost: 1.739
+----
+clust(5	8	)
+tsp(5	8	)	cost: 5.84
+	seq sol(5	8	)	cost sol: 5.84
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+twacost: 2.176	tspcost: 1.739
+----
+clust(5	8	)
+tsp(5	8	)	cost: 5.84
+	seq sol(5	8	)	cost sol: 5.84
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+twacost: 2.176	tspcost: 1.739
+----
+clust(1	2	3	6	9	)
+tsp(2	9	1	3	6	)	cost: 8.37
+	seq sol(2	9	1	3	6	)	cost sol: 8.37
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 15.92
+
+
+twacost: 2.429	tspcost: 1.992
+----
+clust(1	2	3	6	9	)
+tsp(2	9	1	3	6	)	cost: 8.37
+	seq sol(2	9	1	3	6	)	cost sol: 8.37
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 15.92
+
+
+twacost: 2.429	tspcost: 1.992
+----
+clust(1	2	3	6	9	)
+tsp(2	9	1	3	6	)	cost: 8.37
+	seq sol(2	9	1	3	6	)	cost sol: 8.37
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 15.92
+
+
+twacost: 2.429	tspcost: 1.992
+----
+clust(4	5	7	8	10	)
+tsp(5	8	4	7	10	)	cost: 10.48
+	seq sol(5	8	4	7	10	)	cost sol: 10.48
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+twacost: 2.64	tspcost: 2.203
+----
+clust(4	5	7	8	10	)
+tsp(5	8	4	7	10	)	cost: 10.48
+	seq sol(5	8	4	7	10	)	cost sol: 10.48
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+twacost: 2.64	tspcost: 2.203
+----
+clust(4	5	7	8	10	)
+tsp(5	8	4	7	10	)	cost: 10.48
+	seq sol(5	8	4	7	10	)	cost sol: 10.48
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+twacost: 2.64	tspcost: 2.203
+----
+clust(1	2	3	6	9	)
+tsp(2	9	1	3	6	)	cost: 8.37
+	seq sol(2	9	1	3	6	)	cost sol: 8.37
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 15.92
+
+
+twacost: 2.429	tspcost: 1.992
+----
+clust(1	2	3	6	9	)
+tsp(2	9	1	3	6	)	cost: 8.37
+	seq sol(2	9	1	3	6	)	cost sol: 8.37
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 15.92
+
+
+twacost: 2.429	tspcost: 1.992
+----
+clust(1	2	3	6	9	)
+tsp(2	9	1	3	6	)	cost: 8.37
+	seq sol(2	9	1	3	6	)	cost sol: 8.37
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 15.92
+
+
+twacost: 2.429	tspcost: 1.992
+----
+clust(4	5	7	8	10	)
+tsp(5	8	4	7	10	)	cost: 10.48
+	seq sol(5	8	4	7	10	)	cost sol: 10.48
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+twacost: 2.64	tspcost: 2.203
+----
+clust(4	5	7	8	10	)
+tsp(5	8	4	7	10	)	cost: 10.48
+	seq sol(5	8	4	7	10	)	cost sol: 10.48
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+twacost: 2.64	tspcost: 2.203
+----
+clust(4	5	7	8	10	)
+tsp(5	8	4	7	10	)	cost: 10.48
+	seq sol(5	8	4	7	10	)	cost sol: 10.48
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+twacost: 2.64	tspcost: 2.203
+----
+clust(1	2	3	9	)
+tsp(2	9	1	3	)	cost: 6.95
+	seq sol(2	9	1	3	)	cost sol: 6.95
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 15.92
+
+
+twacost: 2.287	tspcost: 1.85
+----
+clust(1	2	3	9	)
+tsp(2	9	1	3	)	cost: 6.95
+	seq sol(2	9	1	3	)	cost sol: 6.95
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 15.92
+
+
+twacost: 2.287	tspcost: 1.85
+----
+clust(1	2	3	9	)
+tsp(2	9	1	3	)	cost: 6.95
+	seq sol(2	9	1	3	)	cost sol: 6.95
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 15.92
+
+
+twacost: 2.287	tspcost: 1.85
+----
+clust(4	5	6	7	8	10	)
+tsp(5	8	4	7	10	6	)	cost: 11.65
+	seq sol(5	8	4	7	10	6	)	cost sol: 11.65
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+twacost: 2.757	tspcost: 2.32
+----
+clust(4	5	6	7	8	10	)
+tsp(5	8	4	7	10	6	)	cost: 11.65
+	seq sol(5	8	4	7	10	6	)	cost sol: 11.65
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+twacost: 2.757	tspcost: 2.32
+----
+clust(4	5	6	7	8	10	)
+tsp(5	8	4	7	10	6	)	cost: 11.65
+	seq sol(5	8	4	7	10	6	)	cost sol: 11.65
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+twacost: 2.757	tspcost: 2.32
+----
+clust(1	2	3	9	)
+tsp(2	9	1	3	)	cost: 6.95
+	seq sol(2	9	1	3	)	cost sol: 6.95
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 15.92
+
+
+twacost: 2.287	tspcost: 1.85
+----
+clust(1	2	3	9	)
+tsp(2	9	1	3	)	cost: 6.95
+	seq sol(2	9	1	3	)	cost sol: 6.95
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 15.92
+
+
+twacost: 2.287	tspcost: 1.85
+----
+clust(1	2	3	9	)
+tsp(2	9	1	3	)	cost: 6.95
+	seq sol(2	9	1	3	)	cost sol: 6.95
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 15.92
+
+
+twacost: 2.287	tspcost: 1.85
+----
+clust(4	5	7	8	10	)
+tsp(5	8	4	7	10	)	cost: 10.48
+	seq sol(5	8	4	7	10	)	cost sol: 10.48
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+twacost: 2.64	tspcost: 2.203
+----
+clust(4	5	7	8	10	)
+tsp(5	8	4	7	10	)	cost: 10.48
+	seq sol(5	8	4	7	10	)	cost sol: 10.48
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+twacost: 2.64	tspcost: 2.203
+----
+clust(4	5	7	8	10	)
+tsp(5	8	4	7	10	)	cost: 10.48
+	seq sol(5	8	4	7	10	)	cost sol: 10.48
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+twacost: 2.64	tspcost: 2.203
+----
+clust(6	)
+tsp(6	)	cost: 3.22
+	seq sol(6	)	cost sol: 3.22
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 15.92
+
+
+twacost: 1.914	tspcost: 1.477
+----
+clust(6	)
+tsp(6	)	cost: 3.22
+	seq sol(6	)	cost sol: 3.22
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 15.92
+
+
+twacost: 1.914	tspcost: 1.477
+----
+clust(6	)
+tsp(6	)	cost: 3.22
+	seq sol(6	)	cost sol: 3.22
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 15.92
+
+
+twacost: 1.914	tspcost: 1.477
+----
+clust(1	3	5	)
+tsp(3	1	5	)	cost: 7.25
+	seq sol(5	1	3	)	cost sol: 7.25
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+twacost: 2.317	tspcost: 1.88
+----
+clust(1	3	5	)
+tsp(3	1	5	)	cost: 7.25
+	seq sol(5	1	3	)	cost sol: 7.25
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+twacost: 2.317	tspcost: 1.88
+----
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+clust(1	3	5	)
+tsp(3	1	5	)	cost: 7.25
+	seq sol(5	1	3	)	cost sol: 7.25
+
+
+twacost: 2.317	tspcost: 1.88
+----
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+clust(1	3	5	)
+tsp(3	1	5	)	cost: 7.25
+	seq sol(5	1	3	)	cost sol: 7.25
+
+
+twacost: 2.317	tspcost: 1.88
+----
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+clust(1	3	6	)
+tsp(1	3	6	)	cost: 6.24
+	seq sol(1	3	6	)	cost sol: 6.24
+
+
+twacost: 2.216	tspcost: 1.779
+----
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 15.92
+
+
+clust(2	5	9	)
+tsp(2	9	5	)	cost: 7.16
+	seq sol(2	9	5	)	cost sol: 7.16
+
+
+twacost: 2.308	tspcost: 1.871
+----
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+clust(4	7	8	10	)
+tsp(8	4	7	10	)	cost: 9.8
+	seq sol(8	4	7	10	)	cost sol: 9.8
+
+
+twacost: 2.572	tspcost: 2.135
+----
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+clust(1	3	9	)
+tsp(3	1	9	)	cost: 6.95
+	seq sol(3	1	9	)	cost sol: 6.95
+
+
+twacost: 2.287	tspcost: 1.85
+----
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+clust(2	5	8	)
+tsp(2	5	8	)	cost: 7.05
+	seq sol(8	5	2	)	cost sol: 7.05
+
+
+twacost: 2.297	tspcost: 1.86
+----
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+clust(4	6	7	10	)
+tsp(4	7	10	6	)	cost: 8.27
+	seq sol(4	7	10	6	)	cost sol: 8.27
+
+
+twacost: 2.419	tspcost: 1.982
+----
+clust(1	3	5	)
+tsp(3	1	5	)	cost: 7.25
+	seq sol(5	1	3	)	cost sol: 7.25
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+twacost: 2.317	tspcost: 1.88
+----
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+clust(1	3	5	)
+tsp(3	1	5	)	cost: 7.25
+	seq sol(5	1	3	)	cost sol: 7.25
+
+
+twacost: 2.317	tspcost: 1.88
+----
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+clust(1	3	6	)
+tsp(1	3	6	)	cost: 6.24
+	seq sol(1	3	6	)	cost sol: 6.24
+
+
+twacost: 2.216	tspcost: 1.779
+----
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 15.92
+
+
+clust(2	5	9	)
+tsp(2	9	5	)	cost: 7.16
+	seq sol(2	9	5	)	cost sol: 7.16
+
+
+twacost: 2.308	tspcost: 1.871
+----
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+clust(4	7	8	10	)
+tsp(8	4	7	10	)	cost: 9.8
+	seq sol(8	4	7	10	)	cost sol: 9.8
+
+
+twacost: 2.572	tspcost: 2.135
+----
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+clust(1	3	9	)
+tsp(3	1	9	)	cost: 6.95
+	seq sol(3	1	9	)	cost sol: 6.95
+
+
+twacost: 2.287	tspcost: 1.85
+----
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+clust(2	5	8	)
+tsp(2	5	8	)	cost: 7.05
+	seq sol(8	5	2	)	cost sol: 7.05
+
+
+twacost: 2.297	tspcost: 1.86
+----
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+clust(4	6	7	10	)
+tsp(4	7	10	6	)	cost: 8.27
+	seq sol(4	7	10	6	)	cost sol: 8.27
+
+
+twacost: 2.419	tspcost: 1.982
+----
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+clust(1	3	6	)
+tsp(1	3	6	)	cost: 6.24
+	seq sol(1	3	6	)	cost sol: 6.24
+
+
+twacost: 2.216	tspcost: 1.779
+----
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 15.92
+
+
+clust(2	5	9	)
+tsp(2	9	5	)	cost: 7.16
+	seq sol(2	9	5	)	cost sol: 7.16
+
+
+twacost: 2.308	tspcost: 1.871
+----
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+clust(4	7	8	10	)
+tsp(8	4	7	10	)	cost: 9.8
+	seq sol(8	4	7	10	)	cost sol: 9.8
+
+
+twacost: 2.572	tspcost: 2.135
+----
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+clust(1	3	9	)
+tsp(3	1	9	)	cost: 6.95
+	seq sol(3	1	9	)	cost sol: 6.95
+
+
+twacost: 2.287	tspcost: 1.85
+----
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+clust(2	5	8	)
+tsp(2	5	8	)	cost: 7.05
+	seq sol(8	5	2	)	cost sol: 7.05
+
+
+twacost: 2.297	tspcost: 1.86
+----
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+clust(4	6	7	10	)
+tsp(4	7	10	6	)	cost: 8.27
+	seq sol(4	7	10	6	)	cost sol: 8.27
+
+
+twacost: 2.419	tspcost: 1.982
+*******(g) 1 (g)********
+---
+clust(1	2	3	9	)
+tsp(2	9	1	3	)	cost: 6.95
+	seq sol(1	3	2	9	)	cost sol: 9
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+M: 0.437	(0, 0.437)
+---
+clust(1	2	3	9	)
+tsp(2	9	1	3	)	cost: 6.95
+	seq sol(1	3	2	9	)	cost sol: 9
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+M: 0.437	(0, 0.437)
+---
+clust(1	2	3	9	)
+tsp(2	9	1	3	)	cost: 6.95
+	seq sol(1	3	2	9	)	cost sol: 9
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+M: 0.437	(0, 0.437)
+---
+clust(4	6	7	10	)
+tsp(4	7	10	6	)	cost: 8.27
+	seq sol(7	4	10	6	)	cost sol: 9
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+M: 0.437	(3.33067e-16, 0.437)
+---
+clust(4	6	7	10	)
+tsp(4	7	10	6	)	cost: 8.27
+	seq sol(7	4	10	6	)	cost sol: 9
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+M: 0.437	(3.33067e-16, 0.437)
+---
+clust(4	6	7	10	)
+tsp(4	7	10	6	)	cost: 8.27
+	seq sol(7	4	10	6	)	cost sol: 9
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+M: 0.437	(3.33067e-16, 0.437)
+---
+clust(5	8	)
+tsp(5	8	)	cost: 5.84
+	seq sol(5	8	)	cost sol: 6
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+M: 0.437	(0, 0.437)
+---
+clust(5	8	)
+tsp(5	8	)	cost: 5.84
+	seq sol(5	8	)	cost sol: 6
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+M: 0.437	(0, 0.437)
+---
+clust(5	8	)
+tsp(5	8	)	cost: 5.84
+	seq sol(5	8	)	cost sol: 6
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+M: 0.437	(0, 0.437)
+---
+clust(1	2	3	6	9	)
+tsp(2	9	1	3	6	)	cost: 8.37
+	seq sol(1	6	2	3	9	)	cost sol: 13
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+M: 0.437	(1.11022e-16, 0.437)
+---
+clust(1	2	3	6	9	)
+tsp(2	9	1	3	6	)	cost: 8.37
+	seq sol(1	6	2	3	9	)	cost sol: 13
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+M: 0.437	(1.11022e-16, 0.437)
+---
+clust(1	2	3	6	9	)
+tsp(2	9	1	3	6	)	cost: 8.37
+	seq sol(1	6	2	3	9	)	cost sol: 13
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+M: 0.437	(1.11022e-16, 0.437)
+---
+clust(4	5	7	8	10	)
+tsp(5	8	4	7	10	)	cost: 10.48
+	seq sol(5	10	7	4	8	)	cost sol: 14
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 15.92
+
+
+M: 0.437	(2.22045e-16, 0.437)
+---
+clust(4	5	7	8	10	)
+tsp(5	8	4	7	10	)	cost: 10.48
+	seq sol(5	10	7	4	8	)	cost sol: 14
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 15.92
+
+
+M: 0.437	(2.22045e-16, 0.437)
+---
+clust(4	5	7	8	10	)
+tsp(5	8	4	7	10	)	cost: 10.48
+	seq sol(5	10	7	4	8	)	cost sol: 14
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 15.92
+
+
+M: 0.437	(2.22045e-16, 0.437)
+---
+clust(1	2	3	6	9	)
+tsp(2	9	1	3	6	)	cost: 8.37
+	seq sol(1	6	2	3	9	)	cost sol: 13
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+M: 0.437	(1.11022e-16, 0.437)
+---
+clust(1	2	3	6	9	)
+tsp(2	9	1	3	6	)	cost: 8.37
+	seq sol(1	6	2	3	9	)	cost sol: 13
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+M: 0.437	(1.11022e-16, 0.437)
+---
+clust(1	2	3	6	9	)
+tsp(2	9	1	3	6	)	cost: 8.37
+	seq sol(1	6	2	3	9	)	cost sol: 13
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+M: 0.437	(1.11022e-16, 0.437)
+---
+clust(4	5	7	8	10	)
+tsp(5	8	4	7	10	)	cost: 10.48
+	seq sol(5	10	7	4	8	)	cost sol: 14
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 15.92
+
+
+M: 0.437	(2.22045e-16, 0.437)
+---
+clust(4	5	7	8	10	)
+tsp(5	8	4	7	10	)	cost: 10.48
+	seq sol(5	10	7	4	8	)	cost sol: 14
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 15.92
+
+
+M: 0.437	(2.22045e-16, 0.437)
+---
+clust(4	5	7	8	10	)
+tsp(5	8	4	7	10	)	cost: 10.48
+	seq sol(5	10	7	4	8	)	cost sol: 14
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 15.92
+
+
+M: 0.437	(2.22045e-16, 0.437)
+---
+clust(1	2	3	9	)
+tsp(2	9	1	3	)	cost: 6.95
+	seq sol(1	3	2	9	)	cost sol: 9
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+M: 0.437	(0, 0.437)
+---
+clust(1	2	3	9	)
+tsp(2	9	1	3	)	cost: 6.95
+	seq sol(1	3	2	9	)	cost sol: 9
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+M: 0.437	(0, 0.437)
+---
+clust(1	2	3	9	)
+tsp(2	9	1	3	)	cost: 6.95
+	seq sol(1	3	2	9	)	cost sol: 9
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+M: 0.437	(0, 0.437)
+---
+clust(4	5	6	7	8	10	)
+tsp(5	8	4	7	10	6	)	cost: 11.65
+	seq sol(5	8	4	7	10	6	)	cost sol: 12
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+M: 0.437	(0, 0.437)
+---
+clust(4	5	6	7	8	10	)
+tsp(5	8	4	7	10	6	)	cost: 11.65
+	seq sol(5	8	4	7	10	6	)	cost sol: 12
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+M: 0.437	(0, 0.437)
+---
+clust(4	5	6	7	8	10	)
+tsp(5	8	4	7	10	6	)	cost: 11.65
+	seq sol(5	8	4	7	10	6	)	cost sol: 12
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+M: 0.437	(0, 0.437)
+---
+clust(1	2	3	9	)
+tsp(2	9	1	3	)	cost: 6.95
+	seq sol(1	3	2	9	)	cost sol: 9
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+M: 0.437	(0, 0.437)
+---
+clust(1	2	3	9	)
+tsp(2	9	1	3	)	cost: 6.95
+	seq sol(1	3	2	9	)	cost sol: 9
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+M: 0.437	(0, 0.437)
+---
+clust(1	2	3	9	)
+tsp(2	9	1	3	)	cost: 6.95
+	seq sol(1	3	2	9	)	cost sol: 9
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+M: 0.437	(0, 0.437)
+---
+clust(4	5	7	8	10	)
+tsp(5	8	4	7	10	)	cost: 10.48
+	seq sol(5	10	7	4	8	)	cost sol: 14
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 15.92
+
+
+M: 0.437	(2.22045e-16, 0.437)
+---
+clust(4	5	7	8	10	)
+tsp(5	8	4	7	10	)	cost: 10.48
+	seq sol(5	10	7	4	8	)	cost sol: 14
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 15.92
+
+
+M: 0.437	(2.22045e-16, 0.437)
+---
+clust(4	5	7	8	10	)
+tsp(5	8	4	7	10	)	cost: 10.48
+	seq sol(5	10	7	4	8	)	cost sol: 14
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 15.92
+
+
+M: 0.437	(2.22045e-16, 0.437)
+---
+clust(6	)
+tsp(6	)	cost: 3.22
+	seq sol(6	)	cost sol: 3.22
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 15.92
+
+
+M: 0.437	(0, 0.437)
+---
+clust(6	)
+tsp(6	)	cost: 3.22
+	seq sol(6	)	cost sol: 3.22
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 15.92
+
+
+M: 0.437	(0, 0.437)
+---
+clust(6	)
+tsp(6	)	cost: 3.22
+	seq sol(6	)	cost sol: 3.22
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 15.92
+
+
+M: 0.437	(0, 0.437)
+---
+clust(1	3	5	)
+tsp(3	1	5	)	cost: 7.25
+	seq sol(3	1	5	)	cost sol: 8
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+M: 0.437	(-1.11022e-16, 0.437)
+---
+clust(1	3	5	)
+tsp(3	1	5	)	cost: 7.25
+	seq sol(3	1	5	)	cost sol: 8
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+M: 0.437	(-1.11022e-16, 0.437)
+---
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 16
+
+
+clust(1	3	5	)
+tsp(3	1	5	)	cost: 7.25
+	seq sol(5	1	3	)	cost sol: 7.25
+
+
+M: 0.437	(0.437, -1.11022e-16)
+---
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 16
+
+
+clust(1	3	5	)
+tsp(3	1	5	)	cost: 7.25
+	seq sol(5	1	3	)	cost sol: 7.25
+
+
+M: 0.437	(0.437, -1.11022e-16)
+---
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 16
+
+
+clust(1	3	6	)
+tsp(1	3	6	)	cost: 6.24
+	seq sol(6	3	1	)	cost sol: 6.24
+
+
+M: 0.437	(0.437, -1.11022e-16)
+---
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 16
+
+
+clust(2	5	9	)
+tsp(2	9	5	)	cost: 7.16
+	seq sol(5	9	2	)	cost sol: 7.16
+
+
+M: 0.437	(0.437, -2.22045e-16)
+---
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 16
+
+
+clust(4	7	8	10	)
+tsp(8	4	7	10	)	cost: 9.8
+	seq sol(10	7	4	8	)	cost sol: 9.8
+
+
+M: 0.437	(0.437, 3.33067e-16)
+---
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 16
+
+
+clust(1	3	9	)
+tsp(3	1	9	)	cost: 6.95
+	seq sol(9	1	3	)	cost sol: 6.95
+
+
+M: 0.437	(0.437, 0)
+---
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 16
+
+
+clust(2	5	8	)
+tsp(2	5	8	)	cost: 7.05
+	seq sol(2	5	8	)	cost sol: 7.05
+
+
+M: 0.437	(0.437, 0)
+---
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 16
+
+
+clust(4	6	7	10	)
+tsp(4	7	10	6	)	cost: 8.27
+	seq sol(6	10	7	4	)	cost sol: 8.27
+
+
+M: 0.437	(0.437, 3.33067e-16)
+---
+clust(1	3	5	)
+tsp(3	1	5	)	cost: 7.25
+	seq sol(3	1	5	)	cost sol: 8
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+M: 0.437	(-1.11022e-16, 0.437)
+---
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 16
+
+
+clust(1	3	5	)
+tsp(3	1	5	)	cost: 7.25
+	seq sol(5	1	3	)	cost sol: 7.25
+
+
+M: 0.437	(0.437, -1.11022e-16)
+---
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 16
+
+
+clust(1	3	6	)
+tsp(1	3	6	)	cost: 6.24
+	seq sol(6	3	1	)	cost sol: 6.24
+
+
+M: 0.437	(0.437, -1.11022e-16)
+---
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 16
+
+
+clust(2	5	9	)
+tsp(2	9	5	)	cost: 7.16
+	seq sol(5	9	2	)	cost sol: 7.16
+
+
+M: 0.437	(0.437, -2.22045e-16)
+---
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 16
+
+
+clust(4	7	8	10	)
+tsp(8	4	7	10	)	cost: 9.8
+	seq sol(10	7	4	8	)	cost sol: 9.8
+
+
+M: 0.437	(0.437, 3.33067e-16)
+---
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 16
+
+
+clust(1	3	9	)
+tsp(3	1	9	)	cost: 6.95
+	seq sol(9	1	3	)	cost sol: 6.95
+
+
+M: 0.437	(0.437, 0)
+---
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 16
+
+
+clust(2	5	8	)
+tsp(2	5	8	)	cost: 7.05
+	seq sol(2	5	8	)	cost sol: 7.05
+
+
+M: 0.437	(0.437, 0)
+---
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 16
+
+
+clust(4	6	7	10	)
+tsp(4	7	10	6	)	cost: 8.27
+	seq sol(6	10	7	4	)	cost sol: 8.27
+
+
+M: 0.437	(0.437, 3.33067e-16)
+---
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 16
+
+
+clust(1	3	6	)
+tsp(1	3	6	)	cost: 6.24
+	seq sol(6	3	1	)	cost sol: 6.24
+
+
+M: 0.437	(0.437, -1.11022e-16)
+---
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 16
+
+
+clust(2	5	9	)
+tsp(2	9	5	)	cost: 7.16
+	seq sol(5	9	2	)	cost sol: 7.16
+
+
+M: 0.437	(0.437, -2.22045e-16)
+---
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 16
+
+
+clust(4	7	8	10	)
+tsp(8	4	7	10	)	cost: 9.8
+	seq sol(10	7	4	8	)	cost sol: 9.8
+
+
+M: 0.437	(0.437, 3.33067e-16)
+---
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 16
+
+
+clust(1	3	9	)
+tsp(3	1	9	)	cost: 6.95
+	seq sol(9	1	3	)	cost sol: 6.95
+
+
+M: 0.437	(0.437, 0)
+---
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 16
+
+
+clust(2	5	8	)
+tsp(2	5	8	)	cost: 7.05
+	seq sol(2	5	8	)	cost sol: 7.05
+
+
+M: 0.437	(0.437, 0)
+---
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 11.55
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 16
+
+
+clust(4	6	7	10	)
+tsp(4	7	10	6	)	cost: 8.27
+	seq sol(6	10	7	4	)	cost sol: 8.27
+
+
+M: 0.437	(0.437, 3.33067e-16)
+*****(y) 0 (y)****
+----
+clust(1	2	3	9	)
+tsp(2	9	1	3	)	cost: 6.95
+	seq sol(2	9	1	3	)	cost sol: 6.95
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 15.92
+
+
+twacost: 2.287	tspcost: 1.582
+----
+clust(1	2	3	9	)
+tsp(2	9	1	3	)	cost: 6.95
+	seq sol(2	9	1	3	)	cost sol: 6.95
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 15.92
+
+
+twacost: 2.287	tspcost: 1.582
+----
+clust(1	2	3	9	)
+tsp(2	9	1	3	)	cost: 6.95
+	seq sol(2	9	1	3	)	cost sol: 6.95
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 15.92
+
+
+twacost: 2.287	tspcost: 1.582
+----
+clust(4	6	7	10	)
+tsp(4	7	10	6	)	cost: 8.27
+	seq sol(4	7	10	6	)	cost sol: 8.27
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+twacost: 2.419	tspcost: 1.714
+----
+clust(4	6	7	10	)
+tsp(4	7	10	6	)	cost: 8.27
+	seq sol(4	7	10	6	)	cost sol: 8.27
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+twacost: 2.419	tspcost: 1.714
+----
+clust(4	6	7	10	)
+tsp(4	7	10	6	)	cost: 8.27
+	seq sol(4	7	10	6	)	cost sol: 8.27
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+twacost: 2.419	tspcost: 1.714
+----
+clust(5	8	)
+tsp(5	8	)	cost: 5.84
+	seq sol(5	8	)	cost sol: 5.84
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+twacost: 2.176	tspcost: 1.471
+----
+clust(5	8	)
+tsp(5	8	)	cost: 5.84
+	seq sol(5	8	)	cost sol: 5.84
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+twacost: 2.176	tspcost: 1.471
+----
+clust(5	8	)
+tsp(5	8	)	cost: 5.84
+	seq sol(5	8	)	cost sol: 5.84
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+twacost: 2.176	tspcost: 1.471
+----
+clust(1	2	3	6	9	)
+tsp(2	9	1	3	6	)	cost: 8.37
+	seq sol(2	9	1	3	6	)	cost sol: 8.37
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 15.92
+
+
+twacost: 2.429	tspcost: 1.724
+----
+clust(1	2	3	6	9	)
+tsp(2	9	1	3	6	)	cost: 8.37
+	seq sol(2	9	1	3	6	)	cost sol: 8.37
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 15.92
+
+
+twacost: 2.429	tspcost: 1.724
+----
+clust(1	2	3	6	9	)
+tsp(2	9	1	3	6	)	cost: 8.37
+	seq sol(2	9	1	3	6	)	cost sol: 8.37
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 15.92
+
+
+twacost: 2.429	tspcost: 1.724
+----
+clust(4	5	7	8	10	)
+tsp(5	8	4	7	10	)	cost: 10.48
+	seq sol(5	8	4	7	10	)	cost sol: 10.48
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+twacost: 2.64	tspcost: 1.935
+----
+clust(4	5	7	8	10	)
+tsp(5	8	4	7	10	)	cost: 10.48
+	seq sol(5	8	4	7	10	)	cost sol: 10.48
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+twacost: 2.64	tspcost: 1.935
+----
+clust(4	5	7	8	10	)
+tsp(5	8	4	7	10	)	cost: 10.48
+	seq sol(5	8	4	7	10	)	cost sol: 10.48
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+twacost: 2.64	tspcost: 1.935
+----
+clust(1	2	3	9	)
+tsp(2	9	1	3	)	cost: 6.95
+	seq sol(2	9	1	3	)	cost sol: 6.95
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 15.92
+
+
+twacost: 2.287	tspcost: 1.582
+----
+clust(1	2	3	9	)
+tsp(2	9	1	3	)	cost: 6.95
+	seq sol(2	9	1	3	)	cost sol: 6.95
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 15.92
+
+
+twacost: 2.287	tspcost: 1.582
+----
+clust(1	2	3	9	)
+tsp(2	9	1	3	)	cost: 6.95
+	seq sol(2	9	1	3	)	cost sol: 6.95
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 15.92
+
+
+twacost: 2.287	tspcost: 1.582
+----
+clust(4	5	6	7	8	10	)
+tsp(5	8	4	7	10	6	)	cost: 11.65
+	seq sol(5	8	4	7	10	6	)	cost sol: 11.65
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+twacost: 2.757	tspcost: 2.052
+----
+clust(4	5	6	7	8	10	)
+tsp(5	8	4	7	10	6	)	cost: 11.65
+	seq sol(5	8	4	7	10	6	)	cost sol: 11.65
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+twacost: 2.757	tspcost: 2.052
+----
+clust(4	5	6	7	8	10	)
+tsp(5	8	4	7	10	6	)	cost: 11.65
+	seq sol(5	8	4	7	10	6	)	cost sol: 11.65
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+twacost: 2.757	tspcost: 2.052
+----
+clust(1	2	3	9	)
+tsp(2	9	1	3	)	cost: 6.95
+	seq sol(2	9	1	3	)	cost sol: 6.95
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 15.92
+
+
+twacost: 2.287	tspcost: 1.582
+----
+clust(1	2	3	9	)
+tsp(2	9	1	3	)	cost: 6.95
+	seq sol(2	9	1	3	)	cost sol: 6.95
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 15.92
+
+
+twacost: 2.287	tspcost: 1.582
+----
+clust(1	2	3	9	)
+tsp(2	9	1	3	)	cost: 6.95
+	seq sol(2	9	1	3	)	cost sol: 6.95
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 15.92
+
+
+twacost: 2.287	tspcost: 1.582
+----
+clust(4	5	6	7	8	10	)
+tsp(5	8	4	7	10	6	)	cost: 11.65
+	seq sol(5	8	4	7	10	6	)	cost sol: 11.65
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+twacost: 2.757	tspcost: 2.052
+----
+clust(4	5	6	7	8	10	)
+tsp(5	8	4	7	10	6	)	cost: 11.65
+	seq sol(5	8	4	7	10	6	)	cost sol: 11.65
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+twacost: 2.757	tspcost: 2.052
+----
+clust(4	5	6	7	8	10	)
+tsp(5	8	4	7	10	6	)	cost: 11.65
+	seq sol(5	8	4	7	10	6	)	cost sol: 11.65
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+twacost: 2.757	tspcost: 2.052
+----
+clust(1	2	3	9	)
+tsp(2	9	1	3	)	cost: 6.95
+	seq sol(2	9	1	3	)	cost sol: 6.95
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 15.92
+
+
+twacost: 2.287	tspcost: 1.582
+----
+clust(1	2	3	9	)
+tsp(2	9	1	3	)	cost: 6.95
+	seq sol(2	9	1	3	)	cost sol: 6.95
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 15.92
+
+
+twacost: 2.287	tspcost: 1.582
+----
+clust(1	2	3	9	)
+tsp(2	9	1	3	)	cost: 6.95
+	seq sol(2	9	1	3	)	cost sol: 6.95
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 15.92
+
+
+twacost: 2.287	tspcost: 1.582
+----
+clust(4	5	7	8	10	)
+tsp(5	8	4	7	10	)	cost: 10.48
+	seq sol(5	8	4	7	10	)	cost sol: 10.48
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+twacost: 2.64	tspcost: 1.935
+----
+clust(4	5	7	8	10	)
+tsp(5	8	4	7	10	)	cost: 10.48
+	seq sol(5	8	4	7	10	)	cost sol: 10.48
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+twacost: 2.64	tspcost: 1.935
+----
+clust(4	5	7	8	10	)
+tsp(5	8	4	7	10	)	cost: 10.48
+	seq sol(5	8	4	7	10	)	cost sol: 10.48
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+twacost: 2.64	tspcost: 1.935
+----
+clust(6	)
+tsp(6	)	cost: 3.22
+	seq sol(6	)	cost sol: 3.22
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 15.92
+
+
+twacost: 1.914	tspcost: 1.209
+----
+clust(6	)
+tsp(6	)	cost: 3.22
+	seq sol(6	)	cost sol: 3.22
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 15.92
+
+
+twacost: 1.914	tspcost: 1.209
+----
+clust(6	)
+tsp(6	)	cost: 3.22
+	seq sol(6	)	cost sol: 3.22
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 15.92
+
+
+twacost: 1.914	tspcost: 1.209
+----
+clust(1	3	5	)
+tsp(3	1	5	)	cost: 7.25
+	seq sol(5	1	3	)	cost sol: 7.25
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+twacost: 2.317	tspcost: 1.612
+----
+clust(1	3	5	)
+tsp(3	1	5	)	cost: 7.25
+	seq sol(5	1	3	)	cost sol: 7.25
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+twacost: 2.317	tspcost: 1.612
+----
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+clust(1	3	5	)
+tsp(3	1	5	)	cost: 7.25
+	seq sol(5	1	3	)	cost sol: 7.25
+
+
+twacost: 2.317	tspcost: 1.612
+----
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+clust(1	3	5	)
+tsp(3	1	5	)	cost: 7.25
+	seq sol(5	1	3	)	cost sol: 7.25
+
+
+twacost: 2.317	tspcost: 1.612
+----
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+clust(1	3	6	)
+tsp(1	3	6	)	cost: 6.24
+	seq sol(1	3	6	)	cost sol: 6.24
+
+
+twacost: 2.216	tspcost: 1.511
+----
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 15.92
+
+
+clust(2	5	9	)
+tsp(2	9	5	)	cost: 7.16
+	seq sol(2	9	5	)	cost sol: 7.16
+
+
+twacost: 2.308	tspcost: 1.603
+----
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+clust(4	7	8	10	)
+tsp(8	4	7	10	)	cost: 9.8
+	seq sol(8	4	7	10	)	cost sol: 9.8
+
+
+twacost: 2.572	tspcost: 1.867
+----
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+clust(1	3	9	)
+tsp(3	1	9	)	cost: 6.95
+	seq sol(3	1	9	)	cost sol: 6.95
+
+
+twacost: 2.287	tspcost: 1.582
+----
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+clust(2	5	8	)
+tsp(2	5	8	)	cost: 7.05
+	seq sol(8	5	2	)	cost sol: 7.05
+
+
+twacost: 2.297	tspcost: 1.592
+----
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+clust(4	6	7	10	)
+tsp(4	7	10	6	)	cost: 8.27
+	seq sol(4	7	10	6	)	cost sol: 8.27
+
+
+twacost: 2.419	tspcost: 1.714
+----
+clust(1	3	5	)
+tsp(3	1	5	)	cost: 7.25
+	seq sol(5	1	3	)	cost sol: 7.25
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+twacost: 2.317	tspcost: 1.612
+----
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+clust(1	3	5	)
+tsp(3	1	5	)	cost: 7.25
+	seq sol(5	1	3	)	cost sol: 7.25
+
+
+twacost: 2.317	tspcost: 1.612
+----
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+clust(1	3	6	)
+tsp(1	3	6	)	cost: 6.24
+	seq sol(1	3	6	)	cost sol: 6.24
+
+
+twacost: 2.216	tspcost: 1.511
+----
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 15.92
+
+
+clust(2	5	9	)
+tsp(2	9	5	)	cost: 7.16
+	seq sol(2	9	5	)	cost sol: 7.16
+
+
+twacost: 2.308	tspcost: 1.603
+----
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+clust(4	7	8	10	)
+tsp(8	4	7	10	)	cost: 9.8
+	seq sol(8	4	7	10	)	cost sol: 9.8
+
+
+twacost: 2.572	tspcost: 1.867
+----
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+clust(1	3	9	)
+tsp(3	1	9	)	cost: 6.95
+	seq sol(3	1	9	)	cost sol: 6.95
+
+
+twacost: 2.287	tspcost: 1.582
+----
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+clust(2	5	8	)
+tsp(2	5	8	)	cost: 7.05
+	seq sol(8	5	2	)	cost sol: 7.05
+
+
+twacost: 2.297	tspcost: 1.592
+----
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+clust(4	6	7	10	)
+tsp(4	7	10	6	)	cost: 8.27
+	seq sol(4	7	10	6	)	cost sol: 8.27
+
+
+twacost: 2.419	tspcost: 1.714
+----
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+clust(1	3	6	)
+tsp(1	3	6	)	cost: 6.24
+	seq sol(1	3	6	)	cost sol: 6.24
+
+
+twacost: 2.216	tspcost: 1.511
+----
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 15.92
+
+
+clust(2	5	9	)
+tsp(2	9	5	)	cost: 7.16
+	seq sol(2	9	5	)	cost sol: 7.16
+
+
+twacost: 2.308	tspcost: 1.603
+----
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+clust(4	7	8	10	)
+tsp(8	4	7	10	)	cost: 9.8
+	seq sol(8	4	7	10	)	cost sol: 9.8
+
+
+twacost: 2.572	tspcost: 1.867
+----
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+clust(1	3	9	)
+tsp(3	1	9	)	cost: 6.95
+	seq sol(3	1	9	)	cost sol: 6.95
+
+
+twacost: 2.287	tspcost: 1.582
+----
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+clust(2	5	8	)
+tsp(2	5	8	)	cost: 7.05
+	seq sol(8	5	2	)	cost sol: 7.05
+
+
+twacost: 2.297	tspcost: 1.592
+----
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+clust(4	6	7	10	)
+tsp(4	7	10	6	)	cost: 8.27
+	seq sol(4	7	10	6	)	cost sol: 8.27
+
+
+twacost: 2.419	tspcost: 1.714
+*******(g) 0 (g)********
+---
+clust(1	2	3	9	)
+tsp(2	9	1	3	)	cost: 6.95
+	seq sol(1	3	2	9	)	cost sol: 9
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+M: 0.705	(0, 0.705)
+---
+clust(1	2	3	9	)
+tsp(2	9	1	3	)	cost: 6.95
+	seq sol(1	3	2	9	)	cost sol: 9
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+M: 0.705	(0, 0.705)
+---
+clust(1	2	3	9	)
+tsp(2	9	1	3	)	cost: 6.95
+	seq sol(1	3	2	9	)	cost sol: 9
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+M: 0.705	(0, 0.705)
+---
+clust(4	6	7	10	)
+tsp(4	7	10	6	)	cost: 8.27
+	seq sol(7	4	10	6	)	cost sol: 9
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+M: 0.705	(3.33067e-16, 0.705)
+---
+clust(4	6	7	10	)
+tsp(4	7	10	6	)	cost: 8.27
+	seq sol(7	4	10	6	)	cost sol: 9
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+M: 0.705	(3.33067e-16, 0.705)
+---
+clust(4	6	7	10	)
+tsp(4	7	10	6	)	cost: 8.27
+	seq sol(7	4	10	6	)	cost sol: 9
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+M: 0.705	(3.33067e-16, 0.705)
+---
+clust(5	8	)
+tsp(5	8	)	cost: 5.84
+	seq sol(5	8	)	cost sol: 6
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+M: 0.705	(0, 0.705)
+---
+clust(5	8	)
+tsp(5	8	)	cost: 5.84
+	seq sol(5	8	)	cost sol: 6
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+M: 0.705	(0, 0.705)
+---
+clust(5	8	)
+tsp(5	8	)	cost: 5.84
+	seq sol(5	8	)	cost sol: 6
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+M: 0.705	(0, 0.705)
+---
+clust(1	2	3	6	9	)
+tsp(2	9	1	3	6	)	cost: 8.37
+	seq sol(1	6	2	3	9	)	cost sol: 13
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+M: 0.705	(1.11022e-16, 0.705)
+---
+clust(1	2	3	6	9	)
+tsp(2	9	1	3	6	)	cost: 8.37
+	seq sol(1	6	2	3	9	)	cost sol: 13
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+M: 0.705	(1.11022e-16, 0.705)
+---
+clust(1	2	3	6	9	)
+tsp(2	9	1	3	6	)	cost: 8.37
+	seq sol(1	6	2	3	9	)	cost sol: 13
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+M: 0.705	(1.11022e-16, 0.705)
+---
+clust(4	5	7	8	10	)
+tsp(5	8	4	7	10	)	cost: 10.48
+	seq sol(5	10	7	4	8	)	cost sol: 14
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 15.92
+
+
+M: 0.705	(2.22045e-16, 0.705)
+---
+clust(4	5	7	8	10	)
+tsp(5	8	4	7	10	)	cost: 10.48
+	seq sol(5	10	7	4	8	)	cost sol: 14
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 15.92
+
+
+M: 0.705	(2.22045e-16, 0.705)
+---
+clust(4	5	7	8	10	)
+tsp(5	8	4	7	10	)	cost: 10.48
+	seq sol(5	10	7	4	8	)	cost sol: 14
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 15.92
+
+
+M: 0.705	(2.22045e-16, 0.705)
+---
+clust(1	2	3	9	)
+tsp(2	9	1	3	)	cost: 6.95
+	seq sol(1	3	2	9	)	cost sol: 9
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+M: 0.705	(0, 0.705)
+---
+clust(1	2	3	9	)
+tsp(2	9	1	3	)	cost: 6.95
+	seq sol(1	3	2	9	)	cost sol: 9
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+M: 0.705	(0, 0.705)
+---
+clust(1	2	3	9	)
+tsp(2	9	1	3	)	cost: 6.95
+	seq sol(1	3	2	9	)	cost sol: 9
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+M: 0.705	(0, 0.705)
+---
+clust(4	5	6	7	8	10	)
+tsp(5	8	4	7	10	6	)	cost: 11.65
+	seq sol(5	8	4	7	10	6	)	cost sol: 12
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+M: 0.705	(0, 0.705)
+---
+clust(4	5	6	7	8	10	)
+tsp(5	8	4	7	10	6	)	cost: 11.65
+	seq sol(5	8	4	7	10	6	)	cost sol: 12
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+M: 0.705	(0, 0.705)
+---
+clust(4	5	6	7	8	10	)
+tsp(5	8	4	7	10	6	)	cost: 11.65
+	seq sol(5	8	4	7	10	6	)	cost sol: 12
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+M: 0.705	(0, 0.705)
+---
+clust(1	2	3	9	)
+tsp(2	9	1	3	)	cost: 6.95
+	seq sol(1	3	2	9	)	cost sol: 9
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+M: 0.705	(0, 0.705)
+---
+clust(1	2	3	9	)
+tsp(2	9	1	3	)	cost: 6.95
+	seq sol(1	3	2	9	)	cost sol: 9
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+M: 0.705	(0, 0.705)
+---
+clust(1	2	3	9	)
+tsp(2	9	1	3	)	cost: 6.95
+	seq sol(1	3	2	9	)	cost sol: 9
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+M: 0.705	(0, 0.705)
+---
+clust(4	5	6	7	8	10	)
+tsp(5	8	4	7	10	6	)	cost: 11.65
+	seq sol(5	8	4	7	10	6	)	cost sol: 12
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+M: 0.705	(0, 0.705)
+---
+clust(4	5	6	7	8	10	)
+tsp(5	8	4	7	10	6	)	cost: 11.65
+	seq sol(5	8	4	7	10	6	)	cost sol: 12
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+M: 0.705	(0, 0.705)
+---
+clust(4	5	6	7	8	10	)
+tsp(5	8	4	7	10	6	)	cost: 11.65
+	seq sol(5	8	4	7	10	6	)	cost sol: 12
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+M: 0.705	(0, 0.705)
+---
+clust(1	2	3	9	)
+tsp(2	9	1	3	)	cost: 6.95
+	seq sol(1	3	2	9	)	cost sol: 9
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+M: 0.705	(0, 0.705)
+---
+clust(1	2	3	9	)
+tsp(2	9	1	3	)	cost: 6.95
+	seq sol(1	3	2	9	)	cost sol: 9
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+M: 0.705	(0, 0.705)
+---
+clust(1	2	3	9	)
+tsp(2	9	1	3	)	cost: 6.95
+	seq sol(1	3	2	9	)	cost sol: 9
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+M: 0.705	(0, 0.705)
+---
+clust(4	5	7	8	10	)
+tsp(5	8	4	7	10	)	cost: 10.48
+	seq sol(5	10	7	4	8	)	cost sol: 14
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 15.92
+
+
+M: 0.705	(2.22045e-16, 0.705)
+---
+clust(4	5	7	8	10	)
+tsp(5	8	4	7	10	)	cost: 10.48
+	seq sol(5	10	7	4	8	)	cost sol: 14
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 15.92
+
+
+M: 0.705	(2.22045e-16, 0.705)
+---
+clust(4	5	7	8	10	)
+tsp(5	8	4	7	10	)	cost: 10.48
+	seq sol(5	10	7	4	8	)	cost sol: 14
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 15.92
+
+
+M: 0.705	(2.22045e-16, 0.705)
+---
+clust(6	)
+tsp(6	)	cost: 3.22
+	seq sol(6	)	cost sol: 3.22
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 15.92
+
+
+M: 0.705	(0, 0.705)
+---
+clust(6	)
+tsp(6	)	cost: 3.22
+	seq sol(6	)	cost sol: 3.22
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 15.92
+
+
+M: 0.705	(0, 0.705)
+---
+clust(6	)
+tsp(6	)	cost: 3.22
+	seq sol(6	)	cost sol: 3.22
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 15.92
+
+
+M: 0.705	(0, 0.705)
+---
+clust(1	3	5	)
+tsp(3	1	5	)	cost: 7.25
+	seq sol(3	1	5	)	cost sol: 8
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+M: 0.705	(-1.11022e-16, 0.705)
+---
+clust(1	3	5	)
+tsp(3	1	5	)	cost: 7.25
+	seq sol(3	1	5	)	cost sol: 8
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+M: 0.705	(-1.11022e-16, 0.705)
+---
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 16
+
+
+clust(1	3	5	)
+tsp(3	1	5	)	cost: 7.25
+	seq sol(5	1	3	)	cost sol: 7.25
+
+
+M: 0.705	(0.705, -1.11022e-16)
+---
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 16
+
+
+clust(1	3	5	)
+tsp(3	1	5	)	cost: 7.25
+	seq sol(5	1	3	)	cost sol: 7.25
+
+
+M: 0.705	(0.705, -1.11022e-16)
+---
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 16
+
+
+clust(1	3	6	)
+tsp(1	3	6	)	cost: 6.24
+	seq sol(6	3	1	)	cost sol: 6.24
+
+
+M: 0.705	(0.705, -1.11022e-16)
+---
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 16
+
+
+clust(2	5	9	)
+tsp(2	9	5	)	cost: 7.16
+	seq sol(5	9	2	)	cost sol: 7.16
+
+
+M: 0.705	(0.705, -2.22045e-16)
+---
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 16
+
+
+clust(4	7	8	10	)
+tsp(8	4	7	10	)	cost: 9.8
+	seq sol(10	7	4	8	)	cost sol: 9.8
+
+
+M: 0.705	(0.705, 3.33067e-16)
+---
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 16
+
+
+clust(1	3	9	)
+tsp(3	1	9	)	cost: 6.95
+	seq sol(9	1	3	)	cost sol: 6.95
+
+
+M: 0.705	(0.705, 0)
+---
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 16
+
+
+clust(2	5	8	)
+tsp(2	5	8	)	cost: 7.05
+	seq sol(2	5	8	)	cost sol: 7.05
+
+
+M: 0.705	(0.705, 0)
+---
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 16
+
+
+clust(4	6	7	10	)
+tsp(4	7	10	6	)	cost: 8.27
+	seq sol(6	10	7	4	)	cost sol: 8.27
+
+
+M: 0.705	(0.705, 3.33067e-16)
+---
+clust(1	3	5	)
+tsp(3	1	5	)	cost: 7.25
+	seq sol(3	1	5	)	cost sol: 8
+
+
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(8	4	7	10	6	2	9	)	cost sol: 15.92
+
+
+M: 0.705	(-1.11022e-16, 0.705)
+---
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 16
+
+
+clust(1	3	5	)
+tsp(3	1	5	)	cost: 7.25
+	seq sol(5	1	3	)	cost sol: 7.25
+
+
+M: 0.705	(0.705, -1.11022e-16)
+---
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 16
+
+
+clust(1	3	6	)
+tsp(1	3	6	)	cost: 6.24
+	seq sol(6	3	1	)	cost sol: 6.24
+
+
+M: 0.705	(0.705, -1.11022e-16)
+---
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 16
+
+
+clust(2	5	9	)
+tsp(2	9	5	)	cost: 7.16
+	seq sol(5	9	2	)	cost sol: 7.16
+
+
+M: 0.705	(0.705, -2.22045e-16)
+---
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 16
+
+
+clust(4	7	8	10	)
+tsp(8	4	7	10	)	cost: 9.8
+	seq sol(10	7	4	8	)	cost sol: 9.8
+
+
+M: 0.705	(0.705, 3.33067e-16)
+---
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 16
+
+
+clust(1	3	9	)
+tsp(3	1	9	)	cost: 6.95
+	seq sol(9	1	3	)	cost sol: 6.95
+
+
+M: 0.705	(0.705, 0)
+---
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 16
+
+
+clust(2	5	8	)
+tsp(2	5	8	)	cost: 7.05
+	seq sol(2	5	8	)	cost sol: 7.05
+
+
+M: 0.705	(0.705, 0)
+---
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 16
+
+
+clust(4	6	7	10	)
+tsp(4	7	10	6	)	cost: 8.27
+	seq sol(6	10	7	4	)	cost sol: 8.27
+
+
+M: 0.705	(0.705, 3.33067e-16)
+---
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 16
+
+
+clust(1	3	6	)
+tsp(1	3	6	)	cost: 6.24
+	seq sol(6	3	1	)	cost sol: 6.24
+
+
+M: 0.705	(0.705, -1.11022e-16)
+---
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 16
+
+
+clust(2	5	9	)
+tsp(2	9	5	)	cost: 7.16
+	seq sol(5	9	2	)	cost sol: 7.16
+
+
+M: 0.705	(0.705, -2.22045e-16)
+---
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 16
+
+
+clust(4	7	8	10	)
+tsp(8	4	7	10	)	cost: 9.8
+	seq sol(10	7	4	8	)	cost sol: 9.8
+
+
+M: 0.705	(0.705, 3.33067e-16)
+---
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 16
+
+
+clust(1	3	9	)
+tsp(3	1	9	)	cost: 6.95
+	seq sol(9	1	3	)	cost sol: 6.95
+
+
+M: 0.705	(0.705, 0)
+---
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 16
+
+
+clust(2	5	8	)
+tsp(2	5	8	)	cost: 7.05
+	seq sol(2	5	8	)	cost sol: 7.05
+
+
+M: 0.705	(0.705, 0)
+---
+clust(2	4	6	7	8	9	10	)
+tsp(2	9	8	4	7	10	6	)	cost: 8.87
+	seq sol(9	2	6	10	7	4	8	)	cost sol: 16
+
+
+clust(4	6	7	10	)
+tsp(4	7	10	6	)	cost: 8.27
+	seq sol(6	10	7	4	)	cost sol: 8.27
+
+
+M: 0.705	(0.705, 3.33067e-16)

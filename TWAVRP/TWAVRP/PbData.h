@@ -1,5 +1,6 @@
 #pragma once
 
+#include <algorithm>
 #include <fstream>
 #include <iostream>
 #include <string>
@@ -26,6 +27,10 @@ public:
 	int nbScenarios;
 	vector<int> id;
 	vector<int> idCustomers;
+	vector<int> keybit;
+	vector<int> wordbit;
+	int nbWords;
+
 	vector<double> scenarioProbability;
 	unordered_map<int, vector<int>> demandScenarios;
 	unordered_map<int, double> x;
@@ -47,6 +52,7 @@ public:
 	double bigM;
 
 	PbData(string instanceName, Config config);
+	PbData(string instanceName, Config config, int nbScenarios);
 	string printTravelCost(int i, int j);
 	string printTravelTime(int i, int j);
 };

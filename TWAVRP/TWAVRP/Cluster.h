@@ -1,5 +1,6 @@
 #pragma once
 
+#include <bitset>
 #include <unordered_map>
 #include <vector>
 
@@ -10,7 +11,9 @@ using namespace std;
 class Cluster
 {
 	PbData *pbData;
-	
+	int isTspFlex = -1;
+	bool determineIsTspFlexible();
+
 public:
 	Cluster(PbData *pbData);
 	~Cluster();
@@ -22,9 +25,18 @@ public:
 
 	vector<int> cluster;
 	vector<int> tsp;
+	vector<int> tspInSol;
 	vector<int> demandScenario;
-	//vector<bool> feasScenario;
+	vector<int> bitWords;
+
+	bool intersection(const Cluster &cluster);
+
 	double cost;
+	double costInSol;
+
+	int coeffObjFunction;		// to be used in separation
+
+	bool isTspFlexible();
 
 };
 

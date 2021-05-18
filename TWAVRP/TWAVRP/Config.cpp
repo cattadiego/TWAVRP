@@ -18,7 +18,10 @@ Config::Config(user user, instanceType instanceType) {
 		this->filePath = "C://Users//cattaruz//Desktop//Diego//Instances//TWAVRP//";
 		break;
 	case lab:
-		this->filePath = "C://Users//mogier//Desktop//Diego//TWAVRP//instances//";
+		this->filePath = "C://Users//Master//Desktop//Diego//TWAVRP//instances//";
+		break;
+	case home:
+		this->filePath = "instances//";
 		break;
 	default:
 		break;

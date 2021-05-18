@@ -7,6 +7,14 @@ PbData::PbData(string instanceName, Config config) {
 	calculateBigM();
 }
 
+PbData::PbData(string instanceName, Config config, int nbScenarios) {
+	this->instanceName = instanceName;
+	this->config = config;
+	this->nbScenarios = nbScenarios;
+	readData();
+	calculateBigM();
+}
+
 void PbData::readData() {
 	
 	string comment, file;
@@ -37,13 +45,20 @@ void PbData::readData() {
 	stream >> this->vehicleCapacity;
 
 	stream >> comment;
-	stream >> this->nbScenarios;
+	if (this->instanceName.find("ExtraScenarios") == string::npos)
+		stream >> this->nbScenarios;
 
+	
 	do
 	{
 		stream >> comment;
 	} while (comment != "Location_Coordinates:");
 	
+
+	int nbBytes = sizeof(int);
+	int nbBits = pow(2, nbBytes);
+	this->nbWords = ceil((double)nbPoints / (double)(nbBits - 2));
+
 	int i = 0;
 	do {
 		++i;
@@ -53,11 +68,16 @@ void PbData::readData() {
 		stream >> locX;
 		stream >> locY;
 		this->id.push_back(locId);
+
+		int word = floor(locId / (double)(nbBits - 2));
+		this->wordbit.push_back(word);
+		this->keybit.push_back(pow(2, locId - (nbBits - 2) * word));
 		if(locId != 0) this->idCustomers.push_back(locId);
 		this->x.insert(make_pair(locId, locX));
 		this->x.insert(make_pair(locId, locY));
 	} while (i < nbPoints);
 
+	int nbOriginalScenarios = this->nbScenarios;
 	if (this->instanceName.find("ExtraScenarios") != string::npos) {
 		stream.close();
 		string instFolder = this->config.instanceFolder;
@@ -69,7 +89,8 @@ void PbData::readData() {
 		{
 			stream >> comment;
 		} while (comment != "Number_Of_Scenarios:");
-		stream >> this->nbScenarios;
+		stream >> nbOriginalScenarios;
+		this->nbScenarios = min(this->nbScenarios, nbOriginalScenarios);
 	}
 
 	
@@ -83,9 +104,12 @@ void PbData::readData() {
 		int locId;
 		stream >> locId;
 		vector< int > d;
-		for (int s = 0; s < nbScenarios; ++s) {			
+		for (int s = 0; s < this->nbScenarios; ++s) {			
 			int locD; stream >> locD;
 			d.push_back(locD);
+		}
+		for (int s = this->nbScenarios; s < nbOriginalScenarios; ++s) {
+			int locD; stream >> locD;
 		}
 		this->demandScenarios.insert(make_pair(locId, d));
 	}
@@ -95,10 +119,18 @@ void PbData::readData() {
 		stream >> comment;
 	} while (comment != "Probability_of_each_scenario_occuring:");
 
-	for (int s = 0; s < this->nbScenarios; ++s) {
-		double ps;
-		stream >> ps;
-		this->scenarioProbability.push_back(ps);
+	if (this->nbScenarios == nbOriginalScenarios) {
+		for (int s = 0; s < this->nbScenarios; ++s) {
+			double ps;
+			stream >> ps;
+			this->scenarioProbability.push_back(ps);
+		}
+	}
+	else {
+		for (int s = 0; s < this->nbScenarios; ++s) {
+			double ps = 1.0 / this->nbScenarios;
+			this->scenarioProbability.push_back(ps);
+		}
 	}
 
 	if (this->instanceName.find("ExtraScenarios") != string::npos) {

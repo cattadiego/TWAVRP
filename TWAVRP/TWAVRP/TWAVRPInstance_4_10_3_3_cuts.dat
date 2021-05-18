@@ -1,0 +1,75 @@
+----
+clust(4	5	7	8	10	)
+tsp(5	7	10	4	8	)	cost: 11.04
+	seq sol(4	10	8	7	5	)	cost sol: 11.39
+
+
+clust(2	4	8	10	)
+tsp(2	4	10	8	)	cost: 8.07
+	seq sol(2	4	10	8	)	cost sol: 8.07
+
+
+twacost: 6.48666	tspcost: 6.37
+----
+clust(4	5	7	8	10	)
+tsp(5	7	10	4	8	)	cost: 11.04
+	seq sol(4	10	8	7	5	)	cost sol: 11.39
+
+
+clust(2	4	8	10	)
+tsp(2	4	10	8	)	cost: 8.07
+	seq sol(2	4	10	8	)	cost sol: 8.07
+
+
+twacost: 6.48666	tspcost: 6.37
+----
+clust(4	5	7	8	10	)
+tsp(5	7	10	4	8	)	cost: 11.04
+	seq sol(4	10	8	7	5	)	cost sol: 11.39
+
+
+clust(2	4	8	10	)
+tsp(2	4	10	8	)	cost: 8.07
+	seq sol(2	4	10	8	)	cost sol: 8.07
+
+
+twacost: 6.48666	tspcost: 6.37
+----
+clust(4	5	7	8	10	)
+tsp(5	7	10	4	8	)	cost: 11.04
+	seq sol(4	10	8	7	5	)	cost sol: 11.39
+
+
+clust(2	4	8	10	)
+tsp(2	4	10	8	)	cost: 8.07
+	seq sol(2	4	10	8	)	cost sol: 8.07
+
+
+twacost: 6.48666	tspcost: 6.37
+----
+clust(4	5	7	8	10	)
+tsp(5	7	10	4	8	)	cost: 11.04
+	seq sol(4	10	8	7	5	)	cost sol: 11.39
+
+
+clust(2	4	8	10	)
+tsp(2	4	10	8	)	cost: 8.07
+	seq sol(2	4	10	8	)	cost sol: 8.07
+
+
+twacost: 6.48666	tspcost: 6.37
+----
+clust(4	5	7	8	10	)
+tsp(5	7	10	4	8	)	cost: 11.04
+	seq sol(4	10	8	7	5	)	cost sol: 11.39
+
+
+clust(2	4	8	10	)
+tsp(2	4	10	8	)	cost: 8.07
+	seq sol(2	4	10	8	)	cost sol: 8.07
+
+
+twacost: 6.48666	tspcost: 6.37
+*****(y) 0 (y)****
+pairs cut
+*******(g) 0 (g)********

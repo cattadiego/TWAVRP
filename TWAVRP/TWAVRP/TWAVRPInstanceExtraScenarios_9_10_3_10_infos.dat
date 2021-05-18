@@ -1,0 +1,792 @@
+******* 0 ********
+lb: 19.893	cost: 319.96	ub: 319.96
+s0_c436
+clust(1	6	10	)	tsp(1	6	10	)	quantity: 12	cost: 7.04
+	seq in sol()	cost sol:0
+
+s0_c467
+clust(2	3	4	5	7	8	9	)	tsp(2	3	9	5	8	4	7	)	quantity: 30	cost: 11.51
+	seq in sol(7	4	8	5	2	3	9	)	cost sol:15.92
+
+s1_c78
+clust(1	2	3	6	9	)	tsp(2	9	1	3	6	)	quantity: 29	cost: 8.37
+	seq in sol()	cost sol:0
+
+s1_c836
+clust(4	5	7	8	10	)	tsp(5	8	4	7	10	)	quantity: 28	cost: 10.48
+	seq in sol()	cost sol:0
+
+s2_c298
+clust(1	3	6	)	tsp(1	3	6	)	quantity: 29	cost: 6.24
+	seq in sol()	cost sol:0
+
+s2_c660
+clust(2	5	9	)	tsp(2	9	5	)	quantity: 26	cost: 7.16
+	seq in sol()	cost sol:0
+
+s2_c867
+clust(4	7	8	10	)	tsp(8	4	7	10	)	quantity: 29	cost: 9.8
+	seq in sol()	cost sol:0
+
+s3_c326
+clust(1	3	9	)	tsp(3	1	9	)	quantity: 23	cost: 6.95
+	seq in sol()	cost sol:0
+
+s3_c656
+clust(2	5	8	)	tsp(2	5	8	)	quantity: 22	cost: 7.05
+	seq in sol()	cost sol:0
+
+s3_c855
+clust(4	6	7	10	)	tsp(4	7	10	6	)	quantity: 25	cost: 8.27
+	seq in sol()	cost sol:0
+
+s4_c93
+clust(1	2	3	9	)	tsp(2	9	1	3	)	quantity: 26	cost: 6.95
+	seq in sol()	cost sol:0
+
+s4_c821
+clust(4	5	6	7	8	10	)	tsp(5	8	4	7	10	6	)	quantity: 30	cost: 11.65
+	seq in sol()	cost sol:0
+
+s5_c93
+clust(1	2	3	9	)	tsp(2	9	1	3	)	quantity: 26	cost: 6.95
+	seq in sol()	cost sol:0
+
+s5_c821
+clust(4	5	6	7	8	10	)	tsp(5	8	4	7	10	6	)	quantity: 30	cost: 11.65
+	seq in sol()	cost sol:0
+
+s6_c93
+clust(1	2	3	9	)	tsp(2	9	1	3	)	quantity: 27	cost: 6.95
+	seq in sol()	cost sol:0
+
+s6_c836
+clust(4	5	7	8	10	)	tsp(5	8	4	7	10	)	quantity: 28	cost: 10.48
+	seq in sol()	cost sol:0
+
+s6_c910
+clust(6	)	tsp(6	)	quantity: 6	cost: 3.22
+	seq in sol()	cost sol:0
+
+s7_c93
+clust(1	2	3	9	)	tsp(2	9	1	3	)	quantity: 20	cost: 6.95
+	seq in sol()	cost sol:0
+
+s7_c821
+clust(4	5	6	7	8	10	)	tsp(5	8	4	7	10	6	)	quantity: 23	cost: 11.65
+	seq in sol()	cost sol:0
+
+s8_c436
+clust(1	6	10	)	tsp(1	6	10	)	quantity: 11	cost: 7.04
+	seq in sol()	cost sol:0
+
+s8_c467
+clust(2	3	4	5	7	8	9	)	tsp(2	3	9	5	8	4	7	)	quantity: 30	cost: 11.51
+	seq in sol(7	4	8	5	2	3	9	)	cost sol:15.92
+
+s9_c93
+clust(1	2	3	9	)	tsp(2	9	1	3	)	quantity: 30	cost: 6.95
+	seq in sol()	cost sol:0
+
+s9_c855
+clust(4	6	7	10	)	tsp(4	7	10	6	)	quantity: 25	cost: 8.27
+	seq in sol()	cost sol:0
+
+s9_c903
+clust(5	8	)	tsp(5	8	)	quantity: 15	cost: 5.84
+	seq in sol()	cost sol:0
+
+
+******* 1 ********
+lb: 19.988	cost: 22.323	ub: 22.323
+s0_c267
+clust(1	3	5	)	tsp(3	1	5	)	quantity: 14	cost: 7.25
+	seq in sol(5	1	3	)	cost sol:7.25
+
+s0_c604
+clust(2	4	6	7	8	9	10	)	tsp(2	9	8	4	7	10	6	)	quantity: 28	cost: 11.55
+	seq in sol(8	4	7	10	6	2	9	)	cost sol:15.92
+
+s1_c78
+clust(1	2	3	6	9	)	tsp(2	9	1	3	6	)	quantity: 29	cost: 8.37
+	seq in sol(1	3	6	2	9	)	cost sol:11.19
+
+s1_c836
+clust(4	5	7	8	10	)	tsp(5	8	4	7	10	)	quantity: 28	cost: 10.48
+	seq in sol(5	8	4	7	10	)	cost sol:10.48
+
+s2_c298
+clust(1	3	6	)	tsp(1	3	6	)	quantity: 29	cost: 6.24
+	seq in sol(1	3	6	)	cost sol:6.24
+
+s2_c660
+clust(2	5	9	)	tsp(2	9	5	)	quantity: 26	cost: 7.16
+	seq in sol(5	2	9	)	cost sol:7.77
+
+s2_c867
+clust(4	7	8	10	)	tsp(8	4	7	10	)	quantity: 29	cost: 9.8
+	seq in sol(8	4	7	10	)	cost sol:9.8
+
+s3_c326
+clust(1	3	9	)	tsp(3	1	9	)	quantity: 23	cost: 6.95
+	seq in sol(3	1	9	)	cost sol:6.95
+
+s3_c656
+clust(2	5	8	)	tsp(2	5	8	)	quantity: 22	cost: 7.05
+	seq in sol(8	5	2	)	cost sol:7.05
+
+s3_c855
+clust(4	6	7	10	)	tsp(4	7	10	6	)	quantity: 25	cost: 8.27
+	seq in sol(4	7	10	6	)	cost sol:8.27
+
+s4_c78
+clust(1	2	3	6	9	)	tsp(2	9	1	3	6	)	quantity: 30	cost: 8.37
+	seq in sol(1	3	6	2	9	)	cost sol:11.19
+
+s4_c836
+clust(4	5	7	8	10	)	tsp(5	8	4	7	10	)	quantity: 26	cost: 10.48
+	seq in sol(5	8	4	7	10	)	cost sol:10.48
+
+s5_c93
+clust(1	2	3	9	)	tsp(2	9	1	3	)	quantity: 26	cost: 6.95
+	seq in sol(3	1	2	9	)	cost sol:8.28
+
+s5_c821
+clust(4	5	6	7	8	10	)	tsp(5	8	4	7	10	6	)	quantity: 30	cost: 11.65
+	seq in sol(5	8	4	7	10	6	)	cost sol:11.65
+
+s6_c93
+clust(1	2	3	9	)	tsp(2	9	1	3	)	quantity: 27	cost: 6.95
+	seq in sol(3	1	2	9	)	cost sol:8.28
+
+s6_c836
+clust(4	5	7	8	10	)	tsp(5	8	4	7	10	)	quantity: 28	cost: 10.48
+	seq in sol(5	8	4	7	10	)	cost sol:10.48
+
+s6_c910
+clust(6	)	tsp(6	)	quantity: 6	cost: 3.22
+	seq in sol(6	)	cost sol:3.22
+
+s7_c267
+clust(1	3	5	)	tsp(3	1	5	)	quantity: 17	cost: 7.25
+	seq in sol(5	1	3	)	cost sol:7.25
+
+s7_c604
+clust(2	4	6	7	8	9	10	)	tsp(2	9	8	4	7	10	6	)	quantity: 26	cost: 11.55
+	seq in sol(8	4	7	10	6	2	9	)	cost sol:15.92
+
+s8_c267
+clust(1	3	5	)	tsp(3	1	5	)	quantity: 14	cost: 7.25
+	seq in sol(5	1	3	)	cost sol:7.25
+
+s8_c604
+clust(2	4	6	7	8	9	10	)	tsp(2	9	8	4	7	10	6	)	quantity: 27	cost: 11.55
+	seq in sol(8	4	7	10	6	2	9	)	cost sol:15.92
+
+s9_c93
+clust(1	2	3	9	)	tsp(2	9	1	3	)	quantity: 30	cost: 6.95
+	seq in sol(3	1	2	9	)	cost sol:8.28
+
+s9_c855
+clust(4	6	7	10	)	tsp(4	7	10	6	)	quantity: 25	cost: 8.27
+	seq in sol(4	7	10	6	)	cost sol:8.27
+
+s9_c903
+clust(5	8	)	tsp(5	8	)	quantity: 15	cost: 5.84
+	seq in sol(5	8	)	cost sol:5.84
+
+
+******* 2 ********
+lb: 20.069	cost: 19.978	ub: 19.978
+s0_c93
+clust(1	2	3	9	)	tsp(2	9	1	3	)	quantity: 18	cost: 6.95
+	seq in sol(3	1	9	2	)	cost sol:6.95
+
+s0_c821
+clust(4	5	6	7	8	10	)	tsp(5	8	4	7	10	6	)	quantity: 24	cost: 11.65
+	seq in sol(6	10	7	4	8	5	)	cost sol:11.65
+
+s1_c78
+clust(1	2	3	6	9	)	tsp(2	9	1	3	6	)	quantity: 29	cost: 8.37
+	seq in sol(6	3	1	9	2	)	cost sol:8.37
+
+s1_c836
+clust(4	5	7	8	10	)	tsp(5	8	4	7	10	)	quantity: 28	cost: 10.48
+	seq in sol(10	7	4	8	5	)	cost sol:10.48
+
+s2_c298
+clust(1	3	6	)	tsp(1	3	6	)	quantity: 29	cost: 6.24
+	seq in sol(6	3	1	)	cost sol:6.24
+
+s2_c660
+clust(2	5	9	)	tsp(2	9	5	)	quantity: 26	cost: 7.16
+	seq in sol(2	9	5	)	cost sol:7.16
+
+s2_c867
+clust(4	7	8	10	)	tsp(8	4	7	10	)	quantity: 29	cost: 9.8
+	seq in sol(10	7	4	8	)	cost sol:9.8
+
+s3_c326
+clust(1	3	9	)	tsp(3	1	9	)	quantity: 23	cost: 6.95
+	seq in sol(3	1	9	)	cost sol:6.95
+
+s3_c656
+clust(2	5	8	)	tsp(2	5	8	)	quantity: 22	cost: 7.05
+	seq in sol(2	5	8	)	cost sol:7.05
+
+s3_c855
+clust(4	6	7	10	)	tsp(4	7	10	6	)	quantity: 25	cost: 8.27
+	seq in sol(6	10	7	4	)	cost sol:8.27
+
+s4_c93
+clust(1	2	3	9	)	tsp(2	9	1	3	)	quantity: 26	cost: 6.95
+	seq in sol(3	1	9	2	)	cost sol:6.95
+
+s4_c821
+clust(4	5	6	7	8	10	)	tsp(5	8	4	7	10	6	)	quantity: 30	cost: 11.65
+	seq in sol(6	10	7	4	8	5	)	cost sol:11.65
+
+s5_c78
+clust(1	2	3	6	9	)	tsp(2	9	1	3	6	)	quantity: 30	cost: 8.37
+	seq in sol(6	3	1	9	2	)	cost sol:8.37
+
+s5_c836
+clust(4	5	7	8	10	)	tsp(5	8	4	7	10	)	quantity: 26	cost: 10.48
+	seq in sol(10	7	4	8	5	)	cost sol:10.48
+
+s6_c93
+clust(1	2	3	9	)	tsp(2	9	1	3	)	quantity: 27	cost: 6.95
+	seq in sol(3	1	9	2	)	cost sol:6.95
+
+s6_c836
+clust(4	5	7	8	10	)	tsp(5	8	4	7	10	)	quantity: 28	cost: 10.48
+	seq in sol(10	7	4	8	5	)	cost sol:10.48
+
+s6_c910
+clust(6	)	tsp(6	)	quantity: 6	cost: 3.22
+	seq in sol(6	)	cost sol:3.22
+
+s7_c78
+clust(1	2	3	6	9	)	tsp(2	9	1	3	6	)	quantity: 22	cost: 8.37
+	seq in sol(6	3	1	9	2	)	cost sol:8.37
+
+s7_c836
+clust(4	5	7	8	10	)	tsp(5	8	4	7	10	)	quantity: 21	cost: 10.48
+	seq in sol(10	7	4	8	5	)	cost sol:10.48
+
+s8_c78
+clust(1	2	3	6	9	)	tsp(2	9	1	3	6	)	quantity: 22	cost: 8.37
+	seq in sol(6	3	1	9	2	)	cost sol:8.37
+
+s8_c836
+clust(4	5	7	8	10	)	tsp(5	8	4	7	10	)	quantity: 19	cost: 10.48
+	seq in sol(10	7	4	8	5	)	cost sol:10.48
+
+s9_c93
+clust(1	2	3	9	)	tsp(2	9	1	3	)	quantity: 30	cost: 6.95
+	seq in sol(3	1	9	2	)	cost sol:6.95
+
+s9_c855
+clust(4	6	7	10	)	tsp(4	7	10	6	)	quantity: 25	cost: 8.27
+	seq in sol(6	10	7	4	)	cost sol:8.27
+
+s9_c903
+clust(5	8	)	tsp(5	8	)	quantity: 15	cost: 5.84
+	seq in sol(8	5	)	cost sol:5.84
+
+
+******* 0 ********
+lb: 19.903	cost: 19.903	ub: 19.903
+s0_c94
+clust(1	2	3	9	)	tsp(2	9	1	3	)	quantity: 18	cost: 6.95
+	seq in sol(2	9	1	3	)	cost sol:6.95
+
+s0_c825
+clust(4	5	6	7	8	10	)	tsp(5	8	4	7	10	6	)	quantity: 24	cost: 11.65
+	seq in sol(5	8	4	7	10	6	)	cost sol:11.65
+
+s1_c79
+clust(1	2	3	6	9	)	tsp(2	9	1	3	6	)	quantity: 29	cost: 8.37
+	seq in sol(2	9	1	3	6	)	cost sol:8.37
+
+s1_c840
+clust(4	5	7	8	10	)	tsp(5	8	4	7	10	)	quantity: 28	cost: 10.48
+	seq in sol(5	8	4	7	10	)	cost sol:10.48
+
+s2_c300
+clust(1	3	6	)	tsp(1	3	6	)	quantity: 29	cost: 6.24
+	seq in sol(1	3	6	)	cost sol:6.24
+
+s2_c664
+clust(2	5	9	)	tsp(2	9	5	)	quantity: 26	cost: 7.16
+	seq in sol(5	9	2	)	cost sol:7.16
+
+s2_c871
+clust(4	7	8	10	)	tsp(8	4	7	10	)	quantity: 29	cost: 9.8
+	seq in sol(8	4	7	10	)	cost sol:9.8
+
+s3_c328
+clust(1	3	9	)	tsp(3	1	9	)	quantity: 23	cost: 6.95
+	seq in sol(9	1	3	)	cost sol:6.95
+
+s3_c660
+clust(2	5	8	)	tsp(2	5	8	)	quantity: 22	cost: 7.05
+	seq in sol(8	5	2	)	cost sol:7.05
+
+s3_c859
+clust(4	6	7	10	)	tsp(4	7	10	6	)	quantity: 25	cost: 8.27
+	seq in sol(4	7	10	6	)	cost sol:8.27
+
+s4_c94
+clust(1	2	3	9	)	tsp(2	9	1	3	)	quantity: 26	cost: 6.95
+	seq in sol(2	9	1	3	)	cost sol:6.95
+
+s4_c825
+clust(4	5	6	7	8	10	)	tsp(5	8	4	7	10	6	)	quantity: 30	cost: 11.65
+	seq in sol(5	8	4	7	10	6	)	cost sol:11.65
+
+s5_c94
+clust(1	2	3	9	)	tsp(2	9	1	3	)	quantity: 26	cost: 6.95
+	seq in sol(2	9	1	3	)	cost sol:6.95
+
+s5_c825
+clust(4	5	6	7	8	10	)	tsp(5	8	4	7	10	6	)	quantity: 30	cost: 11.65
+	seq in sol(5	8	4	7	10	6	)	cost sol:11.65
+
+s6_c94
+clust(1	2	3	9	)	tsp(2	9	1	3	)	quantity: 27	cost: 6.95
+	seq in sol(2	9	1	3	)	cost sol:6.95
+
+s6_c840
+clust(4	5	7	8	10	)	tsp(5	8	4	7	10	)	quantity: 28	cost: 10.48
+	seq in sol(5	8	4	7	10	)	cost sol:10.48
+
+s6_c914
+clust(6	)	tsp(6	)	quantity: 6	cost: 3.22
+	seq in sol(6	)	cost sol:3.22
+
+s7_c94
+clust(1	2	3	9	)	tsp(2	9	1	3	)	quantity: 20	cost: 6.95
+	seq in sol(2	9	1	3	)	cost sol:6.95
+
+s7_c825
+clust(4	5	6	7	8	10	)	tsp(5	8	4	7	10	6	)	quantity: 23	cost: 11.65
+	seq in sol(5	8	4	7	10	6	)	cost sol:11.65
+
+s8_c94
+clust(1	2	3	9	)	tsp(2	9	1	3	)	quantity: 19	cost: 6.95
+	seq in sol(2	9	1	3	)	cost sol:6.95
+
+s8_c825
+clust(4	5	6	7	8	10	)	tsp(5	8	4	7	10	6	)	quantity: 22	cost: 11.65
+	seq in sol(5	8	4	7	10	6	)	cost sol:11.65
+
+s9_c94
+clust(1	2	3	9	)	tsp(2	9	1	3	)	quantity: 30	cost: 6.95
+	seq in sol(2	9	1	3	)	cost sol:6.95
+
+s9_c859
+clust(4	6	7	10	)	tsp(4	7	10	6	)	quantity: 25	cost: 8.27
+	seq in sol(4	7	10	6	)	cost sol:8.27
+
+s9_c907
+clust(5	8	)	tsp(5	8	)	quantity: 15	cost: 5.84
+	seq in sol(8	5	)	cost sol:5.84
+
+
+******* 0 ********
+lb: 19.159	cost: 22.149	ub: 22.149
+s0_c269
+clust(1	3	5	)	tsp(3	1	5	)	quantity: 14	cost: 7.25
+	seq in sol(5	1	3	)	cost sol:7.25
+
+s0_c608
+clust(2	4	6	7	8	9	10	)	tsp(2	9	8	4	7	10	6	)	quantity: 28	cost: 8.87
+	seq in sol(8	4	7	10	6	2	9	)	cost sol:15.92
+
+s1_c79
+clust(1	2	3	6	9	)	tsp(2	9	1	3	6	)	quantity: 29	cost: 8.37
+	seq in sol(1	3	6	2	9	)	cost sol:11.19
+
+s1_c840
+clust(4	5	7	8	10	)	tsp(5	8	4	7	10	)	quantity: 28	cost: 10.48
+	seq in sol(5	8	4	7	10	)	cost sol:10.48
+
+s2_c300
+clust(1	3	6	)	tsp(1	3	6	)	quantity: 29	cost: 6.24
+	seq in sol(1	3	6	)	cost sol:6.24
+
+s2_c664
+clust(2	5	9	)	tsp(2	9	5	)	quantity: 26	cost: 7.16
+	seq in sol(5	2	9	)	cost sol:7.77
+
+s2_c871
+clust(4	7	8	10	)	tsp(8	4	7	10	)	quantity: 29	cost: 9.8
+	seq in sol(8	4	7	10	)	cost sol:9.8
+
+s3_c328
+clust(1	3	9	)	tsp(3	1	9	)	quantity: 23	cost: 6.95
+	seq in sol(3	1	9	)	cost sol:6.95
+
+s3_c660
+clust(2	5	8	)	tsp(2	5	8	)	quantity: 22	cost: 7.05
+	seq in sol(8	5	2	)	cost sol:7.05
+
+s3_c859
+clust(4	6	7	10	)	tsp(4	7	10	6	)	quantity: 25	cost: 8.27
+	seq in sol(4	7	10	6	)	cost sol:8.27
+
+s4_c94
+clust(1	2	3	9	)	tsp(2	9	1	3	)	quantity: 26	cost: 6.95
+	seq in sol(3	1	2	9	)	cost sol:8.28
+
+s4_c825
+clust(4	5	6	7	8	10	)	tsp(5	8	4	7	10	6	)	quantity: 30	cost: 11.65
+	seq in sol(5	8	4	7	10	6	)	cost sol:11.65
+
+s5_c94
+clust(1	2	3	9	)	tsp(2	9	1	3	)	quantity: 26	cost: 6.95
+	seq in sol(3	1	2	9	)	cost sol:8.28
+
+s5_c825
+clust(4	5	6	7	8	10	)	tsp(5	8	4	7	10	6	)	quantity: 30	cost: 11.65
+	seq in sol(5	8	4	7	10	6	)	cost sol:11.65
+
+s6_c94
+clust(1	2	3	9	)	tsp(2	9	1	3	)	quantity: 27	cost: 6.95
+	seq in sol(3	1	2	9	)	cost sol:8.28
+
+s6_c840
+clust(4	5	7	8	10	)	tsp(5	8	4	7	10	)	quantity: 28	cost: 10.48
+	seq in sol(5	8	4	7	10	)	cost sol:10.48
+
+s6_c914
+clust(6	)	tsp(6	)	quantity: 6	cost: 3.22
+	seq in sol(6	)	cost sol:3.22
+
+s7_c269
+clust(1	3	5	)	tsp(3	1	5	)	quantity: 17	cost: 7.25
+	seq in sol(5	1	3	)	cost sol:7.25
+
+s7_c608
+clust(2	4	6	7	8	9	10	)	tsp(2	9	8	4	7	10	6	)	quantity: 26	cost: 8.87
+	seq in sol(8	4	7	10	6	2	9	)	cost sol:15.92
+
+s8_c269
+clust(1	3	5	)	tsp(3	1	5	)	quantity: 14	cost: 7.25
+	seq in sol(5	1	3	)	cost sol:7.25
+
+s8_c608
+clust(2	4	6	7	8	9	10	)	tsp(2	9	8	4	7	10	6	)	quantity: 27	cost: 8.87
+	seq in sol(8	4	7	10	6	2	9	)	cost sol:15.92
+
+s9_c94
+clust(1	2	3	9	)	tsp(2	9	1	3	)	quantity: 30	cost: 6.95
+	seq in sol(3	1	2	9	)	cost sol:8.28
+
+s9_c859
+clust(4	6	7	10	)	tsp(4	7	10	6	)	quantity: 25	cost: 8.27
+	seq in sol(4	7	10	6	)	cost sol:8.27
+
+s9_c907
+clust(5	8	)	tsp(5	8	)	quantity: 15	cost: 5.84
+	seq in sol(5	8	)	cost sol:5.84
+
+
+******* 1 ********
+lb: 19.903	cost: 19.903	ub: 19.903
+s0_c94
+clust(1	2	3	9	)	tsp(2	9	1	3	)	quantity: 18	cost: 6.95
+	seq in sol(2	9	1	3	)	cost sol:6.95
+
+s0_c825
+clust(4	5	6	7	8	10	)	tsp(5	8	4	7	10	6	)	quantity: 24	cost: 11.65
+	seq in sol(5	8	4	7	10	6	)	cost sol:11.65
+
+s1_c79
+clust(1	2	3	6	9	)	tsp(2	9	1	3	6	)	quantity: 29	cost: 8.37
+	seq in sol(2	9	1	3	6	)	cost sol:8.37
+
+s1_c840
+clust(4	5	7	8	10	)	tsp(5	8	4	7	10	)	quantity: 28	cost: 10.48
+	seq in sol(5	8	4	7	10	)	cost sol:10.48
+
+s2_c300
+clust(1	3	6	)	tsp(1	3	6	)	quantity: 29	cost: 6.24
+	seq in sol(1	3	6	)	cost sol:6.24
+
+s2_c664
+clust(2	5	9	)	tsp(2	9	5	)	quantity: 26	cost: 7.16
+	seq in sol(5	9	2	)	cost sol:7.16
+
+s2_c871
+clust(4	7	8	10	)	tsp(8	4	7	10	)	quantity: 29	cost: 9.8
+	seq in sol(8	4	7	10	)	cost sol:9.8
+
+s3_c328
+clust(1	3	9	)	tsp(3	1	9	)	quantity: 23	cost: 6.95
+	seq in sol(9	1	3	)	cost sol:6.95
+
+s3_c660
+clust(2	5	8	)	tsp(2	5	8	)	quantity: 22	cost: 7.05
+	seq in sol(8	5	2	)	cost sol:7.05
+
+s3_c859
+clust(4	6	7	10	)	tsp(4	7	10	6	)	quantity: 25	cost: 8.27
+	seq in sol(4	7	10	6	)	cost sol:8.27
+
+s4_c94
+clust(1	2	3	9	)	tsp(2	9	1	3	)	quantity: 26	cost: 6.95
+	seq in sol(2	9	1	3	)	cost sol:6.95
+
+s4_c825
+clust(4	5	6	7	8	10	)	tsp(5	8	4	7	10	6	)	quantity: 30	cost: 11.65
+	seq in sol(5	8	4	7	10	6	)	cost sol:11.65
+
+s5_c94
+clust(1	2	3	9	)	tsp(2	9	1	3	)	quantity: 26	cost: 6.95
+	seq in sol(2	9	1	3	)	cost sol:6.95
+
+s5_c825
+clust(4	5	6	7	8	10	)	tsp(5	8	4	7	10	6	)	quantity: 30	cost: 11.65
+	seq in sol(5	8	4	7	10	6	)	cost sol:11.65
+
+s6_c94
+clust(1	2	3	9	)	tsp(2	9	1	3	)	quantity: 27	cost: 6.95
+	seq in sol(2	9	1	3	)	cost sol:6.95
+
+s6_c840
+clust(4	5	7	8	10	)	tsp(5	8	4	7	10	)	quantity: 28	cost: 10.48
+	seq in sol(5	8	4	7	10	)	cost sol:10.48
+
+s6_c914
+clust(6	)	tsp(6	)	quantity: 6	cost: 3.22
+	seq in sol(6	)	cost sol:3.22
+
+s7_c94
+clust(1	2	3	9	)	tsp(2	9	1	3	)	quantity: 20	cost: 6.95
+	seq in sol(2	9	1	3	)	cost sol:6.95
+
+s7_c825
+clust(4	5	6	7	8	10	)	tsp(5	8	4	7	10	6	)	quantity: 23	cost: 11.65
+	seq in sol(5	8	4	7	10	6	)	cost sol:11.65
+
+s8_c94
+clust(1	2	3	9	)	tsp(2	9	1	3	)	quantity: 19	cost: 6.95
+	seq in sol(2	9	1	3	)	cost sol:6.95
+
+s8_c825
+clust(4	5	6	7	8	10	)	tsp(5	8	4	7	10	6	)	quantity: 22	cost: 11.65
+	seq in sol(5	8	4	7	10	6	)	cost sol:11.65
+
+s9_c94
+clust(1	2	3	9	)	tsp(2	9	1	3	)	quantity: 30	cost: 6.95
+	seq in sol(2	9	1	3	)	cost sol:6.95
+
+s9_c859
+clust(4	6	7	10	)	tsp(4	7	10	6	)	quantity: 25	cost: 8.27
+	seq in sol(4	7	10	6	)	cost sol:8.27
+
+s9_c907
+clust(5	8	)	tsp(5	8	)	quantity: 15	cost: 5.84
+	seq in sol(8	5	)	cost sol:5.84
+
+
+******* 0 ********
+lb: 19.903	cost: 19.903	ub: 19.903
+s0_c94
+clust(1	2	3	9	)	tsp(2	9	1	3	)	quantity: 18	cost: 6.95
+	seq in sol(2	9	1	3	)	cost sol:6.95
+
+s0_c825
+clust(4	5	6	7	8	10	)	tsp(5	8	4	7	10	6	)	quantity: 24	cost: 11.65
+	seq in sol(5	8	4	7	10	6	)	cost sol:11.65
+
+s1_c79
+clust(1	2	3	6	9	)	tsp(2	9	1	3	6	)	quantity: 29	cost: 8.37
+	seq in sol(2	9	1	3	6	)	cost sol:8.37
+
+s1_c840
+clust(4	5	7	8	10	)	tsp(5	8	4	7	10	)	quantity: 28	cost: 10.48
+	seq in sol(5	8	4	7	10	)	cost sol:10.48
+
+s2_c300
+clust(1	3	6	)	tsp(1	3	6	)	quantity: 29	cost: 6.24
+	seq in sol(1	3	6	)	cost sol:6.24
+
+s2_c664
+clust(2	5	9	)	tsp(2	9	5	)	quantity: 26	cost: 7.16
+	seq in sol(5	9	2	)	cost sol:7.16
+
+s2_c871
+clust(4	7	8	10	)	tsp(8	4	7	10	)	quantity: 29	cost: 9.8
+	seq in sol(8	4	7	10	)	cost sol:9.8
+
+s3_c328
+clust(1	3	9	)	tsp(3	1	9	)	quantity: 23	cost: 6.95
+	seq in sol(9	1	3	)	cost sol:6.95
+
+s3_c660
+clust(2	5	8	)	tsp(2	5	8	)	quantity: 22	cost: 7.05
+	seq in sol(8	5	2	)	cost sol:7.05
+
+s3_c859
+clust(4	6	7	10	)	tsp(4	7	10	6	)	quantity: 25	cost: 8.27
+	seq in sol(4	7	10	6	)	cost sol:8.27
+
+s4_c94
+clust(1	2	3	9	)	tsp(2	9	1	3	)	quantity: 26	cost: 6.95
+	seq in sol(2	9	1	3	)	cost sol:6.95
+
+s4_c825
+clust(4	5	6	7	8	10	)	tsp(5	8	4	7	10	6	)	quantity: 30	cost: 11.65
+	seq in sol(5	8	4	7	10	6	)	cost sol:11.65
+
+s5_c94
+clust(1	2	3	9	)	tsp(2	9	1	3	)	quantity: 26	cost: 6.95
+	seq in sol(2	9	1	3	)	cost sol:6.95
+
+s5_c825
+clust(4	5	6	7	8	10	)	tsp(5	8	4	7	10	6	)	quantity: 30	cost: 11.65
+	seq in sol(5	8	4	7	10	6	)	cost sol:11.65
+
+s6_c94
+clust(1	2	3	9	)	tsp(2	9	1	3	)	quantity: 27	cost: 6.95
+	seq in sol(2	9	1	3	)	cost sol:6.95
+
+s6_c840
+clust(4	5	7	8	10	)	tsp(5	8	4	7	10	)	quantity: 28	cost: 10.48
+	seq in sol(5	8	4	7	10	)	cost sol:10.48
+
+s6_c914
+clust(6	)	tsp(6	)	quantity: 6	cost: 3.22
+	seq in sol(6	)	cost sol:3.22
+
+s7_c94
+clust(1	2	3	9	)	tsp(2	9	1	3	)	quantity: 20	cost: 6.95
+	seq in sol(2	9	1	3	)	cost sol:6.95
+
+s7_c825
+clust(4	5	6	7	8	10	)	tsp(5	8	4	7	10	6	)	quantity: 23	cost: 11.65
+	seq in sol(5	8	4	7	10	6	)	cost sol:11.65
+
+s8_c94
+clust(1	2	3	9	)	tsp(2	9	1	3	)	quantity: 19	cost: 6.95
+	seq in sol(2	9	1	3	)	cost sol:6.95
+
+s8_c825
+clust(4	5	6	7	8	10	)	tsp(5	8	4	7	10	6	)	quantity: 22	cost: 11.65
+	seq in sol(5	8	4	7	10	6	)	cost sol:11.65
+
+s9_c94
+clust(1	2	3	9	)	tsp(2	9	1	3	)	quantity: 30	cost: 6.95
+	seq in sol(2	9	1	3	)	cost sol:6.95
+
+s9_c859
+clust(4	6	7	10	)	tsp(4	7	10	6	)	quantity: 25	cost: 8.27
+	seq in sol(4	7	10	6	)	cost sol:8.27
+
+s9_c907
+clust(5	8	)	tsp(5	8	)	quantity: 15	cost: 5.84
+	seq in sol(8	5	)	cost sol:5.84
+
+
+******* 0 ********
+lb: 19.903	cost: 19.903	ub: 19.903
+s0_c91
+clust(1	2	3	9	)	tsp(2	9	1	3	)	quantity: 18	cost: 6.95
+	seq in sol(2	9	1	3	)	cost sol:6.95
+
+s0_c807
+clust(4	5	6	7	8	10	)	tsp(5	8	4	7	10	6	)	quantity: 24	cost: 11.65
+	seq in sol(5	8	4	7	10	6	)	cost sol:11.65
+
+s1_c76
+clust(1	2	3	6	9	)	tsp(2	9	1	3	6	)	quantity: 29	cost: 8.37
+	seq in sol(2	9	1	3	6	)	cost sol:8.37
+
+s1_c822
+clust(4	5	7	8	10	)	tsp(5	8	4	7	10	)	quantity: 28	cost: 10.48
+	seq in sol(5	8	4	7	10	)	cost sol:10.48
+
+s2_c292
+clust(1	3	6	)	tsp(1	3	6	)	quantity: 29	cost: 6.24
+	seq in sol(1	3	6	)	cost sol:6.24
+
+s2_c647
+clust(2	5	9	)	tsp(2	9	5	)	quantity: 26	cost: 7.16
+	seq in sol(5	9	2	)	cost sol:7.16
+
+s2_c853
+clust(4	7	8	10	)	tsp(8	4	7	10	)	quantity: 29	cost: 9.8
+	seq in sol(8	4	7	10	)	cost sol:9.8
+
+s3_c320
+clust(1	3	9	)	tsp(3	1	9	)	quantity: 23	cost: 6.95
+	seq in sol(9	1	3	)	cost sol:6.95
+
+s3_c643
+clust(2	5	8	)	tsp(2	5	8	)	quantity: 22	cost: 7.05
+	seq in sol(8	5	2	)	cost sol:7.05
+
+s3_c841
+clust(4	6	7	10	)	tsp(4	7	10	6	)	quantity: 25	cost: 8.27
+	seq in sol(4	7	10	6	)	cost sol:8.27
+
+s4_c91
+clust(1	2	3	9	)	tsp(2	9	1	3	)	quantity: 26	cost: 6.95
+	seq in sol(2	9	1	3	)	cost sol:6.95
+
+s4_c807
+clust(4	5	6	7	8	10	)	tsp(5	8	4	7	10	6	)	quantity: 30	cost: 11.65
+	seq in sol(5	8	4	7	10	6	)	cost sol:11.65
+
+s5_c91
+clust(1	2	3	9	)	tsp(2	9	1	3	)	quantity: 26	cost: 6.95
+	seq in sol(2	9	1	3	)	cost sol:6.95
+
+s5_c807
+clust(4	5	6	7	8	10	)	tsp(5	8	4	7	10	6	)	quantity: 30	cost: 11.65
+	seq in sol(5	8	4	7	10	6	)	cost sol:11.65
+
+s6_c91
+clust(1	2	3	9	)	tsp(2	9	1	3	)	quantity: 27	cost: 6.95
+	seq in sol(2	9	1	3	)	cost sol:6.95
+
+s6_c822
+clust(4	5	7	8	10	)	tsp(5	8	4	7	10	)	quantity: 28	cost: 10.48
+	seq in sol(5	8	4	7	10	)	cost sol:10.48
+
+s6_c896
+clust(6	)	tsp(6	)	quantity: 6	cost: 3.22
+	seq in sol(6	)	cost sol:3.22
+
+s7_c91
+clust(1	2	3	9	)	tsp(2	9	1	3	)	quantity: 20	cost: 6.95
+	seq in sol(2	9	1	3	)	cost sol:6.95
+
+s7_c807
+clust(4	5	6	7	8	10	)	tsp(5	8	4	7	10	6	)	quantity: 23	cost: 11.65
+	seq in sol(5	8	4	7	10	6	)	cost sol:11.65
+
+s8_c91
+clust(1	2	3	9	)	tsp(2	9	1	3	)	quantity: 19	cost: 6.95
+	seq in sol(2	9	1	3	)	cost sol:6.95
+
+s8_c807
+clust(4	5	6	7	8	10	)	tsp(5	8	4	7	10	6	)	quantity: 22	cost: 11.65
+	seq in sol(5	8	4	7	10	6	)	cost sol:11.65
+
+s9_c91
+clust(1	2	3	9	)	tsp(2	9	1	3	)	quantity: 30	cost: 6.95
+	seq in sol(2	9	1	3	)	cost sol:6.95
+
+s9_c841
+clust(4	6	7	10	)	tsp(4	7	10	6	)	quantity: 25	cost: 8.27
+	seq in sol(4	7	10	6	)	cost sol:8.27
+
+s9_c889
+clust(5	8	)	tsp(5	8	)	quantity: 15	cost: 5.84
+	seq in sol(8	5	)	cost sol:5.84
+
+

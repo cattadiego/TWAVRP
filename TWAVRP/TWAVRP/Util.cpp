@@ -29,3 +29,24 @@ vector<vector<int>> subsets(vector<int>& A)
 
 	return res;
 }
+void printGreenMessage(string message) {
+	HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+	SetConsoleTextAttribute(hConsole, 10);
+	cout << "********************\n";
+	cout << message << endl;
+	cout << "********************\n";
+	SetConsoleTextAttribute(hConsole, 15);
+}
+void printRedMessage(string message) {
+	HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+	SetConsoleTextAttribute(hConsole, 12);
+	cout << "********************\n";
+	cout << message << endl;
+	cout << "********************\n";
+	SetConsoleTextAttribute(hConsole, 15);
+}
+void writeInStream(string streamName, string message) {
+	ofstream stream; stream.open(streamName, ios::app);
+	stream << message << endl;
+	stream.close();
+}

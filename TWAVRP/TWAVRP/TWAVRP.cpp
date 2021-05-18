@@ -10,19 +10,26 @@
 
 int main(int argc, char* argv[])
 {
-	string fileName = "TWAVRPInstance_12_15_3";
+	string fileName = "TWAVRPInstance_1_10_3";
 
-	fileName = "TWAVRPInstanceExtraScenarios_4_10_3";
-	fileName = "TWAVRPInstance_1_4_3";
+	int nbScenarios = 3;
+	//fileName = "TWAVRPInstance_4_10_3";
 	if (argc > 1) {
 		fileName = string(argv[1]);
+		nbScenarios = atoi(argv[2]);
 	}
 
+	
+
 	Config config(user::diego, instanceType::twa);
-	PbData pbData(fileName, config);
+	PbData pbData(fileName, config, nbScenarios);
 
 	Solver solver(&pbData);
+
+	//solver.test();
+
 	solver.enumerationCutSymmetries();
+	//system("pause");
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

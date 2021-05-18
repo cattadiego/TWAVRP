@@ -1,0 +1,195 @@
+******* 0 ********
+lb: 18.4833	cost: 18.6	ub: 18.6
+s0_c70
+clust(1	3	5	6	7	)	tsp(6	3	1	5	7	)	quantity: 30	cost: 9.68
+	seq in sol(6	3	1	5	7	)	cost sol:9.68
+
+s0_c258
+clust(2	4	8	10	)	tsp(2	4	10	8	)	quantity: 28	cost: 8.07
+	seq in sol(2	4	10	8	)	cost sol:8.07
+
+s0_c504
+clust(9	)	tsp(9	)	quantity: 8	cost: 0.72
+	seq in sol(9	)	cost sol:0.72
+
+s1_c70
+clust(1	3	5	6	7	)	tsp(6	3	1	5	7	)	quantity: 28	cost: 9.68
+	seq in sol(6	3	1	5	7	)	cost sol:9.68
+
+s1_c258
+clust(2	4	8	10	)	tsp(2	4	10	8	)	quantity: 27	cost: 8.07
+	seq in sol(2	4	10	8	)	cost sol:8.07
+
+s1_c504
+clust(9	)	tsp(9	)	quantity: 8	cost: 0.72
+	seq in sol(9	)	cost sol:0.72
+
+s2_c7
+clust(1	2	3	6	)	tsp(1	3	6	2	)	quantity: 30	cost: 6.75
+	seq in sol(2	6	3	1	)	cost sol:6.75
+
+s2_c408
+clust(4	5	7	8	10	)	tsp(5	7	10	4	8	)	quantity: 27	cost: 11.04
+	seq in sol(4	10	8	7	5	)	cost sol:11.39
+
+s2_c504
+clust(9	)	tsp(9	)	quantity: 7	cost: 0.72
+	seq in sol(9	)	cost sol:0.72
+
+
+******* 0 ********
+lb: 18.4833	cost: 18.6	ub: 18.6
+s0_c70
+clust(1	3	5	6	7	)	tsp(6	3	1	5	7	)	quantity: 30	cost: 9.68
+	seq in sol(6	3	1	5	7	)	cost sol:9.68
+
+s0_c258
+clust(2	4	8	10	)	tsp(2	4	10	8	)	quantity: 28	cost: 8.07
+	seq in sol(2	4	10	8	)	cost sol:8.07
+
+s0_c504
+clust(9	)	tsp(9	)	quantity: 8	cost: 0.72
+	seq in sol(9	)	cost sol:0.72
+
+s1_c70
+clust(1	3	5	6	7	)	tsp(6	3	1	5	7	)	quantity: 28	cost: 9.68
+	seq in sol(6	3	1	5	7	)	cost sol:9.68
+
+s1_c258
+clust(2	4	8	10	)	tsp(2	4	10	8	)	quantity: 27	cost: 8.07
+	seq in sol(2	4	10	8	)	cost sol:8.07
+
+s1_c504
+clust(9	)	tsp(9	)	quantity: 8	cost: 0.72
+	seq in sol(9	)	cost sol:0.72
+
+s2_c7
+clust(1	2	3	6	)	tsp(1	3	6	2	)	quantity: 30	cost: 6.75
+	seq in sol(2	6	3	1	)	cost sol:6.75
+
+s2_c408
+clust(4	5	7	8	10	)	tsp(5	7	10	4	8	)	quantity: 27	cost: 11.04
+	seq in sol(4	10	8	7	5	)	cost sol:11.39
+
+s2_c504
+clust(9	)	tsp(9	)	quantity: 7	cost: 0.72
+	seq in sol(9	)	cost sol:0.72
+
+
+******* 0 ********
+lb: 18.4833	cost: 18.6	ub: 18.6
+s0_c70
+clust(1	3	5	6	7	)	tsp(6	3	1	5	7	)	quantity: 30	cost: 9.68
+	seq in sol(6	3	1	5	7	)	cost sol:9.68
+
+s0_c258
+clust(2	4	8	10	)	tsp(2	4	10	8	)	quantity: 28	cost: 8.07
+	seq in sol(2	4	10	8	)	cost sol:8.07
+
+s0_c504
+clust(9	)	tsp(9	)	quantity: 8	cost: 0.72
+	seq in sol(9	)	cost sol:0.72
+
+s1_c70
+clust(1	3	5	6	7	)	tsp(6	3	1	5	7	)	quantity: 28	cost: 9.68
+	seq in sol(6	3	1	5	7	)	cost sol:9.68
+
+s1_c258
+clust(2	4	8	10	)	tsp(2	4	10	8	)	quantity: 27	cost: 8.07
+	seq in sol(2	4	10	8	)	cost sol:8.07
+
+s1_c504
+clust(9	)	tsp(9	)	quantity: 8	cost: 0.72
+	seq in sol(9	)	cost sol:0.72
+
+s2_c7
+clust(1	2	3	6	)	tsp(1	3	6	2	)	quantity: 30	cost: 6.75
+	seq in sol(2	6	3	1	)	cost sol:6.75
+
+s2_c408
+clust(4	5	7	8	10	)	tsp(5	7	10	4	8	)	quantity: 27	cost: 11.04
+	seq in sol(4	10	8	7	5	)	cost sol:11.39
+
+s2_c504
+clust(9	)	tsp(9	)	quantity: 7	cost: 0.72
+	seq in sol(9	)	cost sol:0.72
+
+
+******* 0 ********
+lb: 18.4833	cost: 18.6	ub: 18.6
+s0_c70
+clust(1	3	5	6	7	)	tsp(6	3	1	5	7	)	quantity: 30	cost: 9.68
+	seq in sol(6	3	1	5	7	)	cost sol:9.68
+
+s0_c258
+clust(2	4	8	10	)	tsp(2	4	10	8	)	quantity: 28	cost: 8.07
+	seq in sol(2	4	10	8	)	cost sol:8.07
+
+s0_c504
+clust(9	)	tsp(9	)	quantity: 8	cost: 0.72
+	seq in sol(9	)	cost sol:0.72
+
+s1_c70
+clust(1	3	5	6	7	)	tsp(6	3	1	5	7	)	quantity: 28	cost: 9.68
+	seq in sol(6	3	1	5	7	)	cost sol:9.68
+
+s1_c258
+clust(2	4	8	10	)	tsp(2	4	10	8	)	quantity: 27	cost: 8.07
+	seq in sol(2	4	10	8	)	cost sol:8.07
+
+s1_c504
+clust(9	)	tsp(9	)	quantity: 8	cost: 0.72
+	seq in sol(9	)	cost sol:0.72
+
+s2_c7
+clust(1	2	3	6	)	tsp(1	3	6	2	)	quantity: 30	cost: 6.75
+	seq in sol(2	6	3	1	)	cost sol:6.75
+
+s2_c408
+clust(4	5	7	8	10	)	tsp(5	7	10	4	8	)	quantity: 27	cost: 11.04
+	seq in sol(4	10	8	7	5	)	cost sol:11.39
+
+s2_c504
+clust(9	)	tsp(9	)	quantity: 7	cost: 0.72
+	seq in sol(9	)	cost sol:0.72
+
+
+******* 1 ********
+lb: 18.73	cost: 18.73	ub: 18.6
+s0_c70
+clust(1	3	5	6	7	)	tsp(6	3	1	5	7	)	quantity: 30	cost: 9.68
+	seq in sol(7	5	1	3	6	)	cost sol:9.68
+
+s0_c258
+clust(2	4	8	10	)	tsp(2	4	10	8	)	quantity: 28	cost: 8.07
+	seq in sol(8	10	4	2	)	cost sol:8.07
+
+s0_c504
+clust(9	)	tsp(9	)	quantity: 8	cost: 0.72
+	seq in sol(9	)	cost sol:0.72
+
+s1_c7
+clust(1	2	3	6	)	tsp(1	3	6	2	)	quantity: 27	cost: 6.75
+	seq in sol(1	3	6	2	)	cost sol:6.75
+
+s1_c408
+clust(4	5	7	8	10	)	tsp(5	7	10	4	8	)	quantity: 28	cost: 11.04
+	seq in sol(5	7	8	10	4	)	cost sol:11.39
+
+s1_c504
+clust(9	)	tsp(9	)	quantity: 8	cost: 0.72
+	seq in sol(9	)	cost sol:0.72
+
+s2_c7
+clust(1	2	3	6	)	tsp(1	3	6	2	)	quantity: 30	cost: 6.75
+	seq in sol(1	3	6	2	)	cost sol:6.75
+
+s2_c408
+clust(4	5	7	8	10	)	tsp(5	7	10	4	8	)	quantity: 27	cost: 11.04
+	seq in sol(5	7	8	10	4	)	cost sol:11.39
+
+s2_c504
+clust(9	)	tsp(9	)	quantity: 7	cost: 0.72
+	seq in sol(9	)	cost sol:0.72
+
+

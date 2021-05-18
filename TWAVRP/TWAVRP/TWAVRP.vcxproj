@@ -160,7 +160,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Cluster.cpp" />
+    <ClCompile Include="ClustersPair.cpp" />
     <ClCompile Include="Config.cpp" />
+    <ClCompile Include="MyStructures.cpp" />
     <ClCompile Include="PbData.cpp" />
     <ClCompile Include="Solver.cpp" />
     <ClCompile Include="TWAVRP.cpp" />
@@ -168,7 +170,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Cluster.h" />
+    <ClInclude Include="ClustersPair.h" />
     <ClInclude Include="Config.h" />
+    <ClInclude Include="MyStructures.h" />
     <ClInclude Include="PbData.h" />
     <ClInclude Include="Solver.h" />
     <ClInclude Include="Util.h" />

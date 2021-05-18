@@ -1,2 +1,11 @@
-TWAVRPInstance_4_10_3	10	3	1357	lb0:18.4833	ub0:18.6	lb:18.51	ub:18.51	cutsI: 0	cutsF: 2	1849
-TWAVRPInstance_1_4_3	4	3	45	lb0:8.85999	ub0:8.85999	lb:8.85999	ub:8.85999	cutsI: 0	cutsF: 0	194
+TWAVRPInstanceExtraScenarios_4_10_3	10	0	0	lb0:0	ub0:0	lb:0	ub:0	cutsI: 0	cutsF: 0	custP: 0	5
+TWAVRPInstanceExtraScenarios_9_10_3	10	10	6052	lb0:19.893	ub0:319.96	lb:20.069	ub:19.978	cutsI: 1	cutsF: 1	custP: 204	118944
+TWAVRPInstanceExtraScenarios_9_10_3	10	10	6063	lb0:19.903	ub0:19.903	lb:19.903	ub:19.903	cutsI: 0	cutsF: 0	custP: 0	5590
+TWAVRPInstanceExtraScenarios_9_10_3	10	10	6063	lb0:19.159	ub0:22.149	lb:19.903	ub:19.903	cutsI: 0	cutsF: 1	custP: 120	48639
+TWAVRPInstanceExtraScenarios_9_10_3	10	10	6063	lb0:19.903	ub0:19.903	lb:19.903	ub:19.903	cutsI: 0	cutsF: 0	custP: 0	10467
+TWAVRPInstanceExtraScenarios_9_10_3	10	10	6017	lb0:19.903	ub0:19.903	lb:19.903	ub:19.903	cutsI: 0	cutsF: 0	custP: 0	10318
+TWAVRPInstanceExtraScenarios_8_10_3	10	10	6794	lb0:21.462	ub0:21.462	lb:21.462	ub:21.462	cutsI: 0	cutsF: 0	custP: 0	69446
+TWAVRPInstance_4_8_3	8	3	562	lb0:16.4667	ub0:16.6033	lb:16.47	ub:16.47	cutsI: 0	cutsF: 1	custP: 0	1771
+TWAVRPInstance_4_8_3	8	3	562	lb0:16.4667	ub0:16.6033	lb:16.47	ub:16.47	cutsI: 0	cutsF: 1	custP: 0	1545
+TWAVRPInstance_4_10_3	10	3	1357	lb0:18.4833	ub0:18.6	lb:18.73	ub:18.6	cutsI: 0	cutsF: 1	custP: 2	4777
+TWAVRPInstanceExtraScenarios_4_10_3	10	15	10565	lb0:18.0347	ub0:18.1333	lb:18.3373	ub:18.1333	cutsI: 0	cutsF: 1	custP: 1084	1305708
