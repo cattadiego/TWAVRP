@@ -3,33 +3,44 @@
 #include "pch.h"
 #include <iostream>
 
+#include "ClusterGeneration.h"
 #include "Config.h"
+#include "MyParam.h"
 #include "PbData.h"
+#include "ProgDynTspEnum.h"
 #include "Solver.h"
 #include "Util.h"
 
 int main(int argc, char* argv[])
 {
-	string fileName = "TWAVRPInstance_1_10_3";
-
+	srand(0);
+	string fileName = "TWAVRPInstance_24_20_3";
+	//string fileName = "TWAVRPInstance_21_20_3";
+	
 	int nbScenarios = 3;
-	//fileName = "TWAVRPInstance_4_10_3";
+	//fileName = "TWAVRPInstanceExtraScenarios_4_10_3";
 	if (argc > 1) {
 		fileName = string(argv[1]);
 		nbScenarios = atoi(argv[2]);
 	}
 
-	
-
 	Config config(user::diego, instanceType::twa);
 	PbData pbData(fileName, config, nbScenarios);
+	
+	ofstream stream("progDyn.dat", ios::app);
+	stream << pbData.instanceName << "\t" << pbData.nbScenarios << "\t";
+	stream.close();
 
-	Solver solver(&pbData);
-
-	//solver.test();
-
-	solver.enumerationCutSymmetries();
-	//system("pause");
+	
+	stream.open("progDyn.dat", ios::app);
+	int t = clock();
+	ProgDynTspEnum pDyn(&pbData);
+	stream << clock() - t << "\t";
+	t = clock();
+	pDyn.solve();
+	//ClusterGeneration cl(&pbData);	
+	stream << clock() - t << endl;
+	stream.close();	
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

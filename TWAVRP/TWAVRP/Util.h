@@ -36,5 +36,8 @@ void subsetsUtil(vector<int>& A, vector<vector<int> >& res, vector<int>& subset,
 vector<vector<int>> subsets(vector<int>& A);
 
 void printGreenMessage(string message);
+void printGreenMessage(string message, string header);
 void printRedMessage(string message);
+void printRedMessage(string message, string header);
+
 void writeInStream(string streamName, string message);

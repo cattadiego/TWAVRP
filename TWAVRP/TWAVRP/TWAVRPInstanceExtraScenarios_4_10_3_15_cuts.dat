@@ -1719,3 +1719,20 @@ tsp(7	5	1	3	6	2	9	)	cost: 10.73
 
 
 twacost: 1.58267	tspcost: 1.57667
+---- triplets ---- 
+clust(1	3	5	6	7	)
+tsp(6	3	1	5	7	)	cost: 9.68
+	seq sol(7	5	1	3	6	)	cost sol: 9.68
+
+
+clust(1	2	3	5	6	7	9	)
+tsp(7	5	1	3	6	2	9	)	cost: 10.73
+	seq sol(9	7	5	1	3	6	2	)	cost sol: 10.82
+
+
+clust(1	2	3	4	6	8	9	10	)
+tsp(8	10	4	2	6	3	1	9	)	cost: 12.2
+	seq sol(9	1	3	6	2	4	10	8	)	cost sol: 12.2
+
+
+twacost: 2.18	tspcost: 2.174

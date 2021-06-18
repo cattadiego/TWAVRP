@@ -303,10 +303,15 @@ void Solver::enumeration() {
 }
 void Solver::enumerationCutSymmetries() {
 	int tt = clock();
+#if CONSOLE_VERBOSE == 1
 	cout << "gen started" << endl;
+#endif // CONSOLE_VERBOSE
+
 	generateEvaluateAllClusters();
 	int tGen = clock() - tt;
+#if CONSOLE_VERBOSE  == 1
 	cout << "generation done" << endl;
+#endif // VERBOSE > 0
 
 	IloEnv env;
 	IloModel model(env);
@@ -347,6 +352,7 @@ void Solver::enumerationCutSymmetries() {
 	int nbCutsF = 0, nbCutsI = 0, nbCutsP = 0;
 	double lb, ub = this->pbdata->bigM;
 	double lb0, ub0;
+	int tCuts = 0, tMast = 0, tSep = 0, ttemp;
 
 
 	UnorderedMapKeyPairOrderedInt memoryCuts(-2);
@@ -356,36 +362,44 @@ void Solver::enumerationCutSymmetries() {
 
 		initializeVariablesUCVRP(env, u);
 		initializeVariablesUCVRPCutSymmetries(env, y, z);
-		//initializeVariablesUCVRPValidCuts(env, deltaSS);
 		initializeObjFunctionUCVRP(env, model, u, delta);
 		initializeCoveringCnstUCVRP(env, model, u, coveringCnst);
 		initializeLinkUandYCnstUCVRPCutSymmetries(env, model, u, y, linkUandYCnst);
 
+
+
 		cplex.setParam(IloCplex::Param::Threads, 1);
+		ttemp = clock();
 		cplex.solve();
+		tMast += clock() - ttemp;
 		lb = cplex.getObjValue();
 		lb0 = lb;
 		
-
+		
 		int iter = 0;
 		while (lb < ub - myEpsilon) {
 
+			ttemp = clock();
 			determineClustersInSolUCVRP(cplex, u, sol);
 			double cost = solveSeparationUCVRP(sol);
-		
+			tSep += clock() - ttemp;
+
 			if (cost < ub) {
 				ub = cost;
 				solBest = sol;
 			}
-			ofstream stream; stream.open(this->pbdata->instanceName + "_" + toString(this->pbdata->nbScenarios) + "_infos.dat", ios::app);
-			stream << "******* " << iter << " ********\n";
-			stream << "lb: " << lb << "\tcost: " << cost << "\tub: " << ub << endl;
-			stream << printSolUCVRP(sol) << endl;
-
-			printRedMessage("lb: " + toString(lb) + "\nub: " + toString(ub) + "\n");
-			
 			ub0 = ub;
-		
+
+#if FILE_VERBOSE == 1
+			string streamName = this->pbdata->instanceName + "_" + toString(this->pbdata->nbScenarios) + "_infos.dat";
+			string message = "******* " + toString(iter) + " ********\n" + "lb: " + toString(lb) + "\tcost: " + toString(cost) + "\tub: " + toString(ub) + "\n" + printSolUCVRP(sol) + "\n";
+			writeInStream(streamName, message);
+#endif
+#if CONSOLE_VERBOSE == 1
+			printRedMessage("lb: " + toString(lb) + "\nub: " + toString(ub) + "\n");
+#endif
+			
+			
 			if (cost < this->pbdata->bigM) {
 				unordered_map<int, vector<int>> invSol;
 				invertSolution(sol, invSol);
@@ -395,13 +409,22 @@ void Solver::enumerationCutSymmetries() {
 				nbCutsI += addInfeasibilityCuts(env, model, y, sol);
 			}
 
-			nbCutsP += addValidCutsOnY(env, model, delta, deltaCC, gammaCC, u, y, sol, iter, memoryCutsY);
-			
+			ttemp = clock();
+			nbCutsP += addValidCutsOnY(env, model, delta, deltaCC, gammaCC, u, y, sol, iter, memoryCutsY);			
 			nbCutsP += addValidCuts(env, model, delta, u, y, sol, iter, memoryCuts);
+			tCuts += clock() - ttemp;
 
-			cplex.exportModel("model.lp");
+#if FILE_VERBOSE == 1
+			streamName = this->pbdata->instanceName + "_" + toString(this->pbdata->nbScenarios) + "_infos.dat";
+			message = "tCuts: " + toString(tCuts) + "\ttMast:" + toString(tMast) + "\ttSep: " + toString(tSep) + "\n";
+			writeInStream(streamName, message);
+#endif
+
+			ttemp = clock();
 			cplex.solve();
-			lb = cplex.getObjValue();			
+			tMast += clock() - ttemp;
+			lb = cplex.getObjValue();
+			++iter;
 		}
 	}
 	catch (IloException &ex) {
@@ -410,14 +433,16 @@ void Solver::enumerationCutSymmetries() {
 		return;
 	}
 	cplex.end(); model.end(); env.end();
-
+#if RESULTS_VERBOSE == 1
 	string message = this->pbdata->instanceName + "\t" + toString(this->pbdata->nbCustomers) +  "\t" 
 		+ toString(this->pbdata->nbScenarios) + "\t" + toString(calculateNbClusters()) + "\tlb0: " + toString(lb0)
 		+ "\tub0: " + toString(ub0) +  "\tlb: " + toString(lb) + "\tub: " + toString(ub) 
 		+ "\tcutsI: " + toString(nbCutsI) + "\tcutsF: " + toString(nbCutsF) + "\tcustP: " + toString(nbCutsP)
-		+ "\ttGen: " + toString(tGen) + "\ttTot: " + toString(clock() - tt);
+		+ "\ttGen: " + toString(tGen) + "\ttCuts: " + toString(tCuts) + "\ttMast: " + toString(tMast) 
+		+ "\ttSep: " + toString(tSep) + "\ttTot: " + toString(clock() - tt);
 
 	writeInStream("result.dat", message);
+#endif
 
 }
 template<typename T>
@@ -1158,69 +1183,69 @@ int Solver::addValidCutsOnY(IloEnv &env, IloModel &model, IloNumVar &delta, unor
 			for (s1++; s1 != sol.end(); ++s1) {
 				for (int c1 = 0; c1 < s1->second.size(); ++c1) {
 					if (s->second.at(c) != s1->second.at(c1)) {
-						if (memoryCuts.get(s->second.at(c), s1->second.at(c1)) == -2) { // cut not found
-							double tspCost = (this->clusters.at(s->second.at(c)).cost + this->clusters.at(s1->second.at(c1)).cost) / (this->pbdata->nbScenarios);
-							unordered_map<int, vector<int>> tempSol;
-							tempSol.insert(make_pair(s->first, vector<int>(1, s->second.at(c))));
-							if (s->first != s1->first)
-								tempSol.insert(make_pair(s1->first, vector<int>(1, s1->second.at(c1))));
-							else tempSol.at(s->first).push_back(s1->second.at(c1));
-							double twaCost = solveSeparationUCVRP(tempSol);
-							memoryCuts.insert(s->second.at(c), s1->second.at(c1), twaCost - tspCost);
-							if (twaCost - tspCost > myEpsilon) {
-								IloExpr expr(env);
-								expr += (twaCost - tspCost) * y.at(s->second.at(c)) + (twaCost - tspCost) * y.at(s1->second.at(c1));
-								expr -= delta + (twaCost - tspCost);
-								model.add(expr <= 0);
-								++nbCutsP;
+						if (this->clusters.at(s->second.at(c)).intersection(this->clusters.at(s1->second.at(c1)))) {
+							if (memoryCuts.get(s->second.at(c), s1->second.at(c1)) == memoryCuts.getNotFoundValue()) { // cut not found
+								double tspCost = (this->clusters.at(s->second.at(c)).cost + this->clusters.at(s1->second.at(c1)).cost) / (this->pbdata->nbScenarios);
+								unordered_map<int, vector<int>> tempSol;
+								tempSol.insert(make_pair(s->first, vector<int>(1, s->second.at(c))));
+								if (s->first != s1->first)
+									tempSol.insert(make_pair(s1->first, vector<int>(1, s1->second.at(c1))));
+								else tempSol.at(s->first).push_back(s1->second.at(c1));
+								double twaCost = solveSeparationUCVRP(tempSol);
+								memoryCuts.insert(s->second.at(c), s1->second.at(c1), twaCost - tspCost);
+								if (twaCost - tspCost > myEpsilon) {
+									IloExpr expr(env);
+									expr += (twaCost - tspCost) * y.at(s->second.at(c)) + (twaCost - tspCost) * y.at(s1->second.at(c1));
+									expr -= delta + (twaCost - tspCost);
+									model.add(expr <= 0);
+									++nbCutsP;
 
-								ofstream cuts(this->pbdata->instanceName + "_" + toString(this->pbdata->nbScenarios) + "_cuts.dat", ios::app);
-								cuts << "----\n";
-								cuts << this->clusters.at(s->second.at(c)).print() << endl;
-								cuts << this->clusters.at(s1->second.at(c1)).print() << endl;
-								cuts << "twacost: " << twaCost << "\ttspcost: " << tspCost << endl;
-								cuts.close();
+#if FILE_VERBOSE == 1
+									writeInStream(this->pbdata->instanceName + "_" + toString(this->pbdata->nbScenarios) + "_cuts.dat",
+										"----\n" + this->clusters.at(s->second.at(c)).print() + "\n" + this->clusters.at(s1->second.at(c1)).print() + "\ntwacost: " + toString(twaCost) + "\ttspcost: " + toString(tspCost));
+#endif
 
-								determineDisjointPairsOfClusters(env, model, tspCost, twaCost, deltaCC, y, setpairs, s->second, s1->second, c, c1);
+									determineDisjointPairsOfClusters(env, model, tspCost, twaCost, deltaCC, y, setpairs, s->second, s1->second, c, c1);
 
-								determineMultipleOccurencesOfPairs(env, model, delta, tspCost, twaCost, gammaCC, u, s->second, s1->second, c, c1);
+									determineMultipleOccurencesOfPairs(env, model, delta, tspCost, twaCost, gammaCC, u, s->second, s1->second, c, c1);
 
-							}
+								}
 
-							auto s2 = s1;
-							for (s2++; s2 != sol.end(); ++s2) {
-								for (int c2 = 0; c2 < s2->second.size(); ++c2) {
-									if (s->second.at(c) != s2->second.at(c2) && s1->second.at(c1) != s2->second.at(c2)) {
-										tspCost += (this->clusters.at(s2->second.at(c2)).cost / this->pbdata->nbScenarios);
-										if (s->first != s2->first && s1->first != s2->first)
-											tempSol.insert(make_pair(s2->first, vector<int>(1, s2->second.at(c2))));
-										else tempSol.at(s2->first).push_back(s2->second.at(c2));
-										double twaCost = solveSeparationUCVRP(tempSol);
+								auto s2 = s1;
+								for (s2++; s2 != sol.end(); ++s2) {
+									for (int c2 = 0; c2 < s2->second.size(); ++c2) {
+										if (s->second.at(c) != s2->second.at(c2) && s1->second.at(c1) != s2->second.at(c2)) {
+											tspCost += (this->clusters.at(s2->second.at(c2)).cost / this->pbdata->nbScenarios);
+											if (s->first != s2->first && s1->first != s2->first)
+												tempSol.insert(make_pair(s2->first, vector<int>(1, s2->second.at(c2))));
+											else tempSol.at(s2->first).push_back(s2->second.at(c2));
+											double twaCost = solveSeparationUCVRP(tempSol);
 
-										if (twaCost - tspCost > myEpsilon) {
+											if (twaCost - tspCost > myEpsilon) {
 
-											IloExpr expr(env);
-											expr += (twaCost - tspCost) * (y.at(s->second.at(c)) + y.at(s1->second.at(c1)) + y.at(s2->second.at(c2)));
-											expr -= delta + 2 * (twaCost - tspCost);
-											model.add(expr <= 0);
-											++nbCutsP;
+												IloExpr expr(env);
+												expr += (twaCost - tspCost) * (y.at(s->second.at(c)) + y.at(s1->second.at(c1)) + y.at(s2->second.at(c2)));
+												expr -= delta + 2 * (twaCost - tspCost);
+												model.add(expr <= 0);
+												++nbCutsP;
 
-											ofstream cuts(this->pbdata->instanceName + "_" + toString(this->pbdata->nbScenarios) + "_cuts.dat", ios::app);
-											cuts << "---- triplets ---- \n";
-											cuts << this->clusters.at(s->second.at(c)).print() << endl;
-											cuts << this->clusters.at(s1->second.at(c1)).print() << endl;
-											cuts << this->clusters.at(s2->second.at(c2)).print() << endl;
-											cuts << "twacost: " << twaCost << "\ttspcost: " << tspCost << endl;
-											cuts.close();
+#if FILE_VERBOSE == 1
+												writeInStream(this->pbdata->instanceName + "_" + toString(this->pbdata->nbScenarios) + "_cuts.dat",
+													"---- triplets ---- \n" + this->clusters.at(s->second.at(c)).print() + "\n" + this->clusters.at(s1->second.at(c1)).print() + "\n"
+													+ this->clusters.at(s2->second.at(c2)).print() + "\ntwacost: " + toString(twaCost) + "\ttspcost: " + toString(tspCost) + "\n");
+#endif
+
+
+											}
 										}
 									}
 								}
 							}
-						}
-						else if (memoryCuts.get(s->second.at(c), s1->second.at(c1)) > myEpsilon) {
-							ClustersPair cp(&this->clusters.at(s->second.at(c)), &this->clusters.at(s1->second.at(c1)), s->second.at(c), s1->second.at(c1));
-							insertClusterPairInSets(cp, setpairs);
-						}
+							else if (memoryCuts.get(s->second.at(c), s1->second.at(c1)) > myEpsilon) {
+								ClustersPair cp(&this->clusters.at(s->second.at(c)), &this->clusters.at(s1->second.at(c1)), s->second.at(c), s1->second.at(c1));
+								insertClusterPairInSets(cp, setpairs);
+							}
+						}						
 					}
 				}
 			}
@@ -1355,67 +1380,67 @@ int Solver::addValidCutsOnU(IloEnv &env, IloModel &model, IloNumVar &delta, unor
 	return nbCutsP;
 }
 int Solver::addValidCuts(IloEnv &env, IloModel &model, IloNumVar &delta, vector< unordered_map<int, IloIntVar > > &u, vector<IloIntVar> &y, unordered_map<int, vector<int>> &sol, int iter, UnorderedMapKeyPairOrderedInt& memoryCuts) {
-	HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
-	SetConsoleTextAttribute(hConsole, 10);
-	cout << "********** " << "cuts in " << " **********\n";
-	SetConsoleTextAttribute(hConsole, 15);
+	
+#if CONSOLE_VERBOSE == 1
+	printGreenMessage("cuts in ");
+#endif
 	int nbCutsP = 0;
 
-	ofstream cuts(this->pbdata->instanceName + "_" + toString(this->pbdata->nbScenarios) + "_cuts.dat", ios::app);
-	cuts << "*******(g) " << iter << " (g)********\n";
-
+#if FILE_VERBOSE == 1
+	writeInStream(this->pbdata->instanceName + "_" + toString(this->pbdata->nbScenarios) + "_cuts.dat", "*******(g) " + toString(iter) + " (g)********\n");
+#endif
+	
 	for (auto s = sol.begin(); s != sol.end(); ++s) {
 		for (int c = 0; c < s->second.size(); ++c) {
 			auto s1 = s;
 			for (++s1; s1 != sol.end(); ++s1) {
 				for (int c1 = 0; c1 < s1->second.size(); ++c1) {
 
-					HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
-					SetConsoleTextAttribute(hConsole, 10);
-					cout << "********** " << nbCutsP << " **********\n";
-					cout << s->first << "\t" << s1->first << "\t" << c << "\t" << c1 << endl;
-					cout << "********************\n";
-					SetConsoleTextAttribute(hConsole, 15);						
-
+#if CONSOLE_VERBOSE == 1
+					printGreenMessage(toString(s->first) + "\t" + toString(s1->first) + "\t" + toString(c) + "\t" + toString(c1) + "\n", toString(nbCutsP));
+#endif
 					if (s->second.at(c) != s1->second.at(c1)) {
-						if (memoryCuts.get(s->second.at(c), s1->second.at(c1)) == -2) {
-							unordered_map<int, vector<int>> tempSol;
-							tempSol.insert(make_pair(s->first, vector<int>(1, s->second.at(c))));
-							if (s->first != s1->first)
-								tempSol.insert(make_pair(s1->first, vector<int>(1, s1->second.at(c1))));
-							else tempSol.at(s->first).push_back(s1->second.at(c1));
+						if (this->clusters.at(s->second.at(c)).intersection(this->clusters.at(s1->second.at(c1)))) {
+							if (memoryCuts.get(s->second.at(c), s1->second.at(c1)) == memoryCuts.getNotFoundValue()) {
+								unordered_map<int, vector<int>> tempSol;
+								tempSol.insert(make_pair(s->first, vector<int>(1, s->second.at(c))));
+								if (s->first != s1->first)
+									tempSol.insert(make_pair(s1->first, vector<int>(1, s1->second.at(c1))));
+								else tempSol.at(s->first).push_back(s1->second.at(c1));
 
-							this->clusters.at(s->second.at(c)).coeffObjFunction = 1;
-							this->clusters.at(s1->second.at(c1)).coeffObjFunction = 0;
+								this->clusters.at(s->second.at(c)).coeffObjFunction = 1;
+								this->clusters.at(s1->second.at(c1)).coeffObjFunction = 0;
 
-							double tspCost = this->pbdata->scenarioProbability.at(s->first) * this->clusters.at(s->second.at(c)).cost;
-							double twaCost = solveSeparationUCVRP(tempSol);
+								double tspCost = this->pbdata->scenarioProbability.at(s->first) * this->clusters.at(s->second.at(c)).cost;
+								double twaCost = solveSeparationUCVRP(tempSol);
 
-							double R0 = twaCost - tspCost;
-							this->clusters.at(s->second.at(c)).coeffObjFunction = 0;
-							this->clusters.at(s1->second.at(c1)).coeffObjFunction = 1;
+								double R0 = twaCost - tspCost;
+								this->clusters.at(s->second.at(c)).coeffObjFunction = 0;
+								this->clusters.at(s1->second.at(c1)).coeffObjFunction = 1;
 
-							tspCost = this->pbdata->scenarioProbability.at(s1->first) * this->clusters.at(s1->second.at(c1)).cost;
-							twaCost = solveSeparationUCVRP(tempSol);
-							double R1 = twaCost - tspCost;
-							memoryCuts.insert(s->second.at(c), s1->second.at(c1), R0 + R1);
-							if (R0 + R1 > myEpsilon) {
-								IloExpr expr(env);
-								for (auto scen = u.at(s->second.at(c)).begin(); scen != u.at(s->second.at(c)).end(); ++scen) {
-									expr += R0 * scen->second;
+								tspCost = this->pbdata->scenarioProbability.at(s1->first) * this->clusters.at(s1->second.at(c1)).cost;
+								twaCost = solveSeparationUCVRP(tempSol);
+								double R1 = twaCost - tspCost;
+								memoryCuts.insert(s->second.at(c), s1->second.at(c1), R0 + R1);
+								if (R0 + R1 > myEpsilon) {
+									IloExpr expr(env);
+									for (auto scen = u.at(s->second.at(c)).begin(); scen != u.at(s->second.at(c)).end(); ++scen) {
+										expr += R0 * scen->second;
+									}
+									for (auto scen = u.at(s1->second.at(c1)).begin(); scen != u.at(s1->second.at(c1)).end(); ++scen) {
+										expr += R1 * scen->second;
+									}
+									expr -= delta;
+									double M = max(R0, R1);
+									model.add(expr <= M * (2 - y.at(s->second.at(c)) - y.at(s1->second.at(c1))));
+									++nbCutsP;
+
+#if FILE_VERBOSE == 1
+									writeInStream(this->pbdata->instanceName + "_" + toString(this->pbdata->nbScenarios) + "_cuts.dat", "---\n" + this->clusters.at(s->second.at(c)).print() + "\n" + this->clusters.at(s1->second.at(c1)).print() + "\n" + "M: " + toString(M) + "\t(" + toString(R0) + ", " + toString(R1) + ")\n");
+#endif
 								}
-								for (auto scen = u.at(s1->second.at(c1)).begin(); scen != u.at(s1->second.at(c1)).end(); ++scen) {
-									expr += R1 * scen->second;
-								}
-								expr -= delta;
-								double M = max(R0, R1);
-								model.add(expr <= M * (2 - y.at(s->second.at(c)) - y.at(s1->second.at(c1))));
-								++nbCutsP;
-								cuts << "---\n";
-								cuts << this->clusters.at(s->second.at(c)).print() << "\n" << this->clusters.at(s1->second.at(c1)).print() << endl;
-								cuts << "M: " << M << "\t(" << R0 << ", " << R1 << ")" << endl;
+								this->clusters.at(s->second.at(c)).coeffObjFunction = 1;
 							}
-							this->clusters.at(s->second.at(c)).coeffObjFunction = 1;
 						}
 					}
 				}
@@ -1423,25 +1448,20 @@ int Solver::addValidCuts(IloEnv &env, IloModel &model, IloNumVar &delta, vector<
 		}
 	}
 	
-	cuts.close();
-
-
-	hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
-	SetConsoleTextAttribute(hConsole, 10);
-	cout << "********** " << "cuts out" << " **********\n";
-	SetConsoleTextAttribute(hConsole, 15);
-
+#if CONSOLE_VERBOSE == 1
+	printGreenMessage("cuts out");
+#endif
 	return nbCutsP;
 }
 void Solver::invertSolution(unordered_map<int, vector<int>> &sol, unordered_map<int, vector<int>> &invSol) {
 	for (int s = 0; s < this->pbdata->nbScenarios; ++s) {
 		for (int c = 0; c < sol.at(s).size(); ++c) {
-			try {
-				invSol.at(sol.at(s).at(c)).push_back(s);
-			}
-			catch (out_of_range ex) {
+			if (invSol.find(sol.at(s).at(c)) == invSol.end()) {
 				vector<int> temp; temp.push_back(s);
 				invSol.insert(make_pair(sol.at(s).at(c), temp));
+			}
+			else {
+				invSol.at(sol.at(s).at(c)).push_back(s);
 			}
 		}
 	}

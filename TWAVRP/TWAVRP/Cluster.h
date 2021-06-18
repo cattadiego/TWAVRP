@@ -30,7 +30,7 @@ public:
 	vector<int> bitWords;
 
 	bool intersection(const Cluster &cluster);
-
+	
 	double cost;
 	double costInSol;
 

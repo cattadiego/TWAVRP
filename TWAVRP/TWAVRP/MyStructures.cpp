@@ -50,5 +50,5 @@ float UnorderedMapKeyPairOrderedInt::get(int k1, int k2) {
 	}
 }
 float UnorderedMapKeyPairOrderedInt::getNotFoundValue() {
-	return this->getNotFoundValue;
+	return this->not_found_value;
 }

@@ -8,6 +8,7 @@
 #include <set>  
 #include "Cluster.h"
 #include "ClustersPair.h"
+#include "MyParam.h"
 #include "MyStructures.h"
 #include "PbData.h"
 #include "Util.h"

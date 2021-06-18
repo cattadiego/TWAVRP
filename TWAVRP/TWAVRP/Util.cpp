@@ -37,10 +37,26 @@ void printGreenMessage(string message) {
 	cout << "********************\n";
 	SetConsoleTextAttribute(hConsole, 15);
 }
+void printGreenMessage(string message, string header) {
+	HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+	SetConsoleTextAttribute(hConsole, 10);
+	cout << "**********" << header <<  "**********\n";
+	cout << message << endl;
+	cout << "********************\n";
+	SetConsoleTextAttribute(hConsole, 15);
+}
 void printRedMessage(string message) {
 	HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
 	SetConsoleTextAttribute(hConsole, 12);
 	cout << "********************\n";
+	cout << message << endl;
+	cout << "********************\n";
+	SetConsoleTextAttribute(hConsole, 15);
+}
+void printRedMessage(string message, string header) {
+	HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+	SetConsoleTextAttribute(hConsole, 12);
+	cout << "**********" << header << "**********\n";
 	cout << message << endl;
 	cout << "********************\n";
 	SetConsoleTextAttribute(hConsole, 15);
